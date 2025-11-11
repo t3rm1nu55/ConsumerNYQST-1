@@ -1,19 +1,3167 @@
 {
   "metadata": {
-    "created": "2025-11-11T03:35:43.522553",
+    "created": "2025-11-11T03:46:09.870932",
     "verification_status": {
-      "total_data_points": 0,
+      "total_data_points": 38,
       "verified": 0,
-      "confirmed": 0,
-      "percent_verified_or_confirmed": 0,
-      "total_formulas": 0,
-      "total_manufacturer_data": 0,
-      "total_app_statistics": 0,
-      "last_updated": "2025-11-11T03:35:43.522553"
+      "confirmed": 31,
+      "percent_verified_or_confirmed": 81.6,
+      "total_formulas": 9,
+      "total_manufacturer_data": 17,
+      "total_app_statistics": 33,
+      "last_updated": "2025-11-11T03:46:09.870932"
     }
   },
-  "data_points": {},
-  "formulas": {},
-  "manufacturer_data": [],
-  "app_statistics": []
+  "data_points": {
+    "cnc_operators_employment_may2024": {
+      "claim": "Total Computer Numerically Controlled Tool Operators employed in United States (May 2024)",
+      "value": 177100,
+      "unit": "workers",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey, SOC code 51-9161. This represents the national employment estimate.",
+      "last_verified": "2025-11-11T03:30:55.640741",
+      "conflicts": []
+    },
+    "cnc_operators_median_wage_annual_may2024": {
+      "claim": "Median annual wage for CNC Tool Operators in United States (May 2024)",
+      "value": 49970,
+      "unit": "USD per year",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey. Median represents 50th percentile.",
+      "last_verified": "2025-11-11T03:30:55.640745",
+      "conflicts": []
+    },
+    "cnc_operators_median_wage_hourly_may2024": {
+      "claim": "Median hourly wage for CNC Tool Operators in United States (May 2024)",
+      "value": 24.02,
+      "unit": "USD per hour",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey. Median represents 50th percentile.",
+      "last_verified": "2025-11-11T03:30:55.640747",
+      "conflicts": []
+    },
+    "cnc_operators_job_openings_projected_2024_2034": {
+      "claim": "Projected annual job openings for CNC Tool Operators (2024-2034 average)",
+      "value": 13500,
+      "unit": "job openings per year",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "BLS Employment Projections 2024-2034. Openings include both new jobs and replacement needs.",
+      "last_verified": "2025-11-11T03:30:55.640749",
+      "conflicts": []
+    },
+    "cnc_operators_growth_rate_2024_2034": {
+      "claim": "Projected employment growth rate for CNC Tool Operators (2024-2034)",
+      "value": -1,
+      "unit": "percent",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "BLS projects decline of 1% or lower over 10-year period. Negative growth due to automation and productivity improvements.",
+      "last_verified": "2025-11-11T03:30:55.640751",
+      "conflicts": []
+    },
+    "cnc_programmers_employment_may2024": {
+      "claim": "Total Computer Numerically Controlled Tool Programmers employed in United States (May 2024)",
+      "value": 28300,
+      "unit": "workers",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey, SOC code 51-9162",
+      "last_verified": "2025-11-11T03:30:55.640762",
+      "conflicts": []
+    },
+    "cnc_programmers_median_wage_annual_may2024": {
+      "claim": "Median annual wage for CNC Tool Programmers in United States (May 2024)",
+      "value": 65670,
+      "unit": "USD per year",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey. Significantly higher than CNC operators ($49,970)",
+      "last_verified": "2025-11-11T03:30:55.640764",
+      "conflicts": []
+    },
+    "cnc_programmers_median_wage_hourly_may2024": {
+      "claim": "Median hourly wage for CNC Tool Programmers in United States (May 2024)",
+      "value": 31.57,
+      "unit": "USD per hour",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey. 31% higher hourly wage than operators ($24.02)",
+      "last_verified": "2025-11-11T03:30:55.640767",
+      "conflicts": []
+    },
+    "cnc_programmers_job_openings_projected_2024_2034": {
+      "claim": "Projected annual job openings for CNC Tool Programmers (2024-2034 average)",
+      "value": 3100,
+      "unit": "job openings per year",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "BLS Employment Projections 2024-2034",
+      "last_verified": "2025-11-11T03:30:55.640770",
+      "conflicts": []
+    },
+    "cnc_programmers_growth_rate_2024_2034": {
+      "claim": "Projected employment growth rate for CNC Tool Programmers (2024-2034)",
+      "value": 7,
+      "unit": "percent",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "BLS classifies as 'much faster than average' (7% or higher). Positive growth contrasts with operator decline.",
+      "last_verified": "2025-11-11T03:30:55.640772",
+      "conflicts": []
+    },
+    "total_cnc_workforce_may2024": {
+      "claim": "Total CNC operators and programmers combined workforce (May 2024)",
+      "value": 205400,
+      "unit": "workers",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        },
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "Sum of CNC operators (177,100) + CNC programmers (28,300) = 205,400 total workforce",
+      "last_verified": "2025-11-11T03:30:55.640785",
+      "conflicts": []
+    },
+    "machinists_employment_2024": {
+      "claim": "Total Machinists employed in United States (2024)",
+      "value": 299500,
+      "unit": "workers",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        },
+        {
+          "url": "https://www.bls.gov/oes/current/oes514041.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Employment and Wage Statistics - Machinists (51-4041)",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "May 2024 National Occupational Employment and Wage Estimates for Machinists (SOC 51-4041)",
+          "archive_url": null,
+          "notes": "Direct BLS OES data page for Machinists"
+        }
+      ],
+      "validation_notes": "From BLS OOH using May 2024 OES survey data. SOC code 51-4041.",
+      "last_verified": "2025-11-11T03:30:55.640794",
+      "conflicts": []
+    },
+    "machinists_median_wage_annual_may2024": {
+      "claim": "Median annual wage for Machinists in United States (May 2024)",
+      "value": 56150,
+      "unit": "USD per year",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        },
+        {
+          "url": "https://www.bls.gov/oes/current/oes514041.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Employment and Wage Statistics - Machinists (51-4041)",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "May 2024 National Occupational Employment and Wage Estimates for Machinists (SOC 51-4041)",
+          "archive_url": null,
+          "notes": "Direct BLS OES data page for Machinists"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024. Higher than CNC operators ($49,970) but lower than programmers ($65,670).",
+      "last_verified": "2025-11-11T03:30:55.640797",
+      "conflicts": []
+    },
+    "machinists_wage_10th_percentile_may2024": {
+      "claim": "10th percentile annual wage for Machinists (May 2024)",
+      "value": 38100,
+      "unit": "USD per year",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        }
+      ],
+      "validation_notes": "Lowest 10 percent earned less than this amount",
+      "last_verified": "2025-11-11T03:30:55.640800",
+      "conflicts": []
+    },
+    "machinists_wage_90th_percentile_may2024": {
+      "claim": "90th percentile annual wage for Machinists (May 2024)",
+      "value": 78760,
+      "unit": "USD per year",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        }
+      ],
+      "validation_notes": "Highest 10 percent earned more than this amount",
+      "last_verified": "2025-11-11T03:30:55.640803",
+      "conflicts": []
+    },
+    "machinists_job_openings_projected_2024_2034": {
+      "claim": "Projected annual job openings for Machinists and Tool/Die Makers (2024-2034 average)",
+      "value": 34200,
+      "unit": "job openings per year",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        }
+      ],
+      "validation_notes": "BLS Employment Projections. Includes both machinists and tool/die makers combined.",
+      "last_verified": "2025-11-11T03:30:55.640805",
+      "conflicts": []
+    },
+    "machinists_growth_rate_2024_2034": {
+      "claim": "Projected employment growth rate for Machinists and Tool/Die Makers (2024-2034)",
+      "value": -2,
+      "unit": "percent",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        }
+      ],
+      "validation_notes": "Slight decline projected over 10-year period",
+      "last_verified": "2025-11-11T03:30:55.640808",
+      "conflicts": []
+    },
+    "metal_plastic_workers_employment_2024": {
+      "claim": "Total metal and plastic machine workers employed in United States (2024)",
+      "value": 1000000,
+      "unit": "workers",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Metal and Plastic Machine Workers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Metal and plastic machine workers held about 1.0 million jobs in 2024. The median annual wage was $46,800 in May 2024. Overall employment is projected to decline 7 percent from 2024 to 2034. About 87,900 openings projected each year.",
+          "archive_url": null,
+          "notes": "Broader occupational category that includes CNC operators"
+        }
+      ],
+      "validation_notes": "Broad category including CNC operators, machine setters, and other machine workers",
+      "last_verified": "2025-11-11T03:30:55.640822",
+      "conflicts": []
+    },
+    "metal_plastic_workers_median_wage_may2024": {
+      "claim": "Median annual wage for metal and plastic machine workers (May 2024)",
+      "value": 46800,
+      "unit": "USD per year",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Metal and Plastic Machine Workers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Metal and plastic machine workers held about 1.0 million jobs in 2024. The median annual wage was $46,800 in May 2024. Overall employment is projected to decline 7 percent from 2024 to 2034. About 87,900 openings projected each year.",
+          "archive_url": null,
+          "notes": "Broader occupational category that includes CNC operators"
+        }
+      ],
+      "validation_notes": "Lower than CNC operators specifically ($49,970)",
+      "last_verified": "2025-11-11T03:30:55.640831",
+      "conflicts": []
+    },
+    "metal_plastic_workers_job_openings_projected": {
+      "claim": "Projected annual job openings for metal and plastic machine workers (2024-2034 average)",
+      "value": 87900,
+      "unit": "job openings per year",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Metal and Plastic Machine Workers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Metal and plastic machine workers held about 1.0 million jobs in 2024. The median annual wage was $46,800 in May 2024. Overall employment is projected to decline 7 percent from 2024 to 2034. About 87,900 openings projected each year.",
+          "archive_url": null,
+          "notes": "Broader occupational category that includes CNC operators"
+        }
+      ],
+      "validation_notes": "All openings from replacement needs, not growth",
+      "last_verified": "2025-11-11T03:30:55.640834",
+      "conflicts": []
+    },
+    "metal_plastic_workers_growth_rate_2024_2034": {
+      "claim": "Projected employment growth rate for metal and plastic machine workers (2024-2034)",
+      "value": -7,
+      "unit": "percent",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Metal and Plastic Machine Workers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Metal and plastic machine workers held about 1.0 million jobs in 2024. The median annual wage was $46,800 in May 2024. Overall employment is projected to decline 7 percent from 2024 to 2034. About 87,900 openings projected each year.",
+          "archive_url": null,
+          "notes": "Broader occupational category that includes CNC operators"
+        }
+      ],
+      "validation_notes": "Steeper decline than CNC operators (-1%) due to automation",
+      "last_verified": "2025-11-11T03:30:55.640837",
+      "conflicts": []
+    },
+    "machine_shops_establishments_2020": {
+      "claim": "Number of machine shop establishments in United States (2020 Economic Census)",
+      "value": 17530,
+      "unit": "establishments",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "NAICS 332710. Establishments = physical locations, which can exceed number of firms.",
+      "last_verified": "2025-11-11T03:30:55.640852",
+      "conflicts": []
+    },
+    "machine_shops_businesses_2020": {
+      "claim": "Number of machine shop businesses/firms in United States (2020 Economic Census)",
+      "value": 17275,
+      "unit": "businesses",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "NAICS 332710. Businesses/firms = legal entities, may operate multiple establishments.",
+      "last_verified": "2025-11-11T03:30:55.640855",
+      "conflicts": []
+    },
+    "machine_shops_employment_2020": {
+      "claim": "Total employment in machine shops (2020 Economic Census)",
+      "value": 209280,
+      "unit": "workers",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "NAICS 332710. Represents total workers in machine shop industry.",
+      "last_verified": "2025-11-11T03:30:55.640858",
+      "conflicts": []
+    },
+    "machine_shops_payroll_2020": {
+      "claim": "Annual payroll for machine shop industry (2020)",
+      "value": 12316948000,
+      "unit": "USD",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "Total industry payroll: $12.3 billion",
+      "last_verified": "2025-11-11T03:30:55.640860",
+      "conflicts": []
+    },
+    "machine_shops_avg_wage_2020": {
+      "claim": "Average annual wage per worker in machine shops (2020, calculated)",
+      "value": 58852,
+      "unit": "USD per year",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "Calculated: $12,316,948,000 payroll / 209,280 workers = $58,852 average wage",
+      "last_verified": "2025-11-11T03:30:55.640863",
+      "conflicts": []
+    },
+    "machine_shops_companies_current": {
+      "claim": "Number of active machine shop companies in United States (current estimate)",
+      "value": 12981,
+      "unit": "companies",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://siccode.com/naics-code/332710/machine-shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "NAICS 332710 Machine Shops - Census Data via SIC Code",
+          "author": "SIC Code / Census.gov",
+          "publication_date": "2024",
+          "excerpt": "12,981 verified active companies in the USA. Total Employment: 226,270 paid employees. Total Revenue: $36,756,196,000 (2017). Annual Payroll: $11,955,653,000 (2017).",
+          "archive_url": null,
+          "notes": "Third-party republication of official Census Bureau data. More current company count but older revenue data."
+        }
+      ],
+      "validation_notes": "More recent company count. Lower than 2020 count (17,275) may reflect consolidation or business closures.",
+      "last_verified": "2025-11-11T03:30:55.640865",
+      "conflicts": []
+    },
+    "machine_shops_employment_current": {
+      "claim": "Total employment in machine shops (current estimate)",
+      "value": 226270,
+      "unit": "workers",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://siccode.com/naics-code/332710/machine-shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "NAICS 332710 Machine Shops - Census Data via SIC Code",
+          "author": "SIC Code / Census.gov",
+          "publication_date": "2024",
+          "excerpt": "12,981 verified active companies in the USA. Total Employment: 226,270 paid employees. Total Revenue: $36,756,196,000 (2017). Annual Payroll: $11,955,653,000 (2017).",
+          "archive_url": null,
+          "notes": "Third-party republication of official Census Bureau data. More current company count but older revenue data."
+        }
+      ],
+      "validation_notes": "Higher than 2020 count (209,280), reflecting 8% employment growth in sector",
+      "last_verified": "2025-11-11T03:30:55.640868",
+      "conflicts": []
+    },
+    "machine_shops_employment_index_2024": {
+      "claim": "Machine shop employment index value (2024, base year 2017=100)",
+      "value": 95.435,
+      "unit": "index value",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://fred.stlouisfed.org/series/IPUEN332710W010000000",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "FRED - Employment for Manufacturing: Machine Shops (NAICS 332710)",
+          "author": "Federal Reserve Bank of St. Louis / Bureau of Labor Statistics",
+          "publication_date": "2025",
+          "excerpt": "Employment Index 2024: 95.435 (Index 2017=100). Historical: 2023: 98.502, 2022: 97.539, 2021: 93.402, 2020: 95.756",
+          "archive_url": null,
+          "notes": "BLS Industry Productivity data via FRED. Employment declining from 2023 to 2024."
+        }
+      ],
+      "validation_notes": "Decline from 2023 (98.502) indicates approximately 3% employment reduction year-over-year",
+      "last_verified": "2025-11-11T03:30:55.640888",
+      "conflicts": []
+    },
+    "machine_tool_orders_2023": {
+      "claim": "Total U.S. manufacturing technology orders (2023)",
+      "value": 4940000000,
+      "unit": "USD",
+      "confidence": "likely",
+      "sources": [
+        {
+          "url": "https://www.amtonline.org/article/2023-manufacturing-technology-orders-beat-expectations-as-december-adds",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "AMT - 2023 Manufacturing Technology Orders Beat Expectations",
+          "author": "Association for Manufacturing Technology (AMT)",
+          "publication_date": "2024",
+          "excerpt": "Orders in 2023 totaled $4.94 billion, 11.2% behind the $5.56 billion recorded in 2022. December 2023 orders totaled $491 million, up nearly 22% from November 2023.",
+          "archive_url": null,
+          "notes": "Official industry statistics from AMT's U.S. Manufacturing Technology Orders (USMTO) report"
+        }
+      ],
+      "validation_notes": "$4.94 billion total for calendar year 2023, down 11.2% from 2022",
+      "last_verified": "2025-11-11T03:30:55.640895",
+      "conflicts": []
+    },
+    "machine_tool_orders_2022": {
+      "claim": "Total U.S. manufacturing technology orders (2022)",
+      "value": 5560000000,
+      "unit": "USD",
+      "confidence": "likely",
+      "sources": [
+        {
+          "url": "https://www.amtonline.org/article/2023-manufacturing-technology-orders-beat-expectations-as-december-adds",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "AMT - 2023 Manufacturing Technology Orders Beat Expectations",
+          "author": "Association for Manufacturing Technology (AMT)",
+          "publication_date": "2024",
+          "excerpt": "Orders in 2023 totaled $4.94 billion, 11.2% behind the $5.56 billion recorded in 2022. December 2023 orders totaled $491 million, up nearly 22% from November 2023.",
+          "archive_url": null,
+          "notes": "Official industry statistics from AMT's U.S. Manufacturing Technology Orders (USMTO) report"
+        }
+      ],
+      "validation_notes": "$5.56 billion total for calendar year 2022, used as comparison baseline",
+      "last_verified": "2025-11-11T03:30:55.640902",
+      "conflicts": []
+    },
+    "machine_tool_orders_2024_ytd": {
+      "claim": "Total U.S. manufacturing technology orders (2024, Jan-Sep YTD)",
+      "value": 3350000000,
+      "unit": "USD",
+      "confidence": "likely",
+      "sources": [
+        {
+          "url": "https://www.americanmachinist.com/news/article/55242083/more-improvement-in-us-machine-tool-orders-usmto-september-2024",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "AMT - US Machine Tool Orders Through September 2024",
+          "author": "Association for Manufacturing Technology (AMT) / American Machinist",
+          "publication_date": "2024",
+          "excerpt": "Through September 2024, year-to-date new order volume reached $3.35 billion, 7.7% lower than the nine-month total for 2023.",
+          "archive_url": null,
+          "notes": "USMTO monthly report tracking machine tool and manufacturing technology orders"
+        }
+      ],
+      "validation_notes": "$3.35 billion through September 2024, 7.7% below same period 2023",
+      "last_verified": "2025-11-11T03:30:55.640903",
+      "conflicts": []
+    },
+    "ntma_member_count": {
+      "claim": "Number of NTMA member companies",
+      "value": 1200,
+      "unit": "companies",
+      "confidence": "likely",
+      "sources": [
+        {
+          "url": "https://ntma.org/",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "NTMA - National Tooling & Machining Association",
+          "author": "National Tooling and Machining Association",
+          "publication_date": "2024",
+          "excerpt": "1200 thriving tool & die and precision manufacturing companies. Over 1,300 member companies representing over $30 billion in revenues. $35 BILLION+ parts and components sold by NTMA members. More than 75% of precision machining tools purchased in the US are purchased by NTMA member machine shops.",
+          "archive_url": null,
+          "notes": "Official trade association representing precision machining industry. Founded 1943."
+        }
+      ],
+      "validation_notes": "Represents approximately 9-10% of all machine shops (12,981 total active companies)",
+      "last_verified": "2025-11-11T03:30:55.640909",
+      "conflicts": []
+    },
+    "ntma_member_revenues": {
+      "claim": "Combined revenues of NTMA member companies",
+      "value": 30000000000,
+      "unit": "USD",
+      "confidence": "likely",
+      "sources": [
+        {
+          "url": "https://ntma.org/",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "NTMA - National Tooling & Machining Association",
+          "author": "National Tooling and Machining Association",
+          "publication_date": "2024",
+          "excerpt": "1200 thriving tool & die and precision manufacturing companies. Over 1,300 member companies representing over $30 billion in revenues. $35 BILLION+ parts and components sold by NTMA members. More than 75% of precision machining tools purchased in the US are purchased by NTMA member machine shops.",
+          "archive_url": null,
+          "notes": "Official trade association representing precision machining industry. Founded 1943."
+        }
+      ],
+      "validation_notes": "$30+ billion combined annual revenues from member companies",
+      "last_verified": "2025-11-11T03:30:55.640911",
+      "conflicts": []
+    },
+    "ntma_sales_volume": {
+      "claim": "Parts and components sold by NTMA members annually",
+      "value": 35000000000,
+      "unit": "USD",
+      "confidence": "likely",
+      "sources": [
+        {
+          "url": "https://ntma.org/",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "NTMA - National Tooling & Machining Association",
+          "author": "National Tooling and Machining Association",
+          "publication_date": "2024",
+          "excerpt": "1200 thriving tool & die and precision manufacturing companies. Over 1,300 member companies representing over $30 billion in revenues. $35 BILLION+ parts and components sold by NTMA members. More than 75% of precision machining tools purchased in the US are purchased by NTMA member machine shops.",
+          "archive_url": null,
+          "notes": "Official trade association representing precision machining industry. Founded 1943."
+        }
+      ],
+      "validation_notes": "$35+ billion in parts/components sold to major manufacturers and government",
+      "last_verified": "2025-11-11T03:30:55.640913",
+      "conflicts": []
+    },
+    "ntma_market_share_tools": {
+      "claim": "Percentage of US precision machining tools purchased by NTMA members",
+      "value": 75,
+      "unit": "percent",
+      "confidence": "likely",
+      "sources": [
+        {
+          "url": "https://ntma.org/",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "NTMA - National Tooling & Machining Association",
+          "author": "National Tooling and Machining Association",
+          "publication_date": "2024",
+          "excerpt": "1200 thriving tool & die and precision manufacturing companies. Over 1,300 member companies representing over $30 billion in revenues. $35 BILLION+ parts and components sold by NTMA members. More than 75% of precision machining tools purchased in the US are purchased by NTMA member machine shops.",
+          "archive_url": null,
+          "notes": "Official trade association representing precision machining industry. Founded 1943."
+        }
+      ],
+      "validation_notes": "NTMA members purchase >75% of precision machining tools in US market",
+      "last_verified": "2025-11-11T03:30:55.640914",
+      "conflicts": []
+    },
+    "avg_workers_per_machine_shop_2020": {
+      "claim": "Average workers per machine shop (2020)",
+      "value": 11.94,
+      "unit": "workers per establishment",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "Calculated: 209,280 workers / 17,530 establishments = 11.94 avg workers per shop. Indicates small business nature of industry.",
+      "last_verified": "2025-11-11T03:30:55.640921",
+      "conflicts": []
+    },
+    "cnc_operators_pct_machine_shop_workforce": {
+      "claim": "CNC operators as approximate percentage of machine shop workforce",
+      "value": 84.6,
+      "unit": "percent",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        },
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "Rough calculation: 177,100 CNC operators (2024) / 209,280 machine shop workers (2020) = 84.6%. Different years limit precision, but indicates CNC operators are dominant occupation in machine shops.",
+      "last_verified": "2025-11-11T03:30:55.640924",
+      "conflicts": []
+    }
+  },
+  "formulas": {
+    "rpm_imperial": {
+      "name": "RPM Calculation (Imperial)",
+      "formula": "RPM = (SFM \u00d7 3.82) / D",
+      "variables": {
+        "RPM": "Revolutions Per Minute (spindle speed)",
+        "SFM": "Surface Feet per Minute (cutting speed)",
+        "D": "Tool or workpiece diameter in inches",
+        "3.82": "Conversion constant (12/\u03c0 = 3.8197, rounded to 3.82)"
+      },
+      "sources": [
+        {
+          "url": "https://openoregon.pressbooks.pub/manufacturingprocesses45/chapter/unit-two-cutting-speed/",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "Manufacturing Processes 4-5 - Unit 2: Speeds, Feeds, and Tapping",
+          "author": "LamNgeun Virasak",
+          "publication_date": "2016",
+          "excerpt": "RPM = (CS \u00d7 4) / D where CS = Cutter speed in SFM, D = Tool diameter in inches. Note: 4 is approximation of 3.82",
+          "archive_url": null,
+          "notes": "CC BY 4.0 Licensed textbook from Open Oregon Educational Resources"
+        },
+        {
+          "url": "https://www.practicalmachinist.com/forum/threads/why-3-82.291261/",
+          "source_type": "forum_primary",
+          "retrieved_date": "2025-11-11",
+          "title": "Practical Machinist Forum - Why 3.82?",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Number of inches in a foot - 12 divided by Pi - 3.14 = 3.8197 or 3.82. RPM = 3.82 \u00d7 SFM \u00f7 tool diameter",
+          "archive_url": null,
+          "notes": "Discussion explaining mathematical derivation: 12 inches/foot \u00f7 \u03c0"
+        },
+        {
+          "url": "https://www.harveyperformance.com/in-the-loupe/speeds-and-feeds-101/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Harvey Performance - Speeds and Feeds 101",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "The SFM calculation utilizes the industry standard of 3.82. The cutter diameter is multiplied by the speed or RPM, then divided by 3.82 to generate the SFM",
+          "archive_url": null,
+          "notes": "Confirms 3.82 as industry standard constant"
+        }
+      ],
+      "validation_examples": [
+        {
+          "input": {
+            "SFM": 500,
+            "D": 0.5
+          },
+          "expected_output": 3820,
+          "unit": "RPM",
+          "description": "1/2 inch tool at 500 SFM"
+        },
+        {
+          "input": {
+            "SFM": 100,
+            "D": 0.375
+          },
+          "expected_output": 1018.67,
+          "unit": "RPM",
+          "description": "3/8 inch HSS end mill in mild steel (from Open Oregon example)"
+        },
+        {
+          "input": {
+            "SFM": 90,
+            "D": 0.375
+          },
+          "expected_output": 960,
+          "unit": "RPM",
+          "description": "Exact example from Open Oregon: 90 \u00d7 4 \u00f7 0.375 = 960"
+        }
+      ],
+      "notes": "Most fundamental machining formula. Constant 3.82 = 12/\u03c0. Some machinists use 4 for easier mental math. Derivation: circumference = \u03c0D, convert inches to feet (\u00f712), so RPM = SFM/(\u03c0D/12) = (SFM \u00d7 12)/(\u03c0D) = (SFM \u00d7 3.82)/D"
+    },
+    "rpm_metric": {
+      "name": "RPM Calculation (Metric)",
+      "formula": "RPM = (v \u00d7 1000) / (\u03c0 \u00d7 D) = (v \u00d7 318.3) / D",
+      "variables": {
+        "RPM": "Revolutions Per Minute (spindle speed)",
+        "v": "Cutting speed in meters per minute (m/min)",
+        "D": "Tool or workpiece diameter in millimeters",
+        "\u03c0": "Pi (3.14159...)",
+        "318.3": "Simplified constant (1000/\u03c0 = 318.31)"
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Speeds_and_feeds",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "Wikipedia - Speeds and Feeds",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Cutting Speed (V) = [\u03c0DN]/1000 m/min where D=Diameter in millimeters, N=Spindle Speed in rpm. Can be rearranged to N = (V \u00d7 1000)/(\u03c0 \u00d7 D)",
+          "archive_url": null,
+          "notes": "Wikipedia article with multiple citations. Formula can be rearranged for RPM calculation"
+        },
+        {
+          "url": "https://www.keyence.com/ss/products/measure-sys/machining/formula/cutting.jsp",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Keyence - Cutting Formulas",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Metric formula for spindle speed: n = 1000 \u00d7 v / (\u03c0 \u00d7 D)",
+          "archive_url": null,
+          "notes": "Confirms standard metric formula"
+        }
+      ],
+      "validation_examples": [
+        {
+          "input": {
+            "v": 100,
+            "D": 10
+          },
+          "expected_output": 3183.1,
+          "unit": "RPM",
+          "description": "10mm tool at 100 m/min cutting speed"
+        },
+        {
+          "input": {
+            "v": 200,
+            "D": 25.4
+          },
+          "expected_output": 2507.4,
+          "unit": "RPM",
+          "description": "1 inch (25.4mm) tool at 200 m/min"
+        }
+      ],
+      "notes": "Metric equivalent of imperial formula. Constant 318.3 = 1000/\u03c0. More precise value is 318.31. The 1000 factor converts meters to millimeters."
+    },
+    "sfm_from_rpm": {
+      "name": "Surface Feet per Minute (SFM) from RPM",
+      "formula": "SFM = (D \u00d7 RPM) / 3.82",
+      "variables": {
+        "SFM": "Surface Feet per Minute (cutting speed)",
+        "D": "Tool or workpiece diameter in inches",
+        "RPM": "Revolutions Per Minute (spindle speed)",
+        "3.82": "Conversion constant (12/\u03c0)"
+      },
+      "sources": [
+        {
+          "url": "https://www.harveyperformance.com/in-the-loupe/speeds-and-feeds-101/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Harvey Performance - Speeds and Feeds 101",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "The cutter diameter is multiplied by the speed or RPM, then divided by 3.82 to generate the SFM",
+          "archive_url": null,
+          "notes": "Industry standard formula"
+        },
+        {
+          "url": "https://zero-divide.net/?article_id=4209_general-speeds-and-feeds-formulas",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "HSM Machining - General Speeds and Feeds Formulas",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "SFM = (Tool Diameter \u00d7 RPM) / 3.82",
+          "archive_url": null,
+          "notes": "Confirms inverse of RPM formula"
+        }
+      ],
+      "validation_examples": [
+        {
+          "input": {
+            "D": 0.5,
+            "RPM": 3820
+          },
+          "expected_output": 500,
+          "unit": "SFM",
+          "description": "Inverse of first RPM example"
+        }
+      ],
+      "notes": "Inverse of RPM calculation formula. Used to determine actual cutting speed at a given spindle speed."
+    },
+    "cutting_speed_metric": {
+      "name": "Cutting Speed (Metric) from RPM",
+      "formula": "v = (\u03c0 \u00d7 D \u00d7 N) / 1000",
+      "variables": {
+        "v": "Cutting speed in meters per minute (m/min)",
+        "\u03c0": "Pi (3.14159...)",
+        "D": "Tool or workpiece diameter in millimeters",
+        "N": "Spindle speed in RPM",
+        "1000": "Conversion factor from mm to meters"
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Speeds_and_feeds",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "Wikipedia - Speeds and Feeds",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Cutting Speed (V) = [\u03c0DN]/1000 m/min where D=Diameter in millimeters, N=Spindle Speed in rpm",
+          "archive_url": null,
+          "notes": "Standard metric cutting speed formula"
+        },
+        {
+          "url": "https://www.machiningdoctor.com/machinistglossary/cutting-speed/",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Doctor - Cutting Speed Guide",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "V = \u03c0DN/1000 where V is cutting speed in m/min, D is diameter in mm, N is rpm",
+          "archive_url": null,
+          "notes": "Confirms standard formula"
+        }
+      ],
+      "validation_examples": [
+        {
+          "input": {
+            "D": 10,
+            "N": 3183
+          },
+          "expected_output": 100.0,
+          "unit": "m/min",
+          "description": "10mm tool at 3183 RPM"
+        }
+      ],
+      "notes": "Fundamental relationship: cutting speed = circumference \u00d7 rotational speed. Circumference = \u03c0D (in mm), multiply by RPM to get mm/min, divide by 1000 to get m/min."
+    },
+    "feed_rate_ipm": {
+      "name": "Feed Rate (Imperial) - IPM",
+      "formula": "IPM = RPM \u00d7 N \u00d7 fz",
+      "variables": {
+        "IPM": "Feed rate in inches per minute",
+        "RPM": "Revolutions per minute (spindle speed)",
+        "N": "Number of flutes (cutting edges) on the tool",
+        "fz": "Chip load (feed per tooth) in inches per tooth"
+      },
+      "sources": [
+        {
+          "url": "https://openoregon.pressbooks.pub/manufacturingprocesses45/chapter/unit-two-cutting-speed/",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "Manufacturing Processes 4-5 - Unit 2: Speeds, Feeds, and Tapping",
+          "author": "LamNgeun Virasak",
+          "publication_date": null,
+          "excerpt": "IPM = F \u00d7 N \u00d7 RPM where F = Feed per tooth (inches), N = Number of teeth on cutter, RPM = Revolutions per minute",
+          "archive_url": null,
+          "notes": "CC BY 4.0 Licensed. Example given: 0.002 \u00d7 2 \u00d7 960 = 3.84 IPM"
+        },
+        {
+          "url": "https://www.harveyperformance.com/in-the-loupe/speeds-and-feeds-101/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Harvey Performance - Speeds and Feeds 101",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Feed Rate = RPM \u00d7 Number of Flutes \u00d7 Chip Load",
+          "archive_url": null,
+          "notes": "Industry standard formula from major tool manufacturer"
+        },
+        {
+          "url": "https://www.cnccookbook.com/cnc-chip-load-calculator/",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "CNC Cookbook - Chip Load Calculator",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Feed Rate = RPM \u00d7 number of flutes \u00d7 chip load",
+          "archive_url": null,
+          "notes": "Widely-used CNC reference"
+        }
+      ],
+      "validation_examples": [
+        {
+          "input": {
+            "RPM": 960,
+            "N": 2,
+            "fz": 0.002
+          },
+          "expected_output": 3.84,
+          "unit": "IPM",
+          "description": "Open Oregon example: 2-flute end mill at 960 RPM with 0.002 inch/tooth"
+        },
+        {
+          "input": {
+            "RPM": 1000,
+            "N": 4,
+            "fz": 0.003
+          },
+          "expected_output": 12.0,
+          "unit": "IPM",
+          "description": "4-flute end mill at 1000 RPM with 0.003 inch/tooth"
+        }
+      ],
+      "notes": "Feed rate is the linear speed at which the tool moves through the material. Must be balanced with spindle speed and chip load for optimal cutting."
+    },
+    "chip_load": {
+      "name": "Chip Load (Feed per Tooth)",
+      "formula": "fz = IPM / (RPM \u00d7 N)",
+      "variables": {
+        "fz": "Chip load - feed per tooth (inches per tooth or mm per tooth)",
+        "IPM": "Feed rate (inches per minute or mm per minute)",
+        "RPM": "Revolutions per minute (spindle speed)",
+        "N": "Number of flutes (cutting edges)"
+      },
+      "sources": [
+        {
+          "url": "https://gdptooling.com/chipload-calc/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "GDP Tooling - Chipload Calculator",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Chip Load = Feed Rate (inches per minute) / (RPM \u00d7 number of flutes)",
+          "archive_url": null,
+          "notes": "Industry standard calculator"
+        },
+        {
+          "url": "https://mellowpine.com/chip-load-guide/",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "MellowPine - Chip Load Guide for Beginners",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Chip Load (CL) = Feed Rate (FR) / (Spindle Speed (SS) \u00d7 Number of Cutting Edges)",
+          "archive_url": null,
+          "notes": "Educational resource with detailed explanations"
+        },
+        {
+          "url": "https://scarlettinc.com/what-is-your-current-chip-load-how-do-you-calculate-it/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Scarlett Inc - Chip Load Calculation",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Chip load refers to the thickness of the material removed by each cutting edge during a single rotation. Formula: chip load = feed rate / (rpm \u00d7 number of flutes)",
+          "archive_url": null,
+          "notes": "Confirms formula and explains physical meaning"
+        }
+      ],
+      "validation_examples": [
+        {
+          "input": {
+            "IPM": 3.84,
+            "RPM": 960,
+            "N": 2
+          },
+          "expected_output": 0.002,
+          "unit": "inches per tooth",
+          "description": "Reverse calculation of Open Oregon example"
+        },
+        {
+          "input": {
+            "IPM": 12.0,
+            "RPM": 1000,
+            "N": 4
+          },
+          "expected_output": 0.003,
+          "unit": "inches per tooth",
+          "description": "4-flute example"
+        }
+      ],
+      "notes": "Chip load is independent of RPM and feed rate individually - it represents the actual thickness of material each tooth removes. Critical for tool life and surface finish. Too low = rubbing/heat, too high = tool breakage."
+    },
+    "mrr_milling_metric": {
+      "name": "Material Removal Rate - Milling (Metric)",
+      "formula": "MRR = (D \u00d7 W \u00d7 F) / 1000",
+      "variables": {
+        "MRR": "Material Removal Rate in cubic centimeters per minute (cc/min or cm\u00b3/min)",
+        "D": "Depth of cut (axial) in millimeters",
+        "W": "Width of cut (radial) in millimeters",
+        "F": "Feed rate in millimeters per minute (mm/min)",
+        "1000": "Conversion factor from mm\u00b3 to cm\u00b3"
+      },
+      "sources": [
+        {
+          "url": "https://cadem.com/material-removal-rate-formula/",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "Cadem - Material Removal Rate Formula",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "MRR = (D \u00d7 W \u00d7 F / 1000) cc/min where D is depth of cut (mm), W is width of cut (mm), and F is feed rate (mm/min)",
+          "archive_url": null,
+          "notes": "Technical CAD/CAM resource"
+        },
+        {
+          "url": "https://www.cnccookbook.com/material-removal-rate-optimizing-mrr-for-bigger-profits/",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "CNC Cookbook - Material Removal Rate: Optimizing MRR for Bigger Profits",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "MRR = Cut Width \u00d7 Cut Depth \u00d7 Feed Rate",
+          "archive_url": null,
+          "notes": "Widely-used CNC reference confirming formula structure"
+        },
+        {
+          "url": "https://zcsmould.com/what-is-metal-removal-rate/",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "ZCS Mould - What Is Metal Removal Rate (MRR) in Machining?",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "MRR = depth of cut \u00d7 width of cut \u00d7 feed rate. Major variables are depth of cut, cut width, and feed rate",
+          "archive_url": null,
+          "notes": "Confirms formula components"
+        }
+      ],
+      "validation_examples": [
+        {
+          "input": {
+            "D": 5,
+            "W": 10,
+            "F": 500
+          },
+          "expected_output": 25.0,
+          "unit": "cm\u00b3/min",
+          "description": "5mm depth \u00d7 10mm width \u00d7 500mm/min feed"
+        },
+        {
+          "input": {
+            "D": 2,
+            "W": 20,
+            "F": 1000
+          },
+          "expected_output": 40.0,
+          "unit": "cm\u00b3/min",
+          "description": "Shallow but wide cut with high feed rate"
+        }
+      ],
+      "notes": "MRR is the volume of material removed per unit time. Higher MRR = higher productivity but requires more machine power and rigidity. Limited by machine power, tool strength, and workholding."
+    },
+    "mrr_milling_imperial": {
+      "name": "Material Removal Rate - Milling (Imperial)",
+      "formula": "MRR = D \u00d7 W \u00d7 F",
+      "variables": {
+        "MRR": "Material Removal Rate in cubic inches per minute (in\u00b3/min)",
+        "D": "Depth of cut (axial) in inches",
+        "W": "Width of cut (radial) in inches",
+        "F": "Feed rate in inches per minute (IPM)"
+      },
+      "sources": [
+        {
+          "url": "https://www.cnccookbook.com/material-removal-rate-optimizing-mrr-for-bigger-profits/",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "CNC Cookbook - Material Removal Rate",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "MRR = Cut Width \u00d7 Cut Depth \u00d7 Feed Rate",
+          "archive_url": null,
+          "notes": "Formula applies to both imperial and metric with appropriate units"
+        },
+        {
+          "url": "https://www.montana.edu/jdavis/met314/documents/homework/Milling%20Examples.pdf",
+          "source_type": "academic",
+          "retrieved_date": "2025-11-11",
+          "title": "Montana State University - Milling Equations",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Material removal rate calculations for milling operations",
+          "archive_url": null,
+          "notes": "Academic source from university engineering department"
+        }
+      ],
+      "validation_examples": [
+        {
+          "input": {
+            "D": 0.25,
+            "W": 0.5,
+            "F": 10
+          },
+          "expected_output": 1.25,
+          "unit": "in\u00b3/min",
+          "description": "0.25 inch depth \u00d7 0.5 inch width \u00d7 10 IPM"
+        },
+        {
+          "input": {
+            "D": 0.1,
+            "W": 1.0,
+            "F": 20
+          },
+          "expected_output": 2.0,
+          "unit": "in\u00b3/min",
+          "description": "Shallow wide cut: 0.1 inch depth \u00d7 1 inch width \u00d7 20 IPM"
+        }
+      ],
+      "notes": "Imperial version of MRR formula. No unit conversion needed when all inputs are in inches. Useful for estimating machining time and power requirements."
+    },
+    "mrr_turning_metric": {
+      "name": "Material Removal Rate - Turning (Metric)",
+      "formula": "MRR = D \u00d7 F \u00d7 S",
+      "variables": {
+        "MRR": "Material Removal Rate in cubic centimeters per minute (cc/min)",
+        "D": "Depth of cut in millimeters",
+        "F": "Feed rate in millimeters per revolution (mm/rev)",
+        "S": "Cutting speed in meters per minute (m/min)"
+      },
+      "sources": [
+        {
+          "url": "https://cadem.com/material-removal-rate-formula/",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "Cadem - Material Removal Rate Formula",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "MRR = D \u00d7 F \u00d7 S cc/min where D is the depth of cut in mm, F is the feed rate in mm/rev and S is the cutting speed in m/min",
+          "archive_url": null,
+          "notes": "Specific formula for turning operations"
+        },
+        {
+          "url": "https://www.ilearnengineering.com/manufacturing-industrial/how-material-removal-rate-affects-surface-quality-and-production-speed",
+          "source_type": "public_domain",
+          "retrieved_date": "2025-11-11",
+          "title": "iLearn Engineering - Material Removal Rate Effects",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "For turning operations, MRR depends on depth of cut, feed per revolution, and cutting speed",
+          "archive_url": null,
+          "notes": "Educational engineering resource"
+        }
+      ],
+      "validation_examples": [
+        {
+          "input": {
+            "D": 3,
+            "F": 0.2,
+            "S": 100
+          },
+          "expected_output": 60.0,
+          "unit": "cm\u00b3/min",
+          "description": "3mm depth \u00d7 0.2mm/rev feed \u00d7 100m/min speed"
+        }
+      ],
+      "notes": "Turning MRR formula differs from milling because cutting is continuous rather than interrupted. Feed is per revolution rather than per minute."
+    }
+  },
+  "manufacturer_data": [
+    {
+      "manufacturer": "Sandvik Coromant",
+      "product_line": "Carbide Tooling - Aluminum Applications",
+      "data_type": "cutting_speeds",
+      "data": {
+        "material": "6061 Aluminum",
+        "tool_type": "Carbide End Mill",
+        "grade_recommendation": "H10 (uncoated carbide)",
+        "application": "Roughing and Finishing",
+        "cutting_speed_sfm_range": [
+          600,
+          1200
+        ],
+        "cutting_speed_sfm_typical": 1000,
+        "cutting_speed_sfm_high_performance": 6562,
+        "feed_per_tooth_ipt_range": [
+          0.005,
+          0.01
+        ],
+        "feed_per_tooth_ipt_high_performance": 0.006,
+        "notes": "H10 grade features excellent abrasive wear resistance and edge sharpness. High-performance PCD tooling can achieve 2000 m/min (6562 ft/min) with 0.16 mm/tooth feed."
+      },
+      "sources": [
+        {
+          "url": "https://www.sandvik.coromant.com/en-us/knowledge/parting-and-grooving/cutting-data",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Cutting data for parting and grooving \u2013 speeds and feeds",
+          "author": "Sandvik Coromant",
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.auto-revista.com/texto-diario/mostrar/1545597/sandvik-coromant-optimises-aluminum-machning-processes-for-the-automotive-industry",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Sandvik Coromant optimises aluminum machining processes for the automotive industry",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Demonstrated cutting speeds of 2000 m/min with feed rate of 0.16 mm/tooth using PCD tooling",
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869593"
+    },
+    {
+      "manufacturer": "Sandvik Coromant",
+      "product_line": "CoroPlus ToolGuide",
+      "data_type": "tool_specs",
+      "data": {
+        "product_name": "CoroPlus ToolGuide",
+        "type": "Digital Tool Selection & Cutting Data Platform",
+        "availability": "Online and Mobile App",
+        "features": [
+          "Tool recommendations based on workpiece material",
+          "Cutting data calculations (speed, feed, depth)",
+          "CAM software integration",
+          "Tool data management system export",
+          "Barcode scanning for insert data"
+        ],
+        "access": "Free, publicly accessible",
+        "platforms": [
+          "Web",
+          "iOS",
+          "Android"
+        ],
+        "url": "https://toolguide.sandvik.coromant.com/"
+      },
+      "sources": [
+        {
+          "url": "https://www.sandvik.coromant.com/en-us/tools/digital-machining/coroplus-tool-guide",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "CoroPlus\u00ae Tool Guide",
+          "author": "Sandvik Coromant",
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://videos.sandvik.coromant.com/tool-and-cutting-data",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Tool and cutting data recommendation with CoroPlus ToolGuide",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869603"
+    },
+    {
+      "manufacturer": "Sandvik Coromant",
+      "product_line": "Machining Calculator App",
+      "data_type": "tool_specs",
+      "data": {
+        "product_name": "Sandvik Coromant Machining Calculator",
+        "type": "Mobile Calculation App",
+        "capabilities": [
+          "Cutting speed calculation",
+          "Spindle speed (RPM) calculation",
+          "Feed rate calculation",
+          "Optimized for turning, milling, drilling"
+        ],
+        "availability": "Free mobile app",
+        "platforms": [
+          "iOS",
+          "Android"
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-calculator/id389011280",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Calculator on the App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.helmancnc.com/sandvik-coromant-machining-calculator-app-for-cnc-machinist/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Sandvik Coromant Machining Calculator App for CNC Machinist",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869609"
+    },
+    {
+      "manufacturer": "Kennametal",
+      "product_line": "Engineering Calculators",
+      "data_type": "cutting_speeds",
+      "data": {
+        "formula_rpm": "Speed (RPM) = (Surface Feet per Minute \u00d7 3.82) / Diameter of the Tool",
+        "formula_feed_rate": "Feed Rate = RPM \u00d7 Chip Load \u00d7 Number of Teeth",
+        "formula_sfm_from_rpm": "Surface Feet per Minute = (RPM \u00d7 Tool Diameter) / 3.82",
+        "formula_turning_speed": "Rotational Speed (N) = Cutting Speed (SFM) / (\u03c0 \u00d7 Original Diameter)",
+        "notes": "Based upon theoretical values, intended for planning purposes. Actual results will vary.",
+        "variables_affecting_speed": [
+          "Material hardness and heat treatment",
+          "Tool material composition (carbide, HSS)",
+          "Machine coolant availability",
+          "Work-holding fixture stability"
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.kennametal.com/us/en/resources/engineering-calculators/miscellaneous/speed-and-feed.html",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Speeds and Feeds Calculator \u2013 Kennametal",
+          "author": "Kennametal Inc.",
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869613"
+    },
+    {
+      "manufacturer": "Kennametal",
+      "product_line": "Technical Resources",
+      "data_type": "tool_specs",
+      "data": {
+        "online_calculator": "https://www.kennametal.com/us/en/resources/engineering-calculators/miscellaneous/speed-and-feed.html",
+        "engineering_calculators": [
+          "Speed and Feed Calculator",
+          "Face, Cutoff, and Deep Groove Calculator",
+          "Surface Finish Calculator",
+          "Cost Savings Calculator"
+        ],
+        "technical_guides": [
+          "How to Find Feeds and Speeds for Your Tools",
+          "Recommended Starting Speed and Feeds (PDF)"
+        ],
+        "pdf_url": "https://www1.mscdirect.com/images/solutions/kennametal/endMillSpeedFeed.pdf",
+        "availability": "Free, publicly accessible"
+      },
+      "sources": [
+        {
+          "url": "https://www.kennametal.com/us/en/resources/engineering-calculators.html",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Engineering and Machining Calculators - Kennametal",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.kennametal.com/us/en/resources/tutorials/how-to-find-speeds-and-feeds.html",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "How to Find Feeds and Speeds for Your Tools - Kennametal",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869619"
+    },
+    {
+      "manufacturer": "Harvey Tool",
+      "product_line": "Miniature End Mills and Cutting Tools",
+      "data_type": "cutting_speeds",
+      "data": {
+        "material_6061_aluminum": {
+          "cutting_speed_sfm_range": [
+            800,
+            1500
+          ],
+          "feed_per_tooth_ipt_range": [
+            0.005,
+            0.01
+          ],
+          "notes": "Recommended starting values, may be increased given optimal setup conditions"
+        },
+        "general_carbide_aluminum": {
+          "cutting_speed_sfm_typical": 1000,
+          "cutting_speed_sfm_aggressive": [
+            5000,
+            8000
+          ],
+          "notes": "Aggressive speeds depend on tool style, setup, horsepower, tool holder, and machine capacity"
+        },
+        "resources_available": [
+          "Product-specific speed/feed charts (downloadable, printer-friendly)",
+          "Machining Advisor Pro (MAP) - customized parameter generation",
+          "General Machining Guidelines"
+        ],
+        "chart_features": "Account for exact material, application (slotting, roughing, finishing)",
+        "access": "Free, publicly accessible per product"
+      },
+      "sources": [
+        {
+          "url": "https://www.harveytool.com/resources/speeds-feeds-guide",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Harvey Tool Speeds and Feeds Guide",
+          "author": "Harvey Performance Company",
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.harveytool.com/resources/speeds-feeds",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Harvey Tool - Speeds and Feeds for every tool",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869627"
+    },
+    {
+      "manufacturer": "Harvey Tool",
+      "product_line": "Machining Advisor Pro (MAP)",
+      "data_type": "tool_specs",
+      "data": {
+        "product_name": "Machining Advisor Pro",
+        "type": "Customizable Speeds & Feeds Calculator",
+        "capabilities": [
+          "Specialized machining parameters by tool path",
+          "Material-specific calculations",
+          "Machine setup optimization",
+          "Desktop, tablet, mobile access"
+        ],
+        "cost": "Free - no fee required",
+        "url": "https://www.harveyperformance.com/machining-advisor-pro/",
+        "features": "Pairs cutting tool with exact tool path, material, and machine setup"
+      },
+      "sources": [
+        {
+          "url": "https://www.harveyperformance.com/machining-advisor-pro/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - Customizable Speeds & Feeds",
+          "author": "Harvey Performance Company",
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869631"
+    },
+    {
+      "manufacturer": "Iscar",
+      "product_line": "ITA (Iscar Tool Advisor)",
+      "data_type": "tool_specs",
+      "data": {
+        "product_name": "ISCAR Tool Advisor (ITA)",
+        "type": "Web-based Tool Selection Software",
+        "algorithm": "Unique mathematical algorithm",
+        "input_fields": {
+          "minimum": "2-6 mandatory fields for quick results",
+          "detailed": "Machine parameters, tool diameters, tool type, grade, etc."
+        },
+        "output_data": [
+          "Tool details",
+          "Insert details",
+          "Cutting conditions",
+          "Power requirements",
+          "Metal removal rate",
+          "Cutting time",
+          "3-25 tool recommendations per search (best 3 default)"
+        ],
+        "features": [
+          "Inch and metric platforms",
+          "25 language support",
+          "24/7 availability",
+          "Direct ITA support team connection",
+          "iPhone/iPod Touch app available"
+        ],
+        "advanced_version": "NEO-ITA with AI and Big Data analytics using machine learning",
+        "cost": "Free of charge",
+        "url": "https://www.iscar.com/itc/MainPage.aspx",
+        "url_neo": "www.iscarmetals.com/ITA"
+      },
+      "sources": [
+        {
+          "url": "https://www.iscar.com/itc/MainPage.aspx",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "ITA - ISCAR Tool Advisor",
+          "author": "Iscar Ltd.",
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.ctemag.com/products/ita-iscar-tool-advisor",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "ITA (Iscar Tool Advisor) | Cutting Tool Engineering",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.helmancnc.com/ita-iscar-tool-advisor-web-based-tool-selection-for-cnc-machinists/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "ITA Iscar Tool Advisor - Web-based Tool Selection for CNC Machinists",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869639"
+    },
+    {
+      "manufacturer": "Iscar",
+      "product_line": "2025 Product Catalog",
+      "data_type": "tool_specs",
+      "data": {
+        "year": 2025,
+        "catalog_title": "ISCAR IS ABOUT TO CHANGE METAL CUTTING... AGAIN!",
+        "catalog_url": "https://www.iscar.com/Catalogs/Publication/english_1/world_Magazines/ISCAR_ARTICLE_2025/ISCAR_ARTICLE_2025.pdf",
+        "industry_4_0": "New Industry 4.0 connectivity solutions",
+        "notes": "2025 catalog features new product innovations and digital connectivity"
+      },
+      "sources": [
+        {
+          "url": "https://www.iscar.com/Catalogs/Publication/english_1/world_Magazines/ISCAR_ARTICLE_2025/ISCAR_ARTICLE_2025.pdf",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "2025 ISCAR IS ABOUT TO CHANGE METAL CUTTING... AGAIN!",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869644"
+    },
+    {
+      "manufacturer": "Seco Tools",
+      "product_line": "Digital Cutting Data Solutions",
+      "data_type": "tool_specs",
+      "data": {
+        "machine_library": {
+          "type": "Web-based cutting data tool",
+          "launched": "July 2025",
+          "features": "Product-specific, instant, high-quality cutting data based on machine information"
+        },
+        "seco_assistant_app": {
+          "type": "Mobile application",
+          "capabilities": [
+            "Feeds and speeds calculations",
+            "Cutting data recommendations",
+            "Product comparison"
+          ],
+          "platforms": [
+            "iOS",
+            "Android"
+          ]
+        },
+        "secocut_software": {
+          "type": "Desktop software",
+          "data_types": [
+            "Feed",
+            "Speed",
+            "Power",
+            "Torque"
+          ],
+          "operations": [
+            "Milling",
+            "Turning",
+            "Drilling"
+          ],
+          "features": "Graphical search tool and circular interpolation support"
+        },
+        "technical_guides": [
+          "Catalog & Technical Guide 2020.2 (comprehensive)",
+          "Duratomic product guides",
+          "Advanced Cutting Materials",
+          "Holemaking solutions",
+          "Composite machining"
+        ],
+        "website": "www.secotools.com"
+      },
+      "sources": [
+        {
+          "url": "https://www.geartechnology.com/seco-tools-launches-web-based-tool-for-cutting-data",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Seco Tools Launches Web-Based Tool for Cutting Data",
+          "author": null,
+          "publication_date": "July 2025",
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.secotools.com/article/114039?language=en",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Seco Assistant | Seco Tools",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://secocut.software.informer.com/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Secocut Download - A cutting data tool with graphical search tool",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869652"
+    },
+    {
+      "manufacturer": "Seco Tools",
+      "product_line": "Technical Catalogs",
+      "data_type": "tool_specs",
+      "data": {
+        "catalog_2020_2": {
+          "title": "Catalog & Technical Guide 2020.2",
+          "coverage": "Metal cutting solutions for milling, stationary tools, holemaking, tooling systems",
+          "url": "https://pdf.directindustry.com/pdf/seco-tools/catalog-technical-guide-20202/5699-951358.html"
+        },
+        "all_catalogs_url": "https://pdf.directindustry.com/pdf/seco-tools-5699.html",
+        "formats": [
+          "PDF",
+          "Digital Download"
+        ],
+        "availability": "Publicly accessible technical brochures"
+      },
+      "sources": [
+        {
+          "url": "https://pdf.directindustry.com/pdf/seco-tools/catalog-technical-guide-20202/5699-951358.html",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "CATALOG & TECHNICAL GUIDE 2020.2 - SECO TOOLS",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://pdf.directindustry.com/pdf/seco-tools-5699.html",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "All SECO TOOLS catalogs and technical brochures",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869660"
+    },
+    {
+      "manufacturer": "OSG Corporation",
+      "product_line": "Technical Charts and Guides",
+      "data_type": "tool_specs",
+      "data": {
+        "available_charts": {
+          "800274CA-V3": {
+            "title": "Tap Drill Size & Pitch Limits - Vol 3",
+            "size_kb": 78.27,
+            "year": 2024
+          },
+          "800361CA": {
+            "title": "STI Tap Drill Size - Vol 1",
+            "size_kb": 61.74
+          },
+          "800279CA-V2": {
+            "title": "High Speed Machining Guide - Vol 2",
+            "size_kb": 1890,
+            "coverage": "Inch and metric measurements"
+          },
+          "800313CA-V3": {
+            "title": "Brand Recommendation Guide - Vol 3",
+            "size_kb": 61.24
+          },
+          "80017CA-V10": {
+            "title": "Decimal Wall Charts - Vol 10",
+            "size_kb": 23920
+          },
+          "PDC-22": {
+            "title": "Pocket Decimal Chart - 2022",
+            "size_kb": 451.03,
+            "reprint": 2024
+          }
+        },
+        "tapping_chart_coverage": [
+          "M (Metric)",
+          "MF (Metric Fine)",
+          "MJ (Metric J-type)",
+          "UNC (Unified Coarse)",
+          "UNJC (Unified J-type Coarse)",
+          "UNF (Unified Fine)",
+          "UNJF (Unified J-type Fine)",
+          "Pg (Panzergewinde)",
+          "Tr (Trapezoidal)",
+          "G (BSP Parallel)",
+          "BSW (British Standard Whitworth)",
+          "UNEF (Unified Extra Fine)",
+          "UN (Unified)",
+          "NPT (National Pipe Thread)",
+          "BSF (British Standard Fine)",
+          "Rp (BSP Parallel Internal)",
+          "BA (British Association)",
+          "Rc (BSP Taper)",
+          "EG M (European Gas Metric)",
+          "EG UNC",
+          "EG UNF"
+        ],
+        "download_url": "https://osgtool.com/literature/charts/",
+        "format": "PDF downloads",
+        "availability": "Free, publicly accessible"
+      },
+      "sources": [
+        {
+          "url": "https://osgtool.com/literature/charts/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "LITERATURE - CHARTS - OSG USA, Inc",
+          "author": "OSG Corporation",
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.osg.co.jp/en/media_dl/technical/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Technical Information | DOWNLOAD | OSG Japan",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869665"
+    },
+    {
+      "manufacturer": "Haas Automation",
+      "product_line": "CNC Mill Spindles",
+      "data_type": "machine_specs",
+      "data": {
+        "spindle_power_characteristics": {
+          "peak_power_200_percent": "3 minutes at 200% spindle load",
+          "high_power_150_percent": "10-15 minutes at 150% spindle load",
+          "continuous_100_percent": "Continuous at 100% spindle load",
+          "voltage_note": "Power numbers based on 240V service at required amperage"
+        },
+        "spindle_types": {
+          "inline": {
+            "rpm_range": [
+              8100,
+              20000
+            ],
+            "description": "Direct drive inline spindle"
+          },
+          "geared_head": {
+            "rpm_max": 10000,
+            "features": "Increased low-end torque for heavy cutting"
+          }
+        },
+        "example_minimill": {
+          "max_torque_lb_ft": 33,
+          "max_torque_rpm": 1200,
+          "torque_characteristics": "Fairly constant below 1200 RPM, falls off above"
+        },
+        "resources": [
+          "Spindle torque curves available per machine model",
+          "Individual spindle specification pages on haascnc.com",
+          "Torque chart PDFs (e.g., UMC-1000SS Torque Binder)"
+        ],
+        "website": "https://www.haascnc.com/productivity/spindles.html"
+      },
+      "sources": [
+        {
+          "url": "https://www.haascnc.com/productivity/spindles.html",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Spindles for CNC Milling Machines | Haas Automation",
+          "author": "Haas Automation, Inc.",
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869669"
+    },
+    {
+      "manufacturer": "Haas Automation",
+      "product_line": "Specific Spindle Models",
+      "data_type": "machine_specs",
+      "data": {
+        "8100_rpm_spindle": {
+          "rpm": 8100,
+          "taper": "40 taper",
+          "url": "https://www.haascnc.com/productivity/spindles/8-1k-40t-in.html"
+        },
+        "10000_rpm_grease": {
+          "rpm": 10000,
+          "taper": "40 taper",
+          "type": "Grease-packed",
+          "url": "https://www.haascnc.com/productivity/spindles/10k-40t-grease.html"
+        },
+        "12000_rpm_spindle": {
+          "rpm": 12000,
+          "taper": "40 taper",
+          "url": "https://www.haascnc.com/productivity/spindles/12k-40t-in.html"
+        },
+        "7500_rpm_high_performance": {
+          "rpm": 7500,
+          "horsepower": 60,
+          "drive": "Vector drive system",
+          "gearbox": "Two-speed for wide constant horsepower band",
+          "features": "Good low-speed torque for heavy cuts",
+          "taper": "50 taper",
+          "url": "https://www.haascnc.com/productivity/spindles/7-5k-50-hp.html"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.haascnc.com/productivity/spindles/12k-40t-in.html",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "12,000-rpm Spindle - Haas Automation",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.haascnc.com/productivity/spindles/7-5k-50-hp.html",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "High-Performance 7500-rpm Spindle - Haas Automation",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869675"
+    },
+    {
+      "manufacturer": "DMG MORI",
+      "product_line": "2025 Machine Tool Lineup",
+      "data_type": "machine_specs",
+      "data": {
+        "DMU_40_series": {
+          "type": "Entry-level 5-axis",
+          "models": {
+            "DMU_40": {
+              "spindle": "Inline",
+              "rpm": 12000,
+              "power_kw": 15,
+              "torque_nm": 95
+            },
+            "DMU_40_PLUS": {
+              "spindle": "inlineMASTER",
+              "rpm": 15000,
+              "power_kw": 16.5,
+              "torque_nm": 121
+            },
+            "DMU_40_PRO": {
+              "spindle": "speedMASTER",
+              "rpm": 20000,
+              "power_kw": 32,
+              "torque_nm": 130
+            }
+          },
+          "features": "5-axis simultaneous machining, up to 20,000 min-1"
+        },
+        "DMX_U_series": {
+          "type": "Universal Machining Centers",
+          "models": [
+            "DMX 60 U",
+            "DMX 80 U"
+          ],
+          "spindle_standard": {
+            "type": "inlineMASTER",
+            "rpm": 12000
+          },
+          "spindle_optional": {
+            "speedMASTER_torque": {
+              "torque_nm": 200
+            },
+            "speedMASTER_speed": {
+              "rpm": 20000
+            }
+          }
+        },
+        "NHX_series": {
+          "type": "Horizontal Machining Centers",
+          "spindle": "Speedmaster",
+          "voltage": "400 V",
+          "performance": "Up to 50% more output",
+          "rapid_traverse": "70 m/min"
+        },
+        "turn_mill": {
+          "compactMASTER": {
+            "rpm_or_torque": "Up to 20,000 min-1 or 220 Nm"
+          },
+          "NT_turning_milling": {
+            "rpm_max": 12000,
+            "torque_nm": 302
+          }
+        },
+        "M1_vertical_mill": {
+          "x_axis_mm": 550,
+          "y_axis_mm": 550,
+          "z_axis_mm": 510,
+          "x_axis_in": 22,
+          "y_axis_in": 22,
+          "z_axis_in": 20,
+          "max_workpiece_length_mm": 550,
+          "max_workpiece_width_mm": 550,
+          "max_workpiece_height_mm": 400,
+          "max_workpiece_weight_kg": 600,
+          "max_workpiece_weight_lbs": 1323,
+          "spindle_rpm_options": [
+            10000,
+            12000
+          ],
+          "spindle_type": "Inline spindle with DMG MORI design",
+          "tool_magazine": "24-pocket with double gripper",
+          "control": "SIEMENS 828D",
+          "bed_weight_kg": 2400,
+          "footprint_m2": 6,
+          "coolant_optional": "Internal coolant supply with 20 bar pump"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://visitors.emo-hannover.de/product/dmu-40-robo2go-milling/91/069361",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "EMO Product 2025: DMU 40 (DMG MORI)",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://en.dmgmori.com/products/machines/milling/vertical-milling/m/m1",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "M1 - Vertical Milling - DMG MORI",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.mmsonline.com/articles/process-consolidation-meets-usability-improvements-inside-dmg-mori-innovation-days-2025",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Process Consolidation Meets Usability Improvements: Inside DMG MORI Innovation Days 2025",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869684"
+    },
+    {
+      "manufacturer": "Okuma",
+      "product_line": "CNC Machine Tools",
+      "data_type": "machine_specs",
+      "data": {
+        "multus_series": {
+          "type": "Multitasking Turn-Mill Machines",
+          "capabilities": {
+            "axes": "Up to 5-axis simultaneous control",
+            "feed_rate_max_mm_min": 1000,
+            "rapid_traverse_m_min": 30,
+            "positioning_accuracy_mm": 0.001,
+            "repeatability_mm": 0.001,
+            "spindle_rpm_max": 20000,
+            "tool_magazine_capacity": 120
+          },
+          "models": [
+            "MU-4000V",
+            "MU-5000V",
+            "MU-6300V",
+            "MULTUS U-series"
+          ],
+          "features": [
+            "Complex geometry machining",
+            "Extensive travel ranges for large workpieces",
+            "High feed rates for rapid material removal",
+            "Superior positioning accuracy"
+          ]
+        },
+        "vertical_machining_centers": {
+          "models": [
+            "MB-VA series",
+            "MF-VA/VB series",
+            "GENOS M560V"
+          ]
+        },
+        "lathes": {
+          "models": [
+            "LT2000 EX",
+            "LU3000 EX",
+            "LU7000EX",
+            "LB2000EXIIMY",
+            "GENOS L250"
+          ]
+        },
+        "control_system": "OSP-P control (Okuma proprietary)",
+        "monitoring": "Okuma Connect Plan software-based machine monitoring",
+        "website": "https://www.okuma.com/"
+      },
+      "sources": [
+        {
+          "url": "https://premierequipment.com/cnc-blog/okuma-multus-series/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Discover The Groundbreaking Okuma Multus Series For Advanced CNC Machining",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.okuma.com/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Okuma America | CNC Machine Tools | CNC Controls",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869689"
+    },
+    {
+      "manufacturer": "Mazak",
+      "product_line": "2025 Machine Tool Lineup",
+      "data_type": "machine_specs",
+      "data": {
+        "SYNCREX_38_8": {
+          "type": "Swiss-type Production Turning",
+          "bar_stock_max_diameter_in": 1.5,
+          "control": "MAZATROL SmoothSt CNC",
+          "touch_panel_size_in": 15,
+          "featured_at": "CMTS 2025"
+        },
+        "QTE_100": {
+          "type": "CNC Turning Center",
+          "chuck_size_in": 6,
+          "max_part_diameter_in": 11.42,
+          "spindle": "Built-in motor spindle for high torque"
+        },
+        "VC_Ez_20": {
+          "type": "Vertical Machining Center",
+          "manufactured_in": "Kentucky, USA",
+          "spindle_hp": 25,
+          "spindle_rpm": 12000,
+          "tool_changer": "30-tool automatic",
+          "tool_changer_type": "Standard"
+        },
+        "technical_documentation": {
+          "available_manuals": [
+            "General Information Manual",
+            "Programming Manual for MAZATROL MATRIX (INTEGREX IV)",
+            "Programming Manual for MAZATROL Fusion 640M",
+            "Parameter Lists for MAZATROL MATRIX",
+            "Parameter Lists for MAZATROL Fusion 640MT/MT 5X",
+            "Alarm Lists and M-Code Lists"
+          ],
+          "manual_repository": "https://cncmanual.com/mazak/"
+        },
+        "general_specs": {
+          "insert_weight_max_gf": 20,
+          "insert_weight_max_lbs": 0.04
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.mazak.com/us-en/news-media/news/Mazak-to-Highlight-Production-boosting-Technology-for-Every-Shop--at-CMTS-2025/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Mazak to Highlight Production-boosting Technology for Every Shop at CMTS 2025",
+          "author": "Mazak Corporation",
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://www.mazak.com/us-en/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Welcome to Mazak Corporation",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        },
+        {
+          "url": "https://cncmanual.com/mazak/",
+          "source_type": "manufacturer",
+          "retrieved_date": "2025-11-11",
+          "title": "Mazak Manuals User Guides - CNC Manual",
+          "author": null,
+          "publication_date": null,
+          "excerpt": null,
+          "archive_url": null,
+          "notes": null
+        }
+      ],
+      "last_updated": "2025-11-11T03:46:09.869695"
+    }
+  ],
+  "app_statistics": [
+    {
+      "app_name": "FSWizard (Lite/Free)",
+      "metric": "ios_review_count",
+      "value": 47,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-lite/id741521897",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard App - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "47 ratings",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard (Lite/Free)",
+      "metric": "ios_rating",
+      "value": 4.6,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-lite/id741521897",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard App - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.6 out of 5",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard (Lite/Free)",
+      "metric": "price",
+      "value": "Free",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-lite/id741521897",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard App - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Free (USD)",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard (Lite/Free)",
+      "metric": "developer_name",
+      "value": "Eldar Gerfanov",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-lite/id741521897",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard App - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Developer: Eldar Gerfanov",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard (Lite/Free)",
+      "metric": "last_update_date",
+      "value": "2024-01-21",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-lite/id741521897",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard App - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "January 21, 2024 (version 2.3.6)",
+          "archive_url": null,
+          "notes": "Version 2.3.6 - Added multilingual support"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard PRO",
+      "metric": "ios_review_count",
+      "value": 23,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-pro/id774456543",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard PRO - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "23 ratings",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard PRO",
+      "metric": "ios_rating",
+      "value": 4.8,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-pro/id774456543",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard PRO - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.8 out of 5",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard PRO",
+      "metric": "price",
+      "value": 17.99,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-pro/id774456543",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard PRO - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "$17.99 USD",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard PRO",
+      "metric": "last_update_date",
+      "value": "2024-01-21",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-pro/id774456543",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard PRO - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "January 21, 2024 (Version 2.3.6)",
+          "archive_url": null,
+          "notes": "Version 2.3.6 - Added multilingual support"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard Machinist Calculator (Lite/Free)",
+      "metric": "android_review_count",
+      "value": 826,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard_lite&hl=en_US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Machinist Calculator - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "826 reviews",
+          "archive_url": null,
+          "notes": "From web search results aggregating Google Play data"
+        }
+      ],
+      "methodology": "Reported from Google Play Store search results",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard Machinist Calculator (Lite/Free)",
+      "metric": "android_downloads",
+      "value": "100,000+",
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard_lite&hl=en_US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Machinist Calculator - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "100K+ downloads",
+          "archive_url": null,
+          "notes": "Exact text from Google Play Store"
+        },
+        {
+          "url": "https://fswizard.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "100K+ total downloads claimed",
+          "archive_url": null,
+          "notes": "Company website claims 100K+ downloads"
+        }
+      ],
+      "methodology": "Direct observation from Google Play Store (exact bracket text)",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard Machinist Calculator (Lite/Free)",
+      "metric": "android_rating",
+      "value": 4.6,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://appgrooves.com/app/fswizard-machinist-calculator-by-eldar-gerfanov",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Machinist Calculator - AppGrooves",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.6 rating with 684+ ratings",
+          "archive_url": null,
+          "notes": "Third-party app analytics aggregating Google Play data"
+        }
+      ],
+      "methodology": "Third-party aggregation of Google Play Store data",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "FSWizard Pro Machinist Calc",
+      "metric": "android_review_count",
+      "value": 214,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard&hl=en_US&gl=US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Pro Machinist Calc - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "214 reviews (one source reported 218)",
+          "archive_url": null,
+          "notes": "Web search reported 214 reviews initially"
+        }
+      ],
+      "methodology": "Reported from Google Play Store search results",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard Pro Machinist Calc",
+      "metric": "android_downloads",
+      "value": "5,000+",
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard&hl=en_US&gl=US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Pro Machinist Calc - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "5K+ Downloads",
+          "archive_url": null,
+          "notes": "Exact text from Google Play Store"
+        }
+      ],
+      "methodology": "Direct observation from Google Play Store (exact bracket text)",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard Pro Machinist Calc",
+      "metric": "android_rating",
+      "value": 4.6,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard&hl=en_US&gl=US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Pro Machinist Calc - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.6 star rating",
+          "archive_url": null,
+          "notes": "Reported from search results"
+        }
+      ],
+      "methodology": "Reported from Google Play Store search results",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard Pro Machinist Calc",
+      "metric": "price",
+      "value": 17.99,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard&hl=en_US&gl=US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Pro Machinist Calc - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "$17.99",
+          "archive_url": null,
+          "notes": "From web search results"
+        },
+        {
+          "url": "https://fswizard.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "FSWizard PRO costs $18.99",
+          "archive_url": null,
+          "notes": "Website lists $18.99 (slight discrepancy with Play Store $17.99)"
+        }
+      ],
+      "methodology": "Direct observation from Google Play Store and company website",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard",
+      "metric": "total_downloads_claimed",
+      "value": "100,000+",
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://fswizard.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "100K+ total downloads claimed",
+          "archive_url": null,
+          "notes": "Company claims on official website"
+        }
+      ],
+      "methodology": "Company self-reported claim on official website",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "FSWizard",
+      "metric": "average_rating_claimed",
+      "value": 4.7,
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://fswizard.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.7/5 store rating claimed",
+          "archive_url": null,
+          "notes": "Company claims on official website"
+        }
+      ],
+      "methodology": "Company self-reported claim on official website",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "G-Wizard Calculator",
+      "metric": "users_claimed",
+      "value": "100,000+",
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://www.cnccookbook.com/g-wizard-feeds-speeds-calculator-mill/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "G-Wizard CNC Speeds and Feeds Calculator - CNCCookbook",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Over 100,000 machinists from thousands of companies have used our software",
+          "archive_url": null,
+          "notes": "Exact quote from official website"
+        },
+        {
+          "url": "https://www.cnccookbook.com/g-wizard-feeds-speeds-calculator-mill/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "G-Wizard CNC Speeds and Feeds Calculator - CNCCookbook",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "worked with over 100,000 CNC'ers",
+          "archive_url": null,
+          "notes": "Alternative phrasing found on same page"
+        }
+      ],
+      "methodology": "Company self-reported claim on official website - note 'used' vs 'active users'",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "G-Wizard Calculator",
+      "metric": "customer_companies_claimed",
+      "value": "thousands",
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://www.cnccookbook.com/g-wizard-feeds-speeds-calculator-mill/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "G-Wizard CNC Speeds and Feeds Calculator - CNCCookbook",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "from thousands of companies",
+          "archive_url": null,
+          "notes": "Qualitative claim from official website"
+        }
+      ],
+      "methodology": "Company self-reported claim on official website",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "G-Wizard Calculator",
+      "metric": "market_position_claimed",
+      "value": "market leader",
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://www.cnccookbook.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "CNCCookbook Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "The market leader used by 100,000+ CNC'ers at thousands of the leading manufacturers",
+          "archive_url": null,
+          "notes": "Marketing claim from website"
+        }
+      ],
+      "methodology": "Company marketing claim on official website",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "ios_review_count",
+      "value": 161,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "161 ratings",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "ios_rating",
+      "value": 4.0,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.0 out of 5 stars",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "price",
+      "value": "Free",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Free (USD)",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "developer_name",
+      "value": "Harvey Tool",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Developer: Harvey Tool",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing - by Harvey Performance Company"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "last_update_date",
+      "value": "2023-06-06",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "June 6, 2023 (version 2.0.2)",
+          "archive_url": null,
+          "notes": "Last update over 1.5 years ago"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "optimized_products_claimed",
+      "value": 30000,
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "optimization for 30,000+ products",
+          "archive_url": null,
+          "notes": "Marketing claim in app description"
+        }
+      ],
+      "methodology": "Company claim in app store description",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "android_review_count",
+      "value": 120,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.machining.advisor.pro&hl=en_US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "120 reviews (another source reported 112)",
+          "archive_url": null,
+          "notes": "Web search reported conflicting counts: 120 vs 112"
+        }
+      ],
+      "methodology": "Reported from Google Play Store search results",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "android_downloads",
+      "value": "10,000+",
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.machining.advisor.pro&hl=en_US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "10K+ downloads",
+          "archive_url": null,
+          "notes": "Exact text from Google Play Store"
+        }
+      ],
+      "methodology": "Direct observation from Google Play Store (exact bracket text)",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "android_rating",
+      "value": 2.4,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://appgrooves.com/app/machining-advisor-pro-by-harvey-performance-company",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - AppGrooves",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "2.4 star rating with 112 reviews",
+          "archive_url": null,
+          "notes": "Low rating indicates user dissatisfaction - significantly lower than iOS"
+        }
+      ],
+      "methodology": "Third-party aggregation of Google Play Store data",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "HSMAdvisor",
+      "metric": "platform_type",
+      "value": "Desktop Windows Software",
+      "platform": "Windows",
+      "sources": [
+        {
+          "url": "https://hsmadvisor.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "HSMAdvisor Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Advanced CNC Speed And Feed Machinist Calculator",
+          "archive_url": null,
+          "notes": "Desktop application, not mobile app store presence"
+        }
+      ],
+      "methodology": "Direct observation from company website",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "HSMAdvisor",
+      "metric": "trial_period",
+      "value": "30 days",
+      "platform": "Windows",
+      "sources": [
+        {
+          "url": "https://hsmadvisor.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "HSMAdvisor Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Download HSMAdvisor and enjoy full functionality for 30 days",
+          "archive_url": null,
+          "notes": "Free trial with limited material after expiration"
+        }
+      ],
+      "methodology": "Direct observation from company website",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "HSMAdvisor",
+      "metric": "bundled_app",
+      "value": "FSWizard PRO (included free)",
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://hsmadvisor.com/buy",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "HSMAdvisor Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Unlimited Monthly subscription includes free subscription to FSWizard PRO",
+          "archive_url": null,
+          "notes": "Same developer (Eldar Gerfanov) bundles products"
+        }
+      ],
+      "methodology": "Company website product information",
+      "confidence": "confirmed"
+    }
+  ]
 }

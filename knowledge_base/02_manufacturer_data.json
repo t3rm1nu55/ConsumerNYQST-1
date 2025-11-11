@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "created": "2025-11-11T03:35:43.529155",
+    "created": "2025-11-11T03:41:52.805730",
     "verification_status": {
       "total_data_points": 0,
       "verified": 0,
@@ -9,7 +9,7 @@
       "total_formulas": 0,
       "total_manufacturer_data": 17,
       "total_app_statistics": 0,
-      "last_updated": "2025-11-11T03:35:43.529155"
+      "last_updated": "2025-11-11T03:41:52.805730"
     }
   },
   "data_points": {},
@@ -61,7 +61,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529075"
+      "last_updated": "2025-11-11T03:41:52.805568"
     },
     {
       "manufacturer": "Sandvik Coromant",
@@ -110,7 +110,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529081"
+      "last_updated": "2025-11-11T03:41:52.805580"
     },
     {
       "manufacturer": "Sandvik Coromant",
@@ -155,7 +155,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529086"
+      "last_updated": "2025-11-11T03:41:52.805589"
     },
     {
       "manufacturer": "Kennametal",
@@ -187,7 +187,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529090"
+      "last_updated": "2025-11-11T03:41:52.805597"
     },
     {
       "manufacturer": "Kennametal",
@@ -232,7 +232,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529095"
+      "last_updated": "2025-11-11T03:41:52.805605"
     },
     {
       "manufacturer": "Harvey Tool",
@@ -290,7 +290,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529099"
+      "last_updated": "2025-11-11T03:41:52.805613"
     },
     {
       "manufacturer": "Harvey Tool",
@@ -322,7 +322,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529103"
+      "last_updated": "2025-11-11T03:41:52.805619"
     },
     {
       "manufacturer": "Iscar",
@@ -392,7 +392,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529109"
+      "last_updated": "2025-11-11T03:41:52.805631"
     },
     {
       "manufacturer": "Iscar",
@@ -418,7 +418,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529113"
+      "last_updated": "2025-11-11T03:41:52.805638"
     },
     {
       "manufacturer": "Seco Tools",
@@ -501,7 +501,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529119"
+      "last_updated": "2025-11-11T03:41:52.805648"
     },
     {
       "manufacturer": "Seco Tools",
@@ -544,7 +544,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529123"
+      "last_updated": "2025-11-11T03:41:52.805654"
     },
     {
       "manufacturer": "OSG Corporation",
@@ -631,7 +631,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529128"
+      "last_updated": "2025-11-11T03:41:52.805664"
     },
     {
       "manufacturer": "Haas Automation",
@@ -682,7 +682,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529132"
+      "last_updated": "2025-11-11T03:41:52.805685"
     },
     {
       "manufacturer": "Haas Automation",
@@ -739,7 +739,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529136"
+      "last_updated": "2025-11-11T03:41:52.805693"
     },
     {
       "manufacturer": "DMG MORI",
@@ -864,7 +864,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529144"
+      "last_updated": "2025-11-11T03:41:52.805708"
     },
     {
       "manufacturer": "Okuma",
@@ -939,7 +939,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529149"
+      "last_updated": "2025-11-11T03:41:52.805717"
     },
     {
       "manufacturer": "Mazak",
@@ -1018,7 +1018,7 @@
           "notes": null
         }
       ],
-      "last_updated": "2025-11-11T03:35:43.529154"
+      "last_updated": "2025-11-11T03:41:52.805728"
     }
   ],
   "app_statistics": []

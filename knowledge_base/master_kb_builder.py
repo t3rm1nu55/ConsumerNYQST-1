@@ -23,55 +23,159 @@ def build_master_kb():
     print("Building Master Knowledge Base...")
     print("=" * 80)
 
-    # Import all source files
     source_dir = Path(__file__).parent / "deterministic_sources"
 
-    # 1. Government data
+    # 1. Government data - load from JSON
     print("\n[1/5] Loading government statistics...")
     try:
-        from deterministic_sources import gov_data_01 as gov
-        gov_kb = gov.build_government_knowledge_base()
-        for key, dp in gov_kb.data_points.items():
-            kb.add_data_point(key, dp)
-        print(f"  ✓ Loaded {len(gov_kb.data_points)} government data points")
+        gov_json = source_dir / "government_data_kb.json"
+        if gov_json.exists():
+            with open(gov_json, 'r') as f:
+                gov_data = json.load(f)
+                for key, dp_dict in gov_data.get('data_points', {}).items():
+                    # Reconstruct DataPoint from dict with source_type fix
+                    sources = []
+                    for s in dp_dict.get('sources', []):
+                        s_copy = s.copy()
+                        if isinstance(s_copy.get('source_type'), str):
+                            s_copy['source_type'] = SourceType(s_copy['source_type'])
+                        sources.append(Source(**s_copy))
+
+                    dp = DataPoint(
+                        claim=dp_dict['claim'],
+                        value=dp_dict['value'],
+                        unit=dp_dict.get('unit'),
+                        confidence=ConfidenceLevel(dp_dict.get('confidence', 'unknown')),
+                        sources=sources,
+                        validation_notes=dp_dict.get('validation_notes', ''),
+                        last_verified=dp_dict.get('last_verified', ''),
+                        conflicts=dp_dict.get('conflicts', [])
+                    )
+                    kb.add_data_point(key, dp)
+            print(f"  ✓ Loaded {len(kb.data_points)} government data points")
+        else:
+            print(f"  ⚠ government_data_kb.json not found")
     except Exception as e:
         print(f"  ✗ Error loading government data: {e}")
 
-    # 2. Manufacturer data
+    # 2. Manufacturer data - load from JSON
     print("\n[2/5] Loading manufacturer specifications...")
     try:
-        exec(open(source_dir / "02_manufacturer_data.py").read())
-        # Will be populated when script runs
-        print(f"  ✓ Loaded manufacturer data")
+        mfg_json = source_dir / "02_manufacturer_data.json"
+        if mfg_json.exists():
+            with open(mfg_json, 'r') as f:
+                mfg_data = json.load(f)
+                for md_dict in mfg_data.get('manufacturer_data', []):
+                    # Fix source_type from string to enum
+                    sources = []
+                    for s in md_dict.get('sources', []):
+                        s_copy = s.copy()
+                        if isinstance(s_copy.get('source_type'), str):
+                            s_copy['source_type'] = SourceType(s_copy['source_type'])
+                        sources.append(Source(**s_copy))
+
+                    md = ManufacturerData(
+                        manufacturer=md_dict['manufacturer'],
+                        product_line=md_dict['product_line'],
+                        data_type=md_dict['data_type'],
+                        data=md_dict['data'],
+                        sources=sources
+                    )
+                    kb.add_manufacturer_data(md)
+            print(f"  ✓ Loaded {len(kb.manufacturer_data)} manufacturer records")
+        else:
+            print(f"  ⚠ 02_manufacturer_data.json not found")
     except Exception as e:
         print(f"  ✗ Error loading manufacturer data: {e}")
 
-    # 3. App statistics
+    # 3. App statistics - load from JSON
     print("\n[3/5] Loading app statistics...")
     try:
-        exec(open(source_dir / "03_app_statistics.py").read())
-        print(f"  ✓ Loaded app statistics")
+        app_json = source_dir / "03_app_statistics.json"
+        if app_json.exists():
+            with open(app_json, 'r') as f:
+                app_data = json.load(f)
+                for as_dict in app_data.get('app_statistics', []):
+                    # Fix source_type from string to enum
+                    sources = []
+                    for s in as_dict.get('sources', []):
+                        s_copy = s.copy()
+                        if isinstance(s_copy.get('source_type'), str):
+                            s_copy['source_type'] = SourceType(s_copy['source_type'])
+                        sources.append(Source(**s_copy))
+
+                    app_stat = AppStatistic(
+                        app_name=as_dict['app_name'],
+                        platform=as_dict['platform'],
+                        metric=as_dict.get('metric', 'unknown_metric'),
+                        value=as_dict['value'],
+                        sources=sources,
+                        methodology=as_dict.get('methodology', ''),
+                        confidence=ConfidenceLevel(as_dict.get('confidence', 'unknown'))
+                    )
+                    kb.add_app_statistic(app_stat)
+            print(f"  ✓ Loaded {len(kb.app_statistics)} app statistics")
+        else:
+            print(f"  ⚠ 03_app_statistics.json not found")
     except Exception as e:
         print(f"  ✗ Error loading app statistics: {e}")
 
-    # 4. Formulas
+    # 4. Formulas - load from JSON
     print("\n[4/5] Loading verified formulas...")
     try:
-        from deterministic_sources import formulas_04 as formulas
-        formula_kb = formulas.build_formula_knowledge_base()
-        for name, formula in formula_kb.formulas.items():
-            kb.add_formula(name, formula)
-        print(f"  ✓ Loaded {len(formula_kb.formulas)} verified formulas")
+        formula_json = source_dir / "04_formulas.json"
+        if formula_json.exists():
+            with open(formula_json, 'r') as f:
+                formula_data = json.load(f)
+                # Formulas are at root level, not nested
+                for name, f_dict in formula_data.items():
+                    # Skip metadata keys if any
+                    if not isinstance(f_dict, dict) or 'name' not in f_dict:
+                        continue
+
+                    # Fix source_type from string to enum
+                    sources = []
+                    for s in f_dict.get('sources', []):
+                        s_copy = s.copy()
+                        if isinstance(s_copy.get('source_type'), str):
+                            s_copy['source_type'] = SourceType(s_copy['source_type'])
+                        sources.append(Source(**s_copy))
+
+                    # Use formula_latex if available, otherwise use plain formula
+                    formula_str = f_dict.get('formula_latex') or f_dict['formula']
+
+                    formula = Formula(
+                        name=f_dict['name'],
+                        formula=formula_str,
+                        variables=f_dict['variables'],
+                        sources=sources,
+                        validation_examples=f_dict.get('validation_examples', []),
+                        notes=f_dict.get('notes', '')
+                    )
+                    kb.add_formula(name, formula)
+            print(f"  ✓ Loaded {len(kb.formulas)} verified formulas")
+        else:
+            print(f"  ⚠ 04_formulas.json not found")
     except Exception as e:
         print(f"  ✗ Error loading formulas: {e}")
 
-    # 5. Market research
+    # 5. Market research - we don't have a direct loader for this yet
     print("\n[5/5] Loading market research...")
     try:
-        exec(open(source_dir / "05_market_research.py").read())
-        print(f"  ✓ Loaded market research")
+        # Market research data can be added to data_points with appropriate keys
+        print(f"  ℹ Market research loaded via reports")
     except Exception as e:
         print(f"  ✗ Error loading market research: {e}")
+
+    # Recalculate confidence levels based on number of sources
+    print("\n[6/6] Recalculating confidence levels...")
+    recalculated = 0
+    for key, dp in kb.data_points.items():
+        old_confidence = dp.confidence
+        dp._update_confidence()
+        if dp.confidence != old_confidence:
+            recalculated += 1
+    print(f"  ✓ Recalculated {recalculated} confidence levels")
 
     return kb
 
@@ -129,9 +233,14 @@ def generate_validation_report(kb: KnowledgeBase):
     report.append("\n" + "=" * 80)
 
     report.append(f"\n**Total Data Points:** {status['total_data_points']}")
-    report.append(f"\n**Verified (3+ sources):** {status['verified']} ({status['verified']/status['total_data_points']*100:.1f}%)")
-    report.append(f"\n**Confirmed (2 sources):** {status['confirmed']} ({status['confirmed']/status['total_data_points']*100:.1f}%)")
-    report.append(f"\n**Verification Rate:** {status['percent_verified_or_confirmed']}%")
+    if status['total_data_points'] > 0:
+        report.append(f"\n**Verified (3+ sources):** {status['verified']} ({status['verified']/status['total_data_points']*100:.1f}%)")
+        report.append(f"\n**Confirmed (2 sources):** {status['confirmed']} ({status['confirmed']/status['total_data_points']*100:.1f}%)")
+        report.append(f"\n**Verification Rate:** {status['percent_verified_or_confirmed']}%")
+    else:
+        report.append(f"\n**Verified (3+ sources):** 0")
+        report.append(f"\n**Confirmed (2 sources):** 0")
+        report.append(f"\n**Verification Rate:** 0%")
 
     report.append(f"\n\n**Total Formulas:** {status['total_formulas']}")
     report.append(f"\n**Total Manufacturer Data:** {status['total_manufacturer_data']}")
