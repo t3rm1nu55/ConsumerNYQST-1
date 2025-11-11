@@ -1,0 +1,167 @@
+{
+  "apps": [
+    {
+      "name": "Vine",
+      "peak_year": 2016,
+      "peak_users": "200 million active users",
+      "current_status": "shut down January 17, 2017; archived content accessible through Internet Archive",
+      "decline_reasons": [
+        "poor monetization strategy",
+        "management issues under Twitter ownership",
+        "competition from emerging platforms like TikTok and Instagram Reels",
+        "failure to adapt to market demands"
+      ],
+      "community_size": "Legacy creator community migrated to YouTube, TikTok, and Instagram; estimated 1.5 billion daily video loops at peak",
+      "sources": [
+        "https://www.startupbooted.com/why-vine-shut-down",
+        "https://em360tech.com/tech-articles/what-happened-vine-how-once-viral-app-died",
+        "https://buildd.co/startup/failure-stories/what-happened-to-vine"
+      ]
+    },
+    {
+      "name": "Winamp",
+      "peak_year": 2010,
+      "peak_users": "80-83 million monthly active users",
+      "current_status": "still maintained and actively developed; undergoing modernization for streaming era",
+      "decline_reasons": [
+        "transition from downloads to music streaming services",
+        "competition from cloud-based media players",
+        "market shift to mobile and streaming platforms"
+      ],
+      "community_size": "80-83 million active users globally; CEO target is 250 million users; open source initiative in 2024",
+      "sources": [
+        "https://www.fastcompany.com/90880374/winamp-is-back-but-not-like-you-remember",
+        "https://www.musicbusinessworldwide.com/music-player-winamp-still-exists",
+        "https://ghacks.net/2024/05/17/winamp-new-music-platform-and-source-code-release"
+      ]
+    },
+    {
+      "name": "iTunes",
+      "peak_year": 2014,
+      "peak_users": "31.1 million social media followers",
+      "current_status": "phased out starting 2019 with macOS Catalina; split into Music, Podcasts, and Apple TV; legacy versions still available",
+      "decline_reasons": [
+        "dominance of music streaming services like Spotify and Apple Music",
+        "poor user interface and increasingly bloated software",
+        "shift away from digital downloads to subscription models"
+      ],
+      "community_size": "29.8 million legacy followers; significant legacy user base with ongoing concerns about media library access",
+      "sources": [
+        "https://applescoop.org/story/from-icon-to-obsolete-what-happened-to-apple-itunes",
+        "https://www.npr.org/sections/therecord/2015/01/06/375173595/with-downloads-in-decline-can-itunes-adapt",
+        "https://macmost.com/what-will-happen-to-my-media-when-itunes-is-gone"
+      ]
+    },
+    {
+      "name": "Skype",
+      "peak_year": 2013,
+      "peak_users": "300 million peak; 40 million daily active users at peak",
+      "current_status": "being retired May 5, 2025; users directed to Microsoft Teams",
+      "decline_reasons": [
+        "competition from Microsoft Teams, Discord, and Zoom",
+        "Microsoft's strategic pivot to Teams as primary communication platform",
+        "fragmented messaging market with better alternatives",
+        "website traffic dropped 10% between 2021-2022"
+      ],
+      "community_size": "36 million daily active users as of 2023; 300 million monthly active users reported for 2024; 8.6 million in software sector",
+      "sources": [
+        "https://www.mysteriumvpn.com/blog/is-skype-still-a-thing",
+        "https://www.enterpriseappstoday.com/stats/skype-statistics.html",
+        "https://techcrunch.com/2025/02/28/microsoft-hangs-up-on-skype-service-to-shut-down-may-5-2025"
+      ]
+    },
+    {
+      "name": "Evernote",
+      "peak_year": 2017,
+      "peak_users": "9.6 million downloads in peak year",
+      "current_status": "declining downloads but maintains substantial active user base; version 10 update caused significant user churn",
+      "decline_reasons": [
+        "pricing structure changes and subscription model adjustments",
+        "problematic v10 software update that lost features",
+        "competition from modern alternatives like Notion, OneNote, and Obsidian",
+        "deteriorating user experience and feature limitations"
+      ],
+      "community_size": "225 million active users globally; loyal legacy user base remains committed despite frustrations; community forum active with discussions",
+      "sources": [
+        "https://www.makeuseof.com/what-happened-to-evernote/",
+        "https://francescod.medium.com/the-3-stages-of-evernotes-fall-1a97db52a87f",
+        "https://discussion.evernote.com/forums/topic/150572-people-who-are-already-sick-of-evernote-have-left"
+      ]
+    },
+    {
+      "name": "Pidgin",
+      "peak_year": 2010,
+      "peak_users": "Millions of users (exact numbers unavailable)",
+      "current_status": "declining but actively maintained; used in privacy-focused OS Tails; multi-protocol messaging client",
+      "decline_reasons": [
+        "API shutdowns from major chat services like Facebook and AIM",
+        "consolidation of messaging services into centralized platforms",
+        "shift to modern messaging apps with mobile-first design",
+        "loss of platform connectivity as networks shut down legacy APIs"
+      ],
+      "community_size": "Active developer and user community; integrated into security-focused operating systems; forum and documentation maintained",
+      "sources": [
+        "https://doc.opensuse.org/documentation/leap/archive/42.1/gnomeuser/html/book.gnomeuser/cha.gnome.pidgin.html",
+        "https://www.omgubuntu.co.uk/2015/04/facebook-chat-api-empathy-pidgin-stop-working",
+        "https://oceanexplorer.noaa.gov/okeanos/collaboration-tools/im-eventlog/pidgin-windows.html"
+      ]
+    },
+    {
+      "name": "Miranda IM",
+      "peak_year": 2012,
+      "peak_users": "Millions of users across Windows (exact numbers unavailable)",
+      "current_status": "original project no longer maintained; successfully forked to Miranda NG with active community development",
+      "decline_reasons": [
+        "slow development pace of original project",
+        "shift to centralized messaging platforms",
+        "decline of traditional instant messaging protocols",
+        "resource-intensive development model"
+      ],
+      "community_size": "Miranda NG maintains active community; 350+ plugins available; community forums, wiki, and social media presence active; dedicated developer team",
+      "sources": [
+        "https://github.com/miranda-ng/miranda-ng",
+        "https://miranda-ng.org/",
+        "https://www.portablefreeware.com/?id=128"
+      ]
+    },
+    {
+      "name": "Adobe Flash",
+      "peak_year": 2015,
+      "peak_users": "Billions (ubiquitous across web)",
+      "current_status": "officially discontinued December 2020; emulated through open-source Ruffle project; enterprise versions available in select regions",
+      "decline_reasons": [
+        "critical security vulnerabilities and exploits",
+        "shift to web standards (HTML5, CSS, JavaScript)",
+        "poor performance and resource consumption",
+        "mobile platform incompatibility",
+        "browser abandonment of Flash support"
+      ],
+      "community_size": "Open-source Ruffle emulator project continues active development in 2024; enterprise support in China (Zhongcheng) and for international enterprise users (Harman International)",
+      "sources": [
+        "https://www.phoronix.com/news/Adobe-Flash-Ruffle-2024",
+        "https://cross-browser.org/blog/what-browsers-support-flash-in-2024",
+        "https://www.adobe.com/products/flashplayer/end-of-life.html"
+      ]
+    }
+  ],
+  "research_metadata": {
+    "search_queries": [
+      "apps popular in 2010s now abandoned",
+      "software with declining downloads loyal users",
+      "once dominant apps lost market share",
+      "mobile apps peaked then declined",
+      "desktop software legacy users",
+      "Vine app legacy community active users after shutdown",
+      "Winamp media player still active users 2024",
+      "Pidgin instant messenger declining but loyal users",
+      "Miranda IM legacy messenger users community",
+      "Adobe Flash legacy users still active 2024",
+      "iTunes media player declining users legacy community",
+      "Skype declining users 2024 still active base",
+      "Evernote declining users but loyal community"
+    ],
+    "total_apps_analyzed": 8,
+    "focus": "Apps with passionate communities still using them despite abandonment or decline",
+    "date_generated": "2025-11-11"
+  }
+}

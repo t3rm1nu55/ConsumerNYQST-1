@@ -1,0 +1,317 @@
+{
+  "created": "2025-11-11T00:15:37.266079",
+  "total_vectors": 6,
+  "total_queries": 29,
+  "total_batches": 6,
+  "vectors": [
+    {
+      "name": "app_decline_trends",
+      "description": "Apps that were popular but declined",
+      "queries": [
+        "apps popular in 2010s now abandoned",
+        "software with declining downloads loyal users",
+        "once dominant apps lost market share",
+        "mobile apps peaked then declined",
+        "desktop software legacy users"
+      ],
+      "data_points": [
+        "App name",
+        "Peak year",
+        "Download/user numbers",
+        "Current status",
+        "Why declined"
+      ]
+    },
+    {
+      "name": "technical_niches",
+      "description": "Technical/professional tools with dedicated users",
+      "queries": [
+        "CNC machining software feeds speeds calculators",
+        "CAD software outdated still used",
+        "engineering calculators apps",
+        "specialized technical tools professionals use",
+        "niche software for tradespeople"
+      ],
+      "data_points": [
+        "Tool name",
+        "User base profession",
+        "Pain points",
+        "Update frequency"
+      ]
+    },
+    {
+      "name": "forum_sentiment",
+      "description": "User discussions about abandoned/outdated apps",
+      "queries": [
+        "site:reddit.com 'wish this app would update'",
+        "site:news.ycombinator.com abandoned software still use",
+        "site:reddit.com/r/productivity outdated apps alternatives",
+        "forums frustrated old software no updates",
+        "users complaining app hasn't updated"
+      ],
+      "data_points": [
+        "App mentioned",
+        "User frustrations",
+        "Feature requests",
+        "Workarounds used"
+      ]
+    },
+    {
+      "name": "app_store_archaeology",
+      "description": "App store analysis of declining apps",
+      "queries": [
+        "iOS apps high ratings no updates years",
+        "android apps last updated 2015 2016",
+        "popular apps 2012-2015 still downloaded",
+        "app store apps not updated loyal reviews",
+        "legacy apps still ranking categories"
+      ],
+      "data_points": [
+        "App name",
+        "Rating",
+        "Last update",
+        "Review sentiment",
+        "Download tier"
+      ]
+    },
+    {
+      "name": "ai_transformation_potential",
+      "description": "Categories where AI could be revolutionary",
+      "queries": [
+        "manual workflows AI could automate",
+        "apps AI natural language interface improve",
+        "software benefit machine learning optimization",
+        "tools AI personalization revolution",
+        "legacy software AI computer vision enhance"
+      ],
+      "data_points": [
+        "Workflow type",
+        "Current manual process",
+        "AI capability match",
+        "Expected impact"
+      ]
+    },
+    {
+      "name": "specific_developer_research",
+      "description": "Developers known for then abandoning popular apps",
+      "queries": [
+        "indie developers successful apps stopped updating",
+        "acquired apps abandoned by new owners",
+        "popular apps developer moved on",
+        "successful app makers discontinued products"
+      ],
+      "data_points": [
+        "Developer name",
+        "Apps created",
+        "Why abandoned",
+        "User base status"
+      ]
+    }
+  ],
+  "batches": [
+    {
+      "batch_id": 1,
+      "tasks": [
+        {
+          "vector": "app_decline_trends",
+          "query": "apps popular in 2010s now abandoned",
+          "priority": 5,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "app_decline_trends",
+          "query": "software with declining downloads loyal users",
+          "priority": 5,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "app_decline_trends",
+          "query": "once dominant apps lost market share",
+          "priority": 5,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "app_decline_trends",
+          "query": "mobile apps peaked then declined",
+          "priority": 5,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "app_decline_trends",
+          "query": "desktop software legacy users",
+          "priority": 5,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        }
+      ]
+    },
+    {
+      "batch_id": 2,
+      "tasks": [
+        {
+          "vector": "technical_niches",
+          "query": "CNC machining software feeds speeds calculators",
+          "priority": 5,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "technical_niches",
+          "query": "CAD software outdated still used",
+          "priority": 5,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "technical_niches",
+          "query": "engineering calculators apps",
+          "priority": 5,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "technical_niches",
+          "query": "specialized technical tools professionals use",
+          "priority": 5,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "technical_niches",
+          "query": "niche software for tradespeople",
+          "priority": 5,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        }
+      ]
+    },
+    {
+      "batch_id": 3,
+      "tasks": [
+        {
+          "vector": "forum_sentiment",
+          "query": "site:reddit.com 'wish this app would update'",
+          "priority": 4,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "forum_sentiment",
+          "query": "site:news.ycombinator.com abandoned software still use",
+          "priority": 4,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "forum_sentiment",
+          "query": "site:reddit.com/r/productivity outdated apps alternatives",
+          "priority": 4,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "forum_sentiment",
+          "query": "forums frustrated old software no updates",
+          "priority": 4,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "forum_sentiment",
+          "query": "users complaining app hasn't updated",
+          "priority": 4,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        }
+      ]
+    },
+    {
+      "batch_id": 4,
+      "tasks": [
+        {
+          "vector": "app_store_archaeology",
+          "query": "iOS apps high ratings no updates years",
+          "priority": 4,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "app_store_archaeology",
+          "query": "android apps last updated 2015 2016",
+          "priority": 4,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "app_store_archaeology",
+          "query": "popular apps 2012-2015 still downloaded",
+          "priority": 4,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "app_store_archaeology",
+          "query": "app store apps not updated loyal reviews",
+          "priority": 4,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "app_store_archaeology",
+          "query": "legacy apps still ranking categories",
+          "priority": 4,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        }
+      ]
+    },
+    {
+      "batch_id": 5,
+      "tasks": [
+        {
+          "vector": "ai_transformation_potential",
+          "query": "manual workflows AI could automate",
+          "priority": 3,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "ai_transformation_potential",
+          "query": "apps AI natural language interface improve",
+          "priority": 3,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "ai_transformation_potential",
+          "query": "software benefit machine learning optimization",
+          "priority": 3,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "ai_transformation_potential",
+          "query": "tools AI personalization revolution",
+          "priority": 3,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "ai_transformation_potential",
+          "query": "legacy software AI computer vision enhance",
+          "priority": 3,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        }
+      ]
+    },
+    {
+      "batch_id": 6,
+      "tasks": [
+        {
+          "vector": "specific_developer_research",
+          "query": "indie developers successful apps stopped updating",
+          "priority": 2,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "specific_developer_research",
+          "query": "acquired apps abandoned by new owners",
+          "priority": 2,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "specific_developer_research",
+          "query": "popular apps developer moved on",
+          "priority": 2,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        },
+        {
+          "vector": "specific_developer_research",
+          "query": "successful app makers discontinued products",
+          "priority": 2,
+          "extract": "app names, user counts, sentiment, update dates, pain points"
+        }
+      ]
+    }
+  ]
+}

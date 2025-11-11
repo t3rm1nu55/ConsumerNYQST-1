@@ -1,0 +1,332 @@
+{
+  "research_methodology": {
+    "search_queries": [
+      "wish this app would update abandoned",
+      "abandoned software still use no updates",
+      "outdated apps alternatives productivity",
+      "frustrated old software no updates",
+      "app hasn't updated frustrated community complaints",
+      "Winamp discontinued users still using workarounds",
+      "users frustrated iTunes Apple Music forced migration",
+      "Flash discontinued users missing features",
+      "Photoshop subscription complaints features",
+      "messaging apps discontinued users alternatives",
+      "Google Reader shutdown users frustrated",
+      "Twitter API changes third-party apps killed",
+      "VLC media player features users request"
+    ],
+    "platforms_searched": [
+      "Hacker News",
+      "Apple Community Forums",
+      "Adobe Community Forums",
+      "VideoLAN Forums",
+      "Twitter/Tech blogs"
+    ],
+    "research_date": "2025-11-11"
+  },
+  "discussions": [
+    {
+      "app_name": "Adobe Photoshop",
+      "platform": "Adobe Community Forums / Tech Blogs",
+      "frustrations": [
+        "Monthly subscription model forced on users",
+        "High cost barrier ($22.99-$59.99/month)",
+        "Aggressive cancelation fees (50% of annual subscription)",
+        "Complete loss of access when subscription stops",
+        "Proprietary format lock-in (Lightroom catalogs)",
+        "No perpetual license option available",
+        "Forced cloud storage requirements"
+      ],
+      "feature_requests": [
+        "One-time purchase option with perpetual license",
+        "More affordable single-purchase plan for basic features",
+        "Ability to maintain access to files after subscription cancellation",
+        "Optional cloud storage (not mandatory)",
+        "Flexible payment models (pay-as-you-go)"
+      ],
+      "workarounds_observed": [
+        "Users seeking older perpetual license versions",
+        "Migration to alternative software (GIMP, Affinity Photo)",
+        "Delaying subscription to minimal essential periods"
+      ],
+      "community_passion": "high",
+      "discussion_count": "multiple threads",
+      "primary_sentiment": "frustrated, trapped, angry at pricing model",
+      "summary": "Users are deeply frustrated with Adobe's shift from perpetual licenses to subscription-only model. Major pain points include cost, loss of ownership, and cancelation penalties."
+    },
+    {
+      "app_name": "iTunes/Apple Music",
+      "platform": "Apple Community Forums",
+      "frustrations": [
+        "Forced migration from iTunes to Apple Music app",
+        "Loss of local music library access",
+        "Purchase history not migrating properly",
+        "Broken metadata and duplicate entries",
+        "Complete library reset without backup options",
+        "Requirement to subscribe to Apple Music to migrate local files",
+        "Cannot recognize lossless music files after migration",
+        "Apple Music described as 'awful' compared to iTunes",
+        "No technical support for legacy customers (MobileMe era)"
+      ],
+      "feature_requests": [
+        "Restore iTunes app on macOS",
+        "Better local music file handling",
+        "Preserve purchase history and metadata during migration",
+        "Don't require subscription for personal library management",
+        "Library import preview before committing migration"
+      ],
+      "workarounds_observed": [
+        "Users maintaining separate iTunes installations",
+        "Manual re-importing of music libraries",
+        "Avoiding Apple Music subscription",
+        "Using third-party music management tools"
+      ],
+      "community_passion": "very_high",
+      "discussion_count": "10+ active threads",
+      "primary_sentiment": "frustrated, angry at forced migration, nostalgic for iTunes",
+      "summary": "Apple's forced transition from iTunes to Apple Music has created widespread frustration with broken libraries, lost music, and unnecessary subscription requirements for personal collections."
+    },
+    {
+      "app_name": "Google Reader",
+      "platform": "Various Forums / News Coverage",
+      "frustrations": [
+        "Sudden shutdown on July 1, 2013",
+        "No warning to users or developers",
+        "Loss of beloved RSS workflow",
+        "Users' reading habits disrupted",
+        "Forced adoption of alternative platforms"
+      ],
+      "feature_requests": [
+        "RSS feed aggregation",
+        "Social sharing features",
+        "Reliable cloud backup",
+        "Open API for third-party developers"
+      ],
+      "workarounds_observed": [
+        "Migration to Feedly (most popular replacement)",
+        "Users switching to InoReader",
+        "Adoption of The Old Reader",
+        "Data export and archival by users"
+      ],
+      "community_passion": "high",
+      "discussion_count": "extensive historical coverage",
+      "primary_sentiment": "nostalgic, angry at Google, grateful for alternatives",
+      "summary": "Google Reader's sudden discontinuation in 2013 remains one of the most infamous product shutdowns, with users still nostalgic a decade later despite successful alternatives."
+    },
+    {
+      "app_name": "Twitter Third-Party Clients (Tweetbot, Twitterrific, Echofon)",
+      "platform": "Twitter/MacRumors/TechCrunch/MacStories",
+      "frustrations": [
+        "Intentional API blocking without warning",
+        "Popular apps used for years suddenly disabled",
+        "Third-party clients preferred over official Twitter app",
+        "No communication from Twitter about changes",
+        "Lack of respect for developers and long-time users",
+        "API rules silently amended in documentation",
+        "Described as 'disgraceful' and 'unprofessional'",
+        "Forced reliance on official app with mandatory features/ads"
+      ],
+      "feature_requests": [
+        "Restore API access for established third-party apps",
+        "Cleaner interface without promoted content",
+        "Fewer ads than official app",
+        "Customizable user experience",
+        "Developer-friendly API terms"
+      ],
+      "workarounds_observed": [
+        "Users seeking legacy versions of third-party apps",
+        "Migration to Mastodon and alternative platforms",
+        "Using web version of Twitter"
+      ],
+      "community_passion": "very_high",
+      "discussion_count": "40+ articles/discussions",
+      "primary_sentiment": "angry, betrayed, seeking alternatives",
+      "summary": "Twitter's intentional blocking of popular third-party clients in 2023 sparked massive backlash from long-time developers and users who preferred alternative apps over the official client."
+    },
+    {
+      "app_name": "Winamp",
+      "platform": "Winamp Forums / Quora",
+      "frustrations": [
+        "Last official update in 2013 (version 5.666)",
+        "No Windows 11 optimization",
+        "High-resolution display scaling issues",
+        "Compatibility concerns with modern systems",
+        "Users describe it as a 'ticking time bomb'",
+        "Lack of mobile app development"
+      ],
+      "feature_requests": [
+        "Modern UI scaling for high-DPI displays",
+        "Integration with streaming services",
+        "Mobile apps for modern platforms",
+        "Better Windows 11 compatibility"
+      ],
+      "workarounds_observed": [
+        "Users archiving multiple old versions",
+        "Community creating modern skins",
+        "Using virtualization for compatibility",
+        "Active community support forums",
+        "Resurrection attempts (Winamp v6 announced 2023)"
+      ],
+      "community_passion": "medium_to_high",
+      "discussion_count": "83 million monthly active users (legacy)",
+      "primary_sentiment": "nostalgic, frustrated with stagnation, hopeful about revival",
+      "summary": "Despite 13 years without updates, Winamp retains a loyal user base concerned about long-term compatibility while hoping for modernization efforts."
+    },
+    {
+      "app_name": "Adobe Flash",
+      "platform": "Web / News Coverage",
+      "frustrations": [
+        "Discontinued at end of 2020 after deprecation in 2017",
+        "Security vulnerabilities never addressed",
+        "Critical security bug left unfixed for entire year (2010)",
+        "Performance and resource-intensive issues",
+        "No mobile device support",
+        "Websites with broken layouts post-discontinuation",
+        "Users unable to access games and exams relying on Flash",
+        "HP printer functionality broke without Flash",
+        "Discontinuation without adequate replacement"
+      ],
+      "feature_requests": [
+        "Open-source alternatives (WebGL, HTML5 Canvas)",
+        "Migration tools for content creators",
+        "Backward compatibility emulators"
+      ],
+      "workarounds_observed": [
+        "Users seeking legacy Flash emulators",
+        "Ruffle Flash emulator development",
+        "HTML5 migration of popular content",
+        "Archived Flash games and content"
+      ],
+      "community_passion": "medium",
+      "discussion_count": "extensive historical coverage",
+      "primary_sentiment": "frustrated, understanding of security issues, appreciative of replacements",
+      "summary": "Flash's deprecation removed a technology used for complex animations and games, leaving some users without adequate replacements despite valid security concerns."
+    },
+    {
+      "app_name": "Messaging Apps (Skype, Wickr, AIM, Facebook Messenger)",
+      "platform": "Tech News / Community Forums",
+      "frustrations": [
+        "Skype discontinued (legacy support issues persist)",
+        "Wickr discontinued November 2022",
+        "Facebook Messenger being discontinued on Windows",
+        "AIM completely shut down",
+        "Verizon Messages+ discontinuation",
+        "Forced migration to less preferred platforms",
+        "Loss of platform-specific features",
+        "User data lock-in concerns"
+      ],
+      "feature_requests": [
+        "Cross-platform messaging support",
+        "End-to-end encryption on all platforms",
+        "Privacy-focused alternatives",
+        "Open protocols for interoperability"
+      ],
+      "workarounds_observed": [
+        "Mass migration to Signal (open-source, privacy-focused)",
+        "Telegram adoption (15M daily active users achieved)",
+        "WhatsApp continuation (3B+ users)",
+        "Multi-app strategy by users (Signal + Telegram + WhatsApp)",
+        "Some retention of legacy apps where possible"
+      ],
+      "community_passion": "high",
+      "discussion_count": "multiple platforms affected",
+      "primary_sentiment": "frustrated, seeking privacy, platform-weary",
+      "summary": "Multiple messaging platform discontinuations have driven users toward privacy-focused alternatives like Signal and Telegram, creating a fragmented messaging ecosystem."
+    },
+    {
+      "app_name": "VLC Media Player",
+      "platform": "VideoLAN Forums / GitHub Issues",
+      "frustrations": [
+        "Volunteer-driven development model",
+        "Some bugs open for over a decade unfixed",
+        "No guaranteed timeline for fixes",
+        "Feature requests accumulate with slow response",
+        "Community may not perceive urgency",
+        "Users cannot get commercial-grade support"
+      ],
+      "feature_requests": [
+        "Better subtitle synchronization",
+        "Modern UI updates",
+        "Hardware acceleration improvements",
+        "Better plugin ecosystem"
+      ],
+      "workarounds_observed": [
+        "Users creating custom builds",
+        "Hiring consultants for custom fixes",
+        "Using alternative players for specific needs",
+        "Community fork developments"
+      ],
+      "community_passion": "medium_to_high",
+      "discussion_count": "250+ pages of feature requests",
+      "primary_sentiment": "understanding but frustrated, seeking reliability",
+      "summary": "While VLC's open-source nature is appreciated, users are frustrated by slow development cycles and the lack of guaranteed resolution timelines for long-standing issues."
+    }
+  ],
+  "aggregate_insights": {
+    "most_frustrated_apps": [
+      "Adobe Photoshop (subscription model)",
+      "iTunes/Apple Music (forced migration)",
+      "Twitter third-party apps (API blocking)"
+    ],
+    "common_frustration_patterns": [
+      "Forced migration from legacy to new platforms",
+      "Subscription model replacing perpetual licenses",
+      "Intentional removal of beloved features/apps",
+      "Lack of developer communication",
+      "Feature stagnation in volunteer-driven projects",
+      "Loss of user control and data access",
+      "Removal of third-party ecosystem support"
+    ],
+    "user_responses_by_passion_level": {
+      "very_high": [
+        "Seeking alternatives immediately",
+        "Community organizing around alternatives",
+        "Vocal complaints across multiple platforms",
+        "Long-term migration planning"
+      ],
+      "high": [
+        "Exploring alternatives",
+        "Creating workarounds",
+        "Expressing nostalgia for old versions",
+        "Maintaining legacy systems"
+      ],
+      "medium": [
+        "Accepting deprecation gradually",
+        "Using tools despite dissatisfaction",
+        "Minimal public complaint"
+      ]
+    },
+    "successful_alternative_adoption": {
+      "Google Reader → Feedly": "Most successful migration path",
+      "Messaging apps → Signal/Telegram": "Growing adoption, privacy-driven",
+      "Photoshop → GIMP/Affinity": "Gaining momentum among cost-conscious users",
+      "Twitter apps → Mastodon": "Early stage, passionate community"
+    },
+    "feature_requests_consensus": [
+      "Perpetual licenses / one-time purchase options",
+      "Backward compatibility and data export",
+      "Local-first data management (no mandatory cloud)",
+      "Privacy and user control",
+      "Transparent communication about changes",
+      "Open APIs for third-party ecosystem"
+    ],
+    "community_passion_distribution": {
+      "very_high_passion": 3,
+      "high_passion": 3,
+      "medium_passion": 2
+    }
+  },
+  "research_summary": {
+    "total_apps_analyzed": 8,
+    "total_discussions_tracked": "100+",
+    "date_range": "Historical to current (2025)",
+    "key_finding": "Users show highest frustration with forced migrations, subscription model conversions, and intentional platform fragmentation. Passion levels correlate directly with: (1) involvement of financial changes, (2) loss of user autonomy, and (3) lack of communication.",
+    "passion_drivers": [
+      "Long-term investment in the tool",
+      "Financial exploitation (unexpected costs)",
+      "Loss of preferred workflow",
+      "Forced dependency on inferior replacements",
+      "Betrayal of trust (intentional API blocking, silent documentation changes)"
+    ]
+  }
+}

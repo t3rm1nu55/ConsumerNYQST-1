@@ -1,0 +1,198 @@
+{
+  "tools": [
+    {
+      "name": "FSWizard",
+      "profession": "machinists, CNC programmers, tool engineers",
+      "description": "Online and mobile CNC speeds and feeds calculator that considers dozens of variables for milling, drilling, and turning operations. Calculates RPM, feed rates, chip loads, and material removal rates.",
+      "pain_points": [
+        "Relatively static UI design",
+        "Limited to specific calculation domains",
+        "Requires manual input of tool and material specifications",
+        "No predictive optimization"
+      ],
+      "last_update": "2024",
+      "user_base_size": "5,000-15,000 (estimated professional machinists)",
+      "ai_potential": "AI could predict optimal speeds/feeds based on machine learning from thousands of successful jobs, detect tool wear patterns from images, and suggest tool adjustments in real-time via CNC integration.",
+      "sources": [
+        "https://fswizard.com/",
+        "https://www.practicalmachinist.com/forum/threads/suggested-speed-and-feed-app-calculator-website.383022/"
+      ]
+    },
+    {
+      "name": "G-Wizard Calculator",
+      "profession": "machinists, CNC operators, tooling engineers",
+      "description": "Advanced CNC speeds and feeds calculator that handles more different kinds of tooling than competitors. Provides optimization for efficiency and tool life.",
+      "pain_points": [
+        "Complex interface for beginners",
+        "Requires extensive tool database knowledge",
+        "Premium pricing for advanced features",
+        "Limited integration with CAM software"
+      ],
+      "last_update": "2024",
+      "user_base_size": "8,000-20,000 (estimated professional users)",
+      "ai_potential": "AI could automate tool selection recommendations, predict tool life degradation with computer vision from shop floor data, and integrate directly with CNC machines for real-time parameter adjustment.",
+      "sources": [
+        "https://www.cnccookbook.com/g-wizard-feeds-speeds-calculator-mill/"
+      ]
+    },
+    {
+      "name": "HSMAdvisor",
+      "profession": "professional machinists, CNC specialists, manufacturing engineers",
+      "description": "Specialized machinist calculator with extensive database supporting hundreds of combinations of cutting materials, tools, and coatings. Desktop application for Windows and Mac.",
+      "pain_points": [
+        "Standalone software with no cloud sync",
+        "Manual database updates required",
+        "Limited mobile access",
+        "No collaboration features for teams"
+      ],
+      "last_update": "2023",
+      "user_base_size": "3,000-8,000 (estimated professional shops)",
+      "ai_potential": "AI could automatically update tool databases from manufacturer specs, predict tool performance variations based on machine condition, and enable real-time collaboration via cloud integration.",
+      "sources": [
+        "https://hsmadvisor.com/",
+        "https://hsmadvisor.com/download"
+      ]
+    },
+    {
+      "name": "AutoCAD",
+      "profession": "architects, engineers, drafters, construction professionals",
+      "description": "Industry standard 2D and 3D CAD software first released in 1982. Used for precise technical drawings and designs in architecture, engineering, and construction.",
+      "pain_points": [
+        "40+ year old core architecture",
+        "Steep learning curve",
+        "High subscription cost ($630/year)",
+        "Slower than modern alternatives for 3D modeling",
+        "Students report frustration with outdated UI/UX"
+      ],
+      "last_update": "2024",
+      "user_base_size": "500,000+ (estimated global users)",
+      "ai_potential": "AI could auto-generate construction documents from sketches, predict design issues before manufacturing, automate repetitive drafting tasks, and enable natural language design input.",
+      "sources": [
+        "https://mgsglobalgroup.com/2023/10/02/is-autocad-becoming-obsolete/",
+        "https://forums.autodesk.com/t5/autocad-forum/why-does-autocad-still-exist/td-p/7840240"
+      ]
+    },
+    {
+      "name": "Blockpad",
+      "profession": "engineers, scientists, technical professionals",
+      "description": "Engineering calculation software that combines Excel-like spreadsheet functionality with mathematical notation (similar to Mathcad). Available as desktop (Windows/Mac) and web application.",
+      "pain_points": [
+        "Limited adoption compared to Excel/Mathcad",
+        "Smaller ecosystem of templates and libraries",
+        "Learning curve for users accustomed to Excel",
+        "Limited integration with other engineering tools"
+      ],
+      "last_update": "2024",
+      "user_base_size": "2,000-5,000 (estimated professional users)",
+      "ai_potential": "AI could auto-generate equations from natural language descriptions, validate engineering assumptions, detect calculation errors, and suggest optimizations based on industry best practices.",
+      "sources": [
+        "https://blockpad.net/",
+        "https://www.controleng.com/articles/apps-for-engineers-calculation-apps-for-ios-and-android/"
+      ]
+    },
+    {
+      "name": "Civil Engineering Calculators App",
+      "profession": "civil engineers, construction professionals, surveyors",
+      "description": "iOS/Android app with 484+ calculators and converters for civil engineering tasks including beam calculations, pipeline flow, concrete work, and unit conversions (SI/Imperial).",
+      "pain_points": [
+        "Mobile-only platform limits productivity",
+        "No data export or cloud synchronization",
+        "Limited documentation and support",
+        "Difficult to perform complex multi-step calculations"
+      ],
+      "last_update": "2023",
+      "user_base_size": "15,000-40,000 (estimated app downloads)",
+      "ai_potential": "AI could interpret site photos to auto-calculate dimensions, provide real-time design recommendations based on field conditions, and integrate sensor data from construction sites.",
+      "sources": [
+        "https://apps.apple.com/us/app/civil-engineering-calculators/id673068400"
+      ]
+    },
+    {
+      "name": "Mechanical Engineering Calculators App",
+      "profession": "mechanical engineers, thermodynamics specialists, fluid mechanics professionals",
+      "description": "iOS app with 44 thermodynamics calculators, 97 fluid mechanics calculators, and 28 unit converters for mechanical engineering parameters and conversions.",
+      "pain_points": [
+        "Limited scope compared to professional software",
+        "Basic UI with minimal customization",
+        "No integration with CAD or simulation software",
+        "Mobile-only limits workflow integration"
+      ],
+      "last_update": "2023",
+      "user_base_size": "10,000-25,000 (estimated app users)",
+      "ai_potential": "AI could analyze system parameters to suggest optimal designs, predict component failures from input conditions, and provide context-aware engineering insights based on historical data.",
+      "sources": [
+        "https://apps.apple.com/us/app-bundle/mechanical-engineering-calculators/id927931065"
+      ]
+    },
+    {
+      "name": "Tradify (Job Management for Trades)",
+      "profession": "electricians, plumbers, HVAC technicians, gas engineers, property maintenance",
+      "description": "Cloud-based job management software purpose-built for trade businesses. Handles invoicing, scheduling, dispatch, and integrates with accounting software (Xero, QuickBooks).",
+      "pain_points": [
+        "Learning curve for non-technical tradespeople",
+        "Requires consistent internet connectivity",
+        "Limited offline functionality",
+        "Integration gaps with legacy accounting systems"
+      ],
+      "last_update": "2024",
+      "user_base_size": "10,000-25,000 (estimated businesses)",
+      "ai_potential": "AI could predict job duration accurately, optimize technician routes in real-time, forecast demand patterns by season, and automate invoice generation and client communication.",
+      "sources": [
+        "https://www.tradifyhq.com/",
+        "https://buildbite.com/insights/job-management-software-for-tradesmen"
+      ]
+    },
+    {
+      "name": "Kennametal Speed and Feed Calculator",
+      "profession": "machinists, tool engineers, manufacturing professionals",
+      "description": "Web-based calculator from major cutting tool manufacturer Kennametal. Helps determine SFM (Surface Feet per Minute), IPM (Inches Per Minute), RPM, and Material Removal Rate (MRR).",
+      "pain_points": [
+        "Limited to Kennametal-recommended parameters",
+        "No offline capability",
+        "Minimal integration with other tools",
+        "Vendor-specific bias in recommendations"
+      ],
+      "last_update": "2024",
+      "user_base_size": "20,000-50,000 (estimated occasional users)",
+      "ai_potential": "AI could integrate competing tool brands, predict tool life based on machine condition data, and recommend alternative tools when supply is constrained.",
+      "sources": [
+        "https://www.kennametal.com/us/en/resources/engineering-calculators/miscellaneous/speed-and-feed.html"
+      ]
+    },
+    {
+      "name": "Pitch Gauge App",
+      "profession": "roofers, construction estimators",
+      "description": "Specialized mobile app that measures roof pitch and size without requiring roofers to climb on the roof. Addresses safety concerns in roofing industry.",
+      "pain_points": [
+        "Requires smartphone with accurate sensors",
+        "Weather-dependent accuracy",
+        "Limited to basic pitch measurement",
+        "No integration with estimating software"
+      ],
+      "last_update": "2023",
+      "user_base_size": "3,000-8,000 (estimated niche professional users)",
+      "ai_potential": "AI could analyze drone footage to estimate material needs, predict weather-related risks, and automatically generate roofing estimates and quotes.",
+      "sources": [
+        "https://www.housecallpro.com/resources/best-job-management-software-for-trades/"
+      ]
+    }
+  ],
+  "research_summary": {
+    "search_queries": [
+      "CNC machining software feeds speeds calculators",
+      "CAD software outdated still used",
+      "engineering calculators apps",
+      "specialized technical tools professionals use",
+      "niche software for tradespeople"
+    ],
+    "date_collected": "2025-11-11",
+    "total_tools_identified": 10,
+    "key_findings": [
+      "CNC calculator tools (FSWizard, G-Wizard, HSMAdvisor) have dedicated user bases despite minimal UI updates and feature stagnation",
+      "AutoCAD remains dominant in architecture/engineering despite being 40+ years old and criticized by users as outdated",
+      "Engineering calculator apps (iOS/Android) are feature-rich but limited by mobile-only platforms and lack of integration",
+      "Trade-specific software (Tradify, Housecall Pro) addresses specific pain points but struggle with adoption among less technical users",
+      "All identified tools have significant AI transformation potential in automation, predictive analysis, and intelligent recommendations"
+    ]
+  }
+}
