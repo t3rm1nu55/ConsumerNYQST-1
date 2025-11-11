@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "created": "2025-11-11T03:35:43.522553",
+    "verification_status": {
+      "total_data_points": 0,
+      "verified": 0,
+      "confirmed": 0,
+      "percent_verified_or_confirmed": 0,
+      "total_formulas": 0,
+      "total_manufacturer_data": 0,
+      "total_app_statistics": 0,
+      "last_updated": "2025-11-11T03:35:43.522553"
+    }
+  },
+  "data_points": {},
+  "formulas": {},
+  "manufacturer_data": [],
+  "app_statistics": []
+}

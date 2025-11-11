@@ -1,0 +1,535 @@
+{
+  "rpm_imperial": {
+    "name": "RPM Calculation (Imperial)",
+    "formula": "RPM = (SFM \u00d7 3.82) / D",
+    "variables": {
+      "RPM": "Revolutions Per Minute (spindle speed)",
+      "SFM": "Surface Feet per Minute (cutting speed)",
+      "D": "Tool or workpiece diameter in inches",
+      "3.82": "Conversion constant (12/\u03c0 = 3.8197, rounded to 3.82)"
+    },
+    "sources": [
+      {
+        "url": "https://openoregon.pressbooks.pub/manufacturingprocesses45/chapter/unit-two-cutting-speed/",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "Manufacturing Processes 4-5 - Unit 2: Speeds, Feeds, and Tapping",
+        "author": "LamNgeun Virasak",
+        "publication_date": "2016",
+        "excerpt": "RPM = (CS \u00d7 4) / D where CS = Cutter speed in SFM, D = Tool diameter in inches. Note: 4 is approximation of 3.82",
+        "archive_url": null,
+        "notes": "CC BY 4.0 Licensed textbook from Open Oregon Educational Resources"
+      },
+      {
+        "url": "https://www.practicalmachinist.com/forum/threads/why-3-82.291261/",
+        "source_type": "forum_primary",
+        "retrieved_date": "2025-11-11",
+        "title": "Practical Machinist Forum - Why 3.82?",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "Number of inches in a foot - 12 divided by Pi - 3.14 = 3.8197 or 3.82. RPM = 3.82 \u00d7 SFM \u00f7 tool diameter",
+        "archive_url": null,
+        "notes": "Discussion explaining mathematical derivation: 12 inches/foot \u00f7 \u03c0"
+      },
+      {
+        "url": "https://www.harveyperformance.com/in-the-loupe/speeds-and-feeds-101/",
+        "source_type": "manufacturer",
+        "retrieved_date": "2025-11-11",
+        "title": "Harvey Performance - Speeds and Feeds 101",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "The SFM calculation utilizes the industry standard of 3.82. The cutter diameter is multiplied by the speed or RPM, then divided by 3.82 to generate the SFM",
+        "archive_url": null,
+        "notes": "Confirms 3.82 as industry standard constant"
+      }
+    ],
+    "validation_examples": [
+      {
+        "input": {
+          "SFM": 500,
+          "D": 0.5
+        },
+        "expected_output": 3820,
+        "unit": "RPM",
+        "description": "1/2 inch tool at 500 SFM"
+      },
+      {
+        "input": {
+          "SFM": 100,
+          "D": 0.375
+        },
+        "expected_output": 1018.67,
+        "unit": "RPM",
+        "description": "3/8 inch HSS end mill in mild steel (from Open Oregon example)"
+      },
+      {
+        "input": {
+          "SFM": 90,
+          "D": 0.375
+        },
+        "expected_output": 960,
+        "unit": "RPM",
+        "description": "Exact example from Open Oregon: 90 \u00d7 4 \u00f7 0.375 = 960"
+      }
+    ],
+    "notes": "Most fundamental machining formula. Constant 3.82 = 12/\u03c0. Some machinists use 4 for easier mental math. Derivation: circumference = \u03c0D, convert inches to feet (\u00f712), so RPM = SFM/(\u03c0D/12) = (SFM \u00d7 12)/(\u03c0D) = (SFM \u00d7 3.82)/D"
+  },
+  "rpm_metric": {
+    "name": "RPM Calculation (Metric)",
+    "formula": "RPM = (v \u00d7 1000) / (\u03c0 \u00d7 D) = (v \u00d7 318.3) / D",
+    "variables": {
+      "RPM": "Revolutions Per Minute (spindle speed)",
+      "v": "Cutting speed in meters per minute (m/min)",
+      "D": "Tool or workpiece diameter in millimeters",
+      "\u03c0": "Pi (3.14159...)",
+      "318.3": "Simplified constant (1000/\u03c0 = 318.31)"
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Speeds_and_feeds",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "Wikipedia - Speeds and Feeds",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "Cutting Speed (V) = [\u03c0DN]/1000 m/min where D=Diameter in millimeters, N=Spindle Speed in rpm. Can be rearranged to N = (V \u00d7 1000)/(\u03c0 \u00d7 D)",
+        "archive_url": null,
+        "notes": "Wikipedia article with multiple citations. Formula can be rearranged for RPM calculation"
+      },
+      {
+        "url": "https://www.keyence.com/ss/products/measure-sys/machining/formula/cutting.jsp",
+        "source_type": "manufacturer",
+        "retrieved_date": "2025-11-11",
+        "title": "Keyence - Cutting Formulas",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "Metric formula for spindle speed: n = 1000 \u00d7 v / (\u03c0 \u00d7 D)",
+        "archive_url": null,
+        "notes": "Confirms standard metric formula"
+      }
+    ],
+    "validation_examples": [
+      {
+        "input": {
+          "v": 100,
+          "D": 10
+        },
+        "expected_output": 3183.1,
+        "unit": "RPM",
+        "description": "10mm tool at 100 m/min cutting speed"
+      },
+      {
+        "input": {
+          "v": 200,
+          "D": 25.4
+        },
+        "expected_output": 2507.4,
+        "unit": "RPM",
+        "description": "1 inch (25.4mm) tool at 200 m/min"
+      }
+    ],
+    "notes": "Metric equivalent of imperial formula. Constant 318.3 = 1000/\u03c0. More precise value is 318.31. The 1000 factor converts meters to millimeters."
+  },
+  "sfm_from_rpm": {
+    "name": "Surface Feet per Minute (SFM) from RPM",
+    "formula": "SFM = (D \u00d7 RPM) / 3.82",
+    "variables": {
+      "SFM": "Surface Feet per Minute (cutting speed)",
+      "D": "Tool or workpiece diameter in inches",
+      "RPM": "Revolutions Per Minute (spindle speed)",
+      "3.82": "Conversion constant (12/\u03c0)"
+    },
+    "sources": [
+      {
+        "url": "https://www.harveyperformance.com/in-the-loupe/speeds-and-feeds-101/",
+        "source_type": "manufacturer",
+        "retrieved_date": "2025-11-11",
+        "title": "Harvey Performance - Speeds and Feeds 101",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "The cutter diameter is multiplied by the speed or RPM, then divided by 3.82 to generate the SFM",
+        "archive_url": null,
+        "notes": "Industry standard formula"
+      },
+      {
+        "url": "https://zero-divide.net/?article_id=4209_general-speeds-and-feeds-formulas",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "HSM Machining - General Speeds and Feeds Formulas",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "SFM = (Tool Diameter \u00d7 RPM) / 3.82",
+        "archive_url": null,
+        "notes": "Confirms inverse of RPM formula"
+      }
+    ],
+    "validation_examples": [
+      {
+        "input": {
+          "D": 0.5,
+          "RPM": 3820
+        },
+        "expected_output": 500,
+        "unit": "SFM",
+        "description": "Inverse of first RPM example"
+      }
+    ],
+    "notes": "Inverse of RPM calculation formula. Used to determine actual cutting speed at a given spindle speed."
+  },
+  "cutting_speed_metric": {
+    "name": "Cutting Speed (Metric) from RPM",
+    "formula": "v = (\u03c0 \u00d7 D \u00d7 N) / 1000",
+    "variables": {
+      "v": "Cutting speed in meters per minute (m/min)",
+      "\u03c0": "Pi (3.14159...)",
+      "D": "Tool or workpiece diameter in millimeters",
+      "N": "Spindle speed in RPM",
+      "1000": "Conversion factor from mm to meters"
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Speeds_and_feeds",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "Wikipedia - Speeds and Feeds",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "Cutting Speed (V) = [\u03c0DN]/1000 m/min where D=Diameter in millimeters, N=Spindle Speed in rpm",
+        "archive_url": null,
+        "notes": "Standard metric cutting speed formula"
+      },
+      {
+        "url": "https://www.machiningdoctor.com/machinistglossary/cutting-speed/",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "Machining Doctor - Cutting Speed Guide",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "V = \u03c0DN/1000 where V is cutting speed in m/min, D is diameter in mm, N is rpm",
+        "archive_url": null,
+        "notes": "Confirms standard formula"
+      }
+    ],
+    "validation_examples": [
+      {
+        "input": {
+          "D": 10,
+          "N": 3183
+        },
+        "expected_output": 100.0,
+        "unit": "m/min",
+        "description": "10mm tool at 3183 RPM"
+      }
+    ],
+    "notes": "Fundamental relationship: cutting speed = circumference \u00d7 rotational speed. Circumference = \u03c0D (in mm), multiply by RPM to get mm/min, divide by 1000 to get m/min."
+  },
+  "feed_rate_ipm": {
+    "name": "Feed Rate (Imperial) - IPM",
+    "formula": "IPM = RPM \u00d7 N \u00d7 fz",
+    "variables": {
+      "IPM": "Feed rate in inches per minute",
+      "RPM": "Revolutions per minute (spindle speed)",
+      "N": "Number of flutes (cutting edges) on the tool",
+      "fz": "Chip load (feed per tooth) in inches per tooth"
+    },
+    "sources": [
+      {
+        "url": "https://openoregon.pressbooks.pub/manufacturingprocesses45/chapter/unit-two-cutting-speed/",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "Manufacturing Processes 4-5 - Unit 2: Speeds, Feeds, and Tapping",
+        "author": "LamNgeun Virasak",
+        "publication_date": null,
+        "excerpt": "IPM = F \u00d7 N \u00d7 RPM where F = Feed per tooth (inches), N = Number of teeth on cutter, RPM = Revolutions per minute",
+        "archive_url": null,
+        "notes": "CC BY 4.0 Licensed. Example given: 0.002 \u00d7 2 \u00d7 960 = 3.84 IPM"
+      },
+      {
+        "url": "https://www.harveyperformance.com/in-the-loupe/speeds-and-feeds-101/",
+        "source_type": "manufacturer",
+        "retrieved_date": "2025-11-11",
+        "title": "Harvey Performance - Speeds and Feeds 101",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "Feed Rate = RPM \u00d7 Number of Flutes \u00d7 Chip Load",
+        "archive_url": null,
+        "notes": "Industry standard formula from major tool manufacturer"
+      },
+      {
+        "url": "https://www.cnccookbook.com/cnc-chip-load-calculator/",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "CNC Cookbook - Chip Load Calculator",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "Feed Rate = RPM \u00d7 number of flutes \u00d7 chip load",
+        "archive_url": null,
+        "notes": "Widely-used CNC reference"
+      }
+    ],
+    "validation_examples": [
+      {
+        "input": {
+          "RPM": 960,
+          "N": 2,
+          "fz": 0.002
+        },
+        "expected_output": 3.84,
+        "unit": "IPM",
+        "description": "Open Oregon example: 2-flute end mill at 960 RPM with 0.002 inch/tooth"
+      },
+      {
+        "input": {
+          "RPM": 1000,
+          "N": 4,
+          "fz": 0.003
+        },
+        "expected_output": 12.0,
+        "unit": "IPM",
+        "description": "4-flute end mill at 1000 RPM with 0.003 inch/tooth"
+      }
+    ],
+    "notes": "Feed rate is the linear speed at which the tool moves through the material. Must be balanced with spindle speed and chip load for optimal cutting."
+  },
+  "chip_load": {
+    "name": "Chip Load (Feed per Tooth)",
+    "formula": "fz = IPM / (RPM \u00d7 N)",
+    "variables": {
+      "fz": "Chip load - feed per tooth (inches per tooth or mm per tooth)",
+      "IPM": "Feed rate (inches per minute or mm per minute)",
+      "RPM": "Revolutions per minute (spindle speed)",
+      "N": "Number of flutes (cutting edges)"
+    },
+    "sources": [
+      {
+        "url": "https://gdptooling.com/chipload-calc/",
+        "source_type": "manufacturer",
+        "retrieved_date": "2025-11-11",
+        "title": "GDP Tooling - Chipload Calculator",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "Chip Load = Feed Rate (inches per minute) / (RPM \u00d7 number of flutes)",
+        "archive_url": null,
+        "notes": "Industry standard calculator"
+      },
+      {
+        "url": "https://mellowpine.com/chip-load-guide/",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "MellowPine - Chip Load Guide for Beginners",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "Chip Load (CL) = Feed Rate (FR) / (Spindle Speed (SS) \u00d7 Number of Cutting Edges)",
+        "archive_url": null,
+        "notes": "Educational resource with detailed explanations"
+      },
+      {
+        "url": "https://scarlettinc.com/what-is-your-current-chip-load-how-do-you-calculate-it/",
+        "source_type": "manufacturer",
+        "retrieved_date": "2025-11-11",
+        "title": "Scarlett Inc - Chip Load Calculation",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "Chip load refers to the thickness of the material removed by each cutting edge during a single rotation. Formula: chip load = feed rate / (rpm \u00d7 number of flutes)",
+        "archive_url": null,
+        "notes": "Confirms formula and explains physical meaning"
+      }
+    ],
+    "validation_examples": [
+      {
+        "input": {
+          "IPM": 3.84,
+          "RPM": 960,
+          "N": 2
+        },
+        "expected_output": 0.002,
+        "unit": "inches per tooth",
+        "description": "Reverse calculation of Open Oregon example"
+      },
+      {
+        "input": {
+          "IPM": 12.0,
+          "RPM": 1000,
+          "N": 4
+        },
+        "expected_output": 0.003,
+        "unit": "inches per tooth",
+        "description": "4-flute example"
+      }
+    ],
+    "notes": "Chip load is independent of RPM and feed rate individually - it represents the actual thickness of material each tooth removes. Critical for tool life and surface finish. Too low = rubbing/heat, too high = tool breakage."
+  },
+  "mrr_milling_metric": {
+    "name": "Material Removal Rate - Milling (Metric)",
+    "formula": "MRR = (D \u00d7 W \u00d7 F) / 1000",
+    "variables": {
+      "MRR": "Material Removal Rate in cubic centimeters per minute (cc/min or cm\u00b3/min)",
+      "D": "Depth of cut (axial) in millimeters",
+      "W": "Width of cut (radial) in millimeters",
+      "F": "Feed rate in millimeters per minute (mm/min)",
+      "1000": "Conversion factor from mm\u00b3 to cm\u00b3"
+    },
+    "sources": [
+      {
+        "url": "https://cadem.com/material-removal-rate-formula/",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "Cadem - Material Removal Rate Formula",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "MRR = (D \u00d7 W \u00d7 F / 1000) cc/min where D is depth of cut (mm), W is width of cut (mm), and F is feed rate (mm/min)",
+        "archive_url": null,
+        "notes": "Technical CAD/CAM resource"
+      },
+      {
+        "url": "https://www.cnccookbook.com/material-removal-rate-optimizing-mrr-for-bigger-profits/",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "CNC Cookbook - Material Removal Rate: Optimizing MRR for Bigger Profits",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "MRR = Cut Width \u00d7 Cut Depth \u00d7 Feed Rate",
+        "archive_url": null,
+        "notes": "Widely-used CNC reference confirming formula structure"
+      },
+      {
+        "url": "https://zcsmould.com/what-is-metal-removal-rate/",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "ZCS Mould - What Is Metal Removal Rate (MRR) in Machining?",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "MRR = depth of cut \u00d7 width of cut \u00d7 feed rate. Major variables are depth of cut, cut width, and feed rate",
+        "archive_url": null,
+        "notes": "Confirms formula components"
+      }
+    ],
+    "validation_examples": [
+      {
+        "input": {
+          "D": 5,
+          "W": 10,
+          "F": 500
+        },
+        "expected_output": 25.0,
+        "unit": "cm\u00b3/min",
+        "description": "5mm depth \u00d7 10mm width \u00d7 500mm/min feed"
+      },
+      {
+        "input": {
+          "D": 2,
+          "W": 20,
+          "F": 1000
+        },
+        "expected_output": 40.0,
+        "unit": "cm\u00b3/min",
+        "description": "Shallow but wide cut with high feed rate"
+      }
+    ],
+    "notes": "MRR is the volume of material removed per unit time. Higher MRR = higher productivity but requires more machine power and rigidity. Limited by machine power, tool strength, and workholding."
+  },
+  "mrr_milling_imperial": {
+    "name": "Material Removal Rate - Milling (Imperial)",
+    "formula": "MRR = D \u00d7 W \u00d7 F",
+    "variables": {
+      "MRR": "Material Removal Rate in cubic inches per minute (in\u00b3/min)",
+      "D": "Depth of cut (axial) in inches",
+      "W": "Width of cut (radial) in inches",
+      "F": "Feed rate in inches per minute (IPM)"
+    },
+    "sources": [
+      {
+        "url": "https://www.cnccookbook.com/material-removal-rate-optimizing-mrr-for-bigger-profits/",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "CNC Cookbook - Material Removal Rate",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "MRR = Cut Width \u00d7 Cut Depth \u00d7 Feed Rate",
+        "archive_url": null,
+        "notes": "Formula applies to both imperial and metric with appropriate units"
+      },
+      {
+        "url": "https://www.montana.edu/jdavis/met314/documents/homework/Milling%20Examples.pdf",
+        "source_type": "academic",
+        "retrieved_date": "2025-11-11",
+        "title": "Montana State University - Milling Equations",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "Material removal rate calculations for milling operations",
+        "archive_url": null,
+        "notes": "Academic source from university engineering department"
+      }
+    ],
+    "validation_examples": [
+      {
+        "input": {
+          "D": 0.25,
+          "W": 0.5,
+          "F": 10
+        },
+        "expected_output": 1.25,
+        "unit": "in\u00b3/min",
+        "description": "0.25 inch depth \u00d7 0.5 inch width \u00d7 10 IPM"
+      },
+      {
+        "input": {
+          "D": 0.1,
+          "W": 1.0,
+          "F": 20
+        },
+        "expected_output": 2.0,
+        "unit": "in\u00b3/min",
+        "description": "Shallow wide cut: 0.1 inch depth \u00d7 1 inch width \u00d7 20 IPM"
+      }
+    ],
+    "notes": "Imperial version of MRR formula. No unit conversion needed when all inputs are in inches. Useful for estimating machining time and power requirements."
+  },
+  "mrr_turning_metric": {
+    "name": "Material Removal Rate - Turning (Metric)",
+    "formula": "MRR = D \u00d7 F \u00d7 S",
+    "variables": {
+      "MRR": "Material Removal Rate in cubic centimeters per minute (cc/min)",
+      "D": "Depth of cut in millimeters",
+      "F": "Feed rate in millimeters per revolution (mm/rev)",
+      "S": "Cutting speed in meters per minute (m/min)"
+    },
+    "sources": [
+      {
+        "url": "https://cadem.com/material-removal-rate-formula/",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "Cadem - Material Removal Rate Formula",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "MRR = D \u00d7 F \u00d7 S cc/min where D is the depth of cut in mm, F is the feed rate in mm/rev and S is the cutting speed in m/min",
+        "archive_url": null,
+        "notes": "Specific formula for turning operations"
+      },
+      {
+        "url": "https://www.ilearnengineering.com/manufacturing-industrial/how-material-removal-rate-affects-surface-quality-and-production-speed",
+        "source_type": "public_domain",
+        "retrieved_date": "2025-11-11",
+        "title": "iLearn Engineering - Material Removal Rate Effects",
+        "author": null,
+        "publication_date": null,
+        "excerpt": "For turning operations, MRR depends on depth of cut, feed per revolution, and cutting speed",
+        "archive_url": null,
+        "notes": "Educational engineering resource"
+      }
+    ],
+    "validation_examples": [
+      {
+        "input": {
+          "D": 3,
+          "F": 0.2,
+          "S": 100
+        },
+        "expected_output": 60.0,
+        "unit": "cm\u00b3/min",
+        "description": "3mm depth \u00d7 0.2mm/rev feed \u00d7 100m/min speed"
+      }
+    ],
+    "notes": "Turning MRR formula differs from milling because cutting is continuous rather than interrupted. Feed is per revolution rather than per minute."
+  }
+}

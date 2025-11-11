@@ -1,0 +1,900 @@
+{
+  "metadata": {
+    "created": "2025-11-11T03:30:55.640927",
+    "verification_status": {
+      "total_data_points": 38,
+      "verified": 0,
+      "confirmed": 0,
+      "percent_verified_or_confirmed": 0.0,
+      "total_formulas": 0,
+      "total_manufacturer_data": 0,
+      "total_app_statistics": 0,
+      "last_updated": "2025-11-11T03:30:55.640927"
+    }
+  },
+  "data_points": {
+    "cnc_operators_employment_may2024": {
+      "claim": "Total Computer Numerically Controlled Tool Operators employed in United States (May 2024)",
+      "value": 177100,
+      "unit": "workers",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey, SOC code 51-9161. This represents the national employment estimate.",
+      "last_verified": "2025-11-11T03:30:55.640741",
+      "conflicts": []
+    },
+    "cnc_operators_median_wage_annual_may2024": {
+      "claim": "Median annual wage for CNC Tool Operators in United States (May 2024)",
+      "value": 49970,
+      "unit": "USD per year",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey. Median represents 50th percentile.",
+      "last_verified": "2025-11-11T03:30:55.640745",
+      "conflicts": []
+    },
+    "cnc_operators_median_wage_hourly_may2024": {
+      "claim": "Median hourly wage for CNC Tool Operators in United States (May 2024)",
+      "value": 24.02,
+      "unit": "USD per hour",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey. Median represents 50th percentile.",
+      "last_verified": "2025-11-11T03:30:55.640747",
+      "conflicts": []
+    },
+    "cnc_operators_job_openings_projected_2024_2034": {
+      "claim": "Projected annual job openings for CNC Tool Operators (2024-2034 average)",
+      "value": 13500,
+      "unit": "job openings per year",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "BLS Employment Projections 2024-2034. Openings include both new jobs and replacement needs.",
+      "last_verified": "2025-11-11T03:30:55.640749",
+      "conflicts": []
+    },
+    "cnc_operators_growth_rate_2024_2034": {
+      "claim": "Projected employment growth rate for CNC Tool Operators (2024-2034)",
+      "value": -1,
+      "unit": "percent",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "BLS projects decline of 1% or lower over 10-year period. Negative growth due to automation and productivity improvements.",
+      "last_verified": "2025-11-11T03:30:55.640751",
+      "conflicts": []
+    },
+    "cnc_programmers_employment_may2024": {
+      "claim": "Total Computer Numerically Controlled Tool Programmers employed in United States (May 2024)",
+      "value": 28300,
+      "unit": "workers",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey, SOC code 51-9162",
+      "last_verified": "2025-11-11T03:30:55.640762",
+      "conflicts": []
+    },
+    "cnc_programmers_median_wage_annual_may2024": {
+      "claim": "Median annual wage for CNC Tool Programmers in United States (May 2024)",
+      "value": 65670,
+      "unit": "USD per year",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey. Significantly higher than CNC operators ($49,970)",
+      "last_verified": "2025-11-11T03:30:55.640764",
+      "conflicts": []
+    },
+    "cnc_programmers_median_wage_hourly_may2024": {
+      "claim": "Median hourly wage for CNC Tool Programmers in United States (May 2024)",
+      "value": 31.57,
+      "unit": "USD per hour",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024 survey. 31% higher hourly wage than operators ($24.02)",
+      "last_verified": "2025-11-11T03:30:55.640767",
+      "conflicts": []
+    },
+    "cnc_programmers_job_openings_projected_2024_2034": {
+      "claim": "Projected annual job openings for CNC Tool Programmers (2024-2034 average)",
+      "value": 3100,
+      "unit": "job openings per year",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "BLS Employment Projections 2024-2034",
+      "last_verified": "2025-11-11T03:30:55.640770",
+      "conflicts": []
+    },
+    "cnc_programmers_growth_rate_2024_2034": {
+      "claim": "Projected employment growth rate for CNC Tool Programmers (2024-2034)",
+      "value": 7,
+      "unit": "percent",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "BLS classifies as 'much faster than average' (7% or higher). Positive growth contrasts with operator decline.",
+      "last_verified": "2025-11-11T03:30:55.640772",
+      "conflicts": []
+    },
+    "total_cnc_workforce_may2024": {
+      "claim": "Total CNC operators and programmers combined workforce (May 2024)",
+      "value": 205400,
+      "unit": "workers",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        },
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9162.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Programmers (51-9162.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "Median Hourly: $31.57, Median Annual: $65,670. Current Employment: 28,300 workers. Growth Rate: Much faster than average (7% or higher). Projected Job Openings: 3,100 positions.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS OES and Employment Projections data"
+        }
+      ],
+      "validation_notes": "Sum of CNC operators (177,100) + CNC programmers (28,300) = 205,400 total workforce",
+      "last_verified": "2025-11-11T03:30:55.640785",
+      "conflicts": []
+    },
+    "machinists_employment_2024": {
+      "claim": "Total Machinists employed in United States (2024)",
+      "value": 299500,
+      "unit": "workers",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        },
+        {
+          "url": "https://www.bls.gov/oes/current/oes514041.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Employment and Wage Statistics - Machinists (51-4041)",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "May 2024 National Occupational Employment and Wage Estimates for Machinists (SOC 51-4041)",
+          "archive_url": null,
+          "notes": "Direct BLS OES data page for Machinists"
+        }
+      ],
+      "validation_notes": "From BLS OOH using May 2024 OES survey data. SOC code 51-4041.",
+      "last_verified": "2025-11-11T03:30:55.640794",
+      "conflicts": []
+    },
+    "machinists_median_wage_annual_may2024": {
+      "claim": "Median annual wage for Machinists in United States (May 2024)",
+      "value": 56150,
+      "unit": "USD per year",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        },
+        {
+          "url": "https://www.bls.gov/oes/current/oes514041.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Employment and Wage Statistics - Machinists (51-4041)",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "May 2024 National Occupational Employment and Wage Estimates for Machinists (SOC 51-4041)",
+          "archive_url": null,
+          "notes": "Direct BLS OES data page for Machinists"
+        }
+      ],
+      "validation_notes": "From BLS OES May 2024. Higher than CNC operators ($49,970) but lower than programmers ($65,670).",
+      "last_verified": "2025-11-11T03:30:55.640797",
+      "conflicts": []
+    },
+    "machinists_wage_10th_percentile_may2024": {
+      "claim": "10th percentile annual wage for Machinists (May 2024)",
+      "value": 38100,
+      "unit": "USD per year",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        }
+      ],
+      "validation_notes": "Lowest 10 percent earned less than this amount",
+      "last_verified": "2025-11-11T03:30:55.640800",
+      "conflicts": []
+    },
+    "machinists_wage_90th_percentile_may2024": {
+      "claim": "90th percentile annual wage for Machinists (May 2024)",
+      "value": 78760,
+      "unit": "USD per year",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        }
+      ],
+      "validation_notes": "Highest 10 percent earned more than this amount",
+      "last_verified": "2025-11-11T03:30:55.640803",
+      "conflicts": []
+    },
+    "machinists_job_openings_projected_2024_2034": {
+      "claim": "Projected annual job openings for Machinists and Tool/Die Makers (2024-2034 average)",
+      "value": 34200,
+      "unit": "job openings per year",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        }
+      ],
+      "validation_notes": "BLS Employment Projections. Includes both machinists and tool/die makers combined.",
+      "last_verified": "2025-11-11T03:30:55.640805",
+      "conflicts": []
+    },
+    "machinists_growth_rate_2024_2034": {
+      "claim": "Projected employment growth rate for Machinists and Tool/Die Makers (2024-2034)",
+      "value": -2,
+      "unit": "percent",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Machinists and Tool and Die Makers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Machinists held about 299,500 jobs in 2024. The median annual wage for machinists was $56,150 in May 2024. The lowest 10 percent earned less than $38,100, and the highest 10 percent earned more than $78,760.",
+          "archive_url": null,
+          "notes": "Official BLS Occupational Outlook Handbook using May 2024 OES data"
+        }
+      ],
+      "validation_notes": "Slight decline projected over 10-year period",
+      "last_verified": "2025-11-11T03:30:55.640808",
+      "conflicts": []
+    },
+    "metal_plastic_workers_employment_2024": {
+      "claim": "Total metal and plastic machine workers employed in United States (2024)",
+      "value": 1000000,
+      "unit": "workers",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Metal and Plastic Machine Workers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Metal and plastic machine workers held about 1.0 million jobs in 2024. The median annual wage was $46,800 in May 2024. Overall employment is projected to decline 7 percent from 2024 to 2034. About 87,900 openings projected each year.",
+          "archive_url": null,
+          "notes": "Broader occupational category that includes CNC operators"
+        }
+      ],
+      "validation_notes": "Broad category including CNC operators, machine setters, and other machine workers",
+      "last_verified": "2025-11-11T03:30:55.640822",
+      "conflicts": []
+    },
+    "metal_plastic_workers_median_wage_may2024": {
+      "claim": "Median annual wage for metal and plastic machine workers (May 2024)",
+      "value": 46800,
+      "unit": "USD per year",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Metal and Plastic Machine Workers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Metal and plastic machine workers held about 1.0 million jobs in 2024. The median annual wage was $46,800 in May 2024. Overall employment is projected to decline 7 percent from 2024 to 2034. About 87,900 openings projected each year.",
+          "archive_url": null,
+          "notes": "Broader occupational category that includes CNC operators"
+        }
+      ],
+      "validation_notes": "Lower than CNC operators specifically ($49,970)",
+      "last_verified": "2025-11-11T03:30:55.640831",
+      "conflicts": []
+    },
+    "metal_plastic_workers_job_openings_projected": {
+      "claim": "Projected annual job openings for metal and plastic machine workers (2024-2034 average)",
+      "value": 87900,
+      "unit": "job openings per year",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Metal and Plastic Machine Workers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Metal and plastic machine workers held about 1.0 million jobs in 2024. The median annual wage was $46,800 in May 2024. Overall employment is projected to decline 7 percent from 2024 to 2034. About 87,900 openings projected each year.",
+          "archive_url": null,
+          "notes": "Broader occupational category that includes CNC operators"
+        }
+      ],
+      "validation_notes": "All openings from replacement needs, not growth",
+      "last_verified": "2025-11-11T03:30:55.640834",
+      "conflicts": []
+    },
+    "metal_plastic_workers_growth_rate_2024_2034": {
+      "claim": "Projected employment growth rate for metal and plastic machine workers (2024-2034)",
+      "value": -7,
+      "unit": "percent",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "BLS Occupational Outlook Handbook - Metal and Plastic Machine Workers",
+          "author": "U.S. Bureau of Labor Statistics",
+          "publication_date": "2024",
+          "excerpt": "Metal and plastic machine workers held about 1.0 million jobs in 2024. The median annual wage was $46,800 in May 2024. Overall employment is projected to decline 7 percent from 2024 to 2034. About 87,900 openings projected each year.",
+          "archive_url": null,
+          "notes": "Broader occupational category that includes CNC operators"
+        }
+      ],
+      "validation_notes": "Steeper decline than CNC operators (-1%) due to automation",
+      "last_verified": "2025-11-11T03:30:55.640837",
+      "conflicts": []
+    },
+    "machine_shops_establishments_2020": {
+      "claim": "Number of machine shop establishments in United States (2020 Economic Census)",
+      "value": 17530,
+      "unit": "establishments",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "NAICS 332710. Establishments = physical locations, which can exceed number of firms.",
+      "last_verified": "2025-11-11T03:30:55.640852",
+      "conflicts": []
+    },
+    "machine_shops_businesses_2020": {
+      "claim": "Number of machine shop businesses/firms in United States (2020 Economic Census)",
+      "value": 17275,
+      "unit": "businesses",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "NAICS 332710. Businesses/firms = legal entities, may operate multiple establishments.",
+      "last_verified": "2025-11-11T03:30:55.640855",
+      "conflicts": []
+    },
+    "machine_shops_employment_2020": {
+      "claim": "Total employment in machine shops (2020 Economic Census)",
+      "value": 209280,
+      "unit": "workers",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "NAICS 332710. Represents total workers in machine shop industry.",
+      "last_verified": "2025-11-11T03:30:55.640858",
+      "conflicts": []
+    },
+    "machine_shops_payroll_2020": {
+      "claim": "Annual payroll for machine shop industry (2020)",
+      "value": 12316948000,
+      "unit": "USD",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "Total industry payroll: $12.3 billion",
+      "last_verified": "2025-11-11T03:30:55.640860",
+      "conflicts": []
+    },
+    "machine_shops_avg_wage_2020": {
+      "claim": "Average annual wage per worker in machine shops (2020, calculated)",
+      "value": 58852,
+      "unit": "USD per year",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "Calculated: $12,316,948,000 payroll / 209,280 workers = $58,852 average wage",
+      "last_verified": "2025-11-11T03:30:55.640863",
+      "conflicts": []
+    },
+    "machine_shops_companies_current": {
+      "claim": "Number of active machine shop companies in United States (current estimate)",
+      "value": 12981,
+      "unit": "companies",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://siccode.com/naics-code/332710/machine-shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "NAICS 332710 Machine Shops - Census Data via SIC Code",
+          "author": "SIC Code / Census.gov",
+          "publication_date": "2024",
+          "excerpt": "12,981 verified active companies in the USA. Total Employment: 226,270 paid employees. Total Revenue: $36,756,196,000 (2017). Annual Payroll: $11,955,653,000 (2017).",
+          "archive_url": null,
+          "notes": "Third-party republication of official Census Bureau data. More current company count but older revenue data."
+        }
+      ],
+      "validation_notes": "More recent company count. Lower than 2020 count (17,275) may reflect consolidation or business closures.",
+      "last_verified": "2025-11-11T03:30:55.640865",
+      "conflicts": []
+    },
+    "machine_shops_employment_current": {
+      "claim": "Total employment in machine shops (current estimate)",
+      "value": 226270,
+      "unit": "workers",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://siccode.com/naics-code/332710/machine-shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "NAICS 332710 Machine Shops - Census Data via SIC Code",
+          "author": "SIC Code / Census.gov",
+          "publication_date": "2024",
+          "excerpt": "12,981 verified active companies in the USA. Total Employment: 226,270 paid employees. Total Revenue: $36,756,196,000 (2017). Annual Payroll: $11,955,653,000 (2017).",
+          "archive_url": null,
+          "notes": "Third-party republication of official Census Bureau data. More current company count but older revenue data."
+        }
+      ],
+      "validation_notes": "Higher than 2020 count (209,280), reflecting 8% employment growth in sector",
+      "last_verified": "2025-11-11T03:30:55.640868",
+      "conflicts": []
+    },
+    "machine_shops_employment_index_2024": {
+      "claim": "Machine shop employment index value (2024, base year 2017=100)",
+      "value": 95.435,
+      "unit": "index value",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://fred.stlouisfed.org/series/IPUEN332710W010000000",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "FRED - Employment for Manufacturing: Machine Shops (NAICS 332710)",
+          "author": "Federal Reserve Bank of St. Louis / Bureau of Labor Statistics",
+          "publication_date": "2025",
+          "excerpt": "Employment Index 2024: 95.435 (Index 2017=100). Historical: 2023: 98.502, 2022: 97.539, 2021: 93.402, 2020: 95.756",
+          "archive_url": null,
+          "notes": "BLS Industry Productivity data via FRED. Employment declining from 2023 to 2024."
+        }
+      ],
+      "validation_notes": "Decline from 2023 (98.502) indicates approximately 3% employment reduction year-over-year",
+      "last_verified": "2025-11-11T03:30:55.640888",
+      "conflicts": []
+    },
+    "machine_tool_orders_2023": {
+      "claim": "Total U.S. manufacturing technology orders (2023)",
+      "value": 4940000000,
+      "unit": "USD",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.amtonline.org/article/2023-manufacturing-technology-orders-beat-expectations-as-december-adds",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "AMT - 2023 Manufacturing Technology Orders Beat Expectations",
+          "author": "Association for Manufacturing Technology (AMT)",
+          "publication_date": "2024",
+          "excerpt": "Orders in 2023 totaled $4.94 billion, 11.2% behind the $5.56 billion recorded in 2022. December 2023 orders totaled $491 million, up nearly 22% from November 2023.",
+          "archive_url": null,
+          "notes": "Official industry statistics from AMT's U.S. Manufacturing Technology Orders (USMTO) report"
+        }
+      ],
+      "validation_notes": "$4.94 billion total for calendar year 2023, down 11.2% from 2022",
+      "last_verified": "2025-11-11T03:30:55.640895",
+      "conflicts": []
+    },
+    "machine_tool_orders_2022": {
+      "claim": "Total U.S. manufacturing technology orders (2022)",
+      "value": 5560000000,
+      "unit": "USD",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.amtonline.org/article/2023-manufacturing-technology-orders-beat-expectations-as-december-adds",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "AMT - 2023 Manufacturing Technology Orders Beat Expectations",
+          "author": "Association for Manufacturing Technology (AMT)",
+          "publication_date": "2024",
+          "excerpt": "Orders in 2023 totaled $4.94 billion, 11.2% behind the $5.56 billion recorded in 2022. December 2023 orders totaled $491 million, up nearly 22% from November 2023.",
+          "archive_url": null,
+          "notes": "Official industry statistics from AMT's U.S. Manufacturing Technology Orders (USMTO) report"
+        }
+      ],
+      "validation_notes": "$5.56 billion total for calendar year 2022, used as comparison baseline",
+      "last_verified": "2025-11-11T03:30:55.640902",
+      "conflicts": []
+    },
+    "machine_tool_orders_2024_ytd": {
+      "claim": "Total U.S. manufacturing technology orders (2024, Jan-Sep YTD)",
+      "value": 3350000000,
+      "unit": "USD",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://www.americanmachinist.com/news/article/55242083/more-improvement-in-us-machine-tool-orders-usmto-september-2024",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "AMT - US Machine Tool Orders Through September 2024",
+          "author": "Association for Manufacturing Technology (AMT) / American Machinist",
+          "publication_date": "2024",
+          "excerpt": "Through September 2024, year-to-date new order volume reached $3.35 billion, 7.7% lower than the nine-month total for 2023.",
+          "archive_url": null,
+          "notes": "USMTO monthly report tracking machine tool and manufacturing technology orders"
+        }
+      ],
+      "validation_notes": "$3.35 billion through September 2024, 7.7% below same period 2023",
+      "last_verified": "2025-11-11T03:30:55.640903",
+      "conflicts": []
+    },
+    "ntma_member_count": {
+      "claim": "Number of NTMA member companies",
+      "value": 1200,
+      "unit": "companies",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://ntma.org/",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "NTMA - National Tooling & Machining Association",
+          "author": "National Tooling and Machining Association",
+          "publication_date": "2024",
+          "excerpt": "1200 thriving tool & die and precision manufacturing companies. Over 1,300 member companies representing over $30 billion in revenues. $35 BILLION+ parts and components sold by NTMA members. More than 75% of precision machining tools purchased in the US are purchased by NTMA member machine shops.",
+          "archive_url": null,
+          "notes": "Official trade association representing precision machining industry. Founded 1943."
+        }
+      ],
+      "validation_notes": "Represents approximately 9-10% of all machine shops (12,981 total active companies)",
+      "last_verified": "2025-11-11T03:30:55.640909",
+      "conflicts": []
+    },
+    "ntma_member_revenues": {
+      "claim": "Combined revenues of NTMA member companies",
+      "value": 30000000000,
+      "unit": "USD",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://ntma.org/",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "NTMA - National Tooling & Machining Association",
+          "author": "National Tooling and Machining Association",
+          "publication_date": "2024",
+          "excerpt": "1200 thriving tool & die and precision manufacturing companies. Over 1,300 member companies representing over $30 billion in revenues. $35 BILLION+ parts and components sold by NTMA members. More than 75% of precision machining tools purchased in the US are purchased by NTMA member machine shops.",
+          "archive_url": null,
+          "notes": "Official trade association representing precision machining industry. Founded 1943."
+        }
+      ],
+      "validation_notes": "$30+ billion combined annual revenues from member companies",
+      "last_verified": "2025-11-11T03:30:55.640911",
+      "conflicts": []
+    },
+    "ntma_sales_volume": {
+      "claim": "Parts and components sold by NTMA members annually",
+      "value": 35000000000,
+      "unit": "USD",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://ntma.org/",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "NTMA - National Tooling & Machining Association",
+          "author": "National Tooling and Machining Association",
+          "publication_date": "2024",
+          "excerpt": "1200 thriving tool & die and precision manufacturing companies. Over 1,300 member companies representing over $30 billion in revenues. $35 BILLION+ parts and components sold by NTMA members. More than 75% of precision machining tools purchased in the US are purchased by NTMA member machine shops.",
+          "archive_url": null,
+          "notes": "Official trade association representing precision machining industry. Founded 1943."
+        }
+      ],
+      "validation_notes": "$35+ billion in parts/components sold to major manufacturers and government",
+      "last_verified": "2025-11-11T03:30:55.640913",
+      "conflicts": []
+    },
+    "ntma_market_share_tools": {
+      "claim": "Percentage of US precision machining tools purchased by NTMA members",
+      "value": 75,
+      "unit": "percent",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://ntma.org/",
+          "source_type": "industry_report",
+          "retrieved_date": "2025-11-11",
+          "title": "NTMA - National Tooling & Machining Association",
+          "author": "National Tooling and Machining Association",
+          "publication_date": "2024",
+          "excerpt": "1200 thriving tool & die and precision manufacturing companies. Over 1,300 member companies representing over $30 billion in revenues. $35 BILLION+ parts and components sold by NTMA members. More than 75% of precision machining tools purchased in the US are purchased by NTMA member machine shops.",
+          "archive_url": null,
+          "notes": "Official trade association representing precision machining industry. Founded 1943."
+        }
+      ],
+      "validation_notes": "NTMA members purchase >75% of precision machining tools in US market",
+      "last_verified": "2025-11-11T03:30:55.640914",
+      "conflicts": []
+    },
+    "avg_workers_per_machine_shop_2020": {
+      "claim": "Average workers per machine shop (2020)",
+      "value": 11.94,
+      "unit": "workers per establishment",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        }
+      ],
+      "validation_notes": "Calculated: 209,280 workers / 17,530 establishments = 11.94 avg workers per shop. Indicates small business nature of industry.",
+      "last_verified": "2025-11-11T03:30:55.640921",
+      "conflicts": []
+    },
+    "cnc_operators_pct_machine_shop_workforce": {
+      "claim": "CNC operators as approximate percentage of machine shop workforce",
+      "value": 84.6,
+      "unit": "percent",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "url": "https://data.census.gov/profile/332710_-_Machine_Shops",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "U.S. Census Bureau - NAICS 332710 Machine Shops Profile (2020 Economic Census)",
+          "author": "U.S. Census Bureau",
+          "publication_date": "2020",
+          "excerpt": "In 2020 there were 17,275 businesses operating within this national industry. These businesses had a total of 17,530 locations or establishments around the country, with 209,280 people working in this industry. Annual payroll: $12,316,948,000.",
+          "archive_url": null,
+          "notes": "Most recent detailed Economic Census data publicly available"
+        },
+        {
+          "url": "https://www.onetonline.org/link/summary/51-9161.00",
+          "source_type": "government",
+          "retrieved_date": "2025-11-11",
+          "title": "O*NET OnLine - Computer Numerically Controlled Tool Operators (51-9161.00)",
+          "author": "U.S. Department of Labor, Employment & Training Administration",
+          "publication_date": "2024",
+          "excerpt": "National Employment (2024): 177,100 employees. Median Wages (2024): Hourly: $24.02, Annual: $49,970. Employment Outlook (2024-2034): Projected Change: Decline of 1% or lower. Projected Job Openings: 13,500.",
+          "archive_url": null,
+          "notes": "O*NET republishes official BLS Occupational Employment and Wage Statistics (OES) data from May 2024 survey"
+        }
+      ],
+      "validation_notes": "Rough calculation: 177,100 CNC operators (2024) / 209,280 machine shop workers (2020) = 84.6%. Different years limit precision, but indicates CNC operators are dominant occupation in machine shops.",
+      "last_verified": "2025-11-11T03:30:55.640924",
+      "conflicts": []
+    }
+  },
+  "formulas": {},
+  "manufacturer_data": [],
+  "app_statistics": []
+}

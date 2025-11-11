@@ -1,0 +1,746 @@
+{
+  "metadata": {
+    "created": "2025-11-11T03:30:01.444623",
+    "verification_status": {
+      "total_data_points": 0,
+      "verified": 0,
+      "confirmed": 0,
+      "percent_verified_or_confirmed": 0,
+      "total_formulas": 0,
+      "total_manufacturer_data": 0,
+      "total_app_statistics": 33,
+      "last_updated": "2025-11-11T03:30:01.444623"
+    }
+  },
+  "data_points": {},
+  "formulas": {},
+  "manufacturer_data": [],
+  "app_statistics": [
+    {
+      "app_name": "FSWizard (Lite/Free)",
+      "metric": "ios_review_count",
+      "value": 47,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-lite/id741521897",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard App - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "47 ratings",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard (Lite/Free)",
+      "metric": "ios_rating",
+      "value": 4.6,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-lite/id741521897",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard App - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.6 out of 5",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard (Lite/Free)",
+      "metric": "price",
+      "value": "Free",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-lite/id741521897",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard App - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Free (USD)",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard (Lite/Free)",
+      "metric": "developer_name",
+      "value": "Eldar Gerfanov",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-lite/id741521897",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard App - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Developer: Eldar Gerfanov",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard (Lite/Free)",
+      "metric": "last_update_date",
+      "value": "2024-01-21",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-lite/id741521897",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard App - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "January 21, 2024 (version 2.3.6)",
+          "archive_url": null,
+          "notes": "Version 2.3.6 - Added multilingual support"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard PRO",
+      "metric": "ios_review_count",
+      "value": 23,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-pro/id774456543",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard PRO - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "23 ratings",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard PRO",
+      "metric": "ios_rating",
+      "value": 4.8,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-pro/id774456543",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard PRO - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.8 out of 5",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard PRO",
+      "metric": "price",
+      "value": 17.99,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-pro/id774456543",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard PRO - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "$17.99 USD",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard PRO",
+      "metric": "last_update_date",
+      "value": "2024-01-21",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/fswizard-pro/id774456543",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard PRO - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "January 21, 2024 (Version 2.3.6)",
+          "archive_url": null,
+          "notes": "Version 2.3.6 - Added multilingual support"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "FSWizard Machinist Calculator (Lite/Free)",
+      "metric": "android_review_count",
+      "value": 826,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard_lite&hl=en_US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Machinist Calculator - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "826 reviews",
+          "archive_url": null,
+          "notes": "From web search results aggregating Google Play data"
+        }
+      ],
+      "methodology": "Reported from Google Play Store search results",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard Machinist Calculator (Lite/Free)",
+      "metric": "android_downloads",
+      "value": "100,000+",
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard_lite&hl=en_US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Machinist Calculator - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "100K+ downloads",
+          "archive_url": null,
+          "notes": "Exact text from Google Play Store"
+        },
+        {
+          "url": "https://fswizard.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "100K+ total downloads claimed",
+          "archive_url": null,
+          "notes": "Company website claims 100K+ downloads"
+        }
+      ],
+      "methodology": "Direct observation from Google Play Store (exact bracket text)",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard Machinist Calculator (Lite/Free)",
+      "metric": "android_rating",
+      "value": 4.6,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://appgrooves.com/app/fswizard-machinist-calculator-by-eldar-gerfanov",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Machinist Calculator - AppGrooves",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.6 rating with 684+ ratings",
+          "archive_url": null,
+          "notes": "Third-party app analytics aggregating Google Play data"
+        }
+      ],
+      "methodology": "Third-party aggregation of Google Play Store data",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "FSWizard Pro Machinist Calc",
+      "metric": "android_review_count",
+      "value": 214,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard&hl=en_US&gl=US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Pro Machinist Calc - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "214 reviews (one source reported 218)",
+          "archive_url": null,
+          "notes": "Web search reported 214 reviews initially"
+        }
+      ],
+      "methodology": "Reported from Google Play Store search results",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard Pro Machinist Calc",
+      "metric": "android_downloads",
+      "value": "5,000+",
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard&hl=en_US&gl=US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Pro Machinist Calc - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "5K+ Downloads",
+          "archive_url": null,
+          "notes": "Exact text from Google Play Store"
+        }
+      ],
+      "methodology": "Direct observation from Google Play Store (exact bracket text)",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard Pro Machinist Calc",
+      "metric": "android_rating",
+      "value": 4.6,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard&hl=en_US&gl=US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Pro Machinist Calc - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.6 star rating",
+          "archive_url": null,
+          "notes": "Reported from search results"
+        }
+      ],
+      "methodology": "Reported from Google Play Store search results",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard Pro Machinist Calc",
+      "metric": "price",
+      "value": 17.99,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.beta.fswizard&hl=en_US&gl=US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Pro Machinist Calc - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "$17.99",
+          "archive_url": null,
+          "notes": "From web search results"
+        },
+        {
+          "url": "https://fswizard.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "FSWizard PRO costs $18.99",
+          "archive_url": null,
+          "notes": "Website lists $18.99 (slight discrepancy with Play Store $17.99)"
+        }
+      ],
+      "methodology": "Direct observation from Google Play Store and company website",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "FSWizard",
+      "metric": "total_downloads_claimed",
+      "value": "100,000+",
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://fswizard.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "100K+ total downloads claimed",
+          "archive_url": null,
+          "notes": "Company claims on official website"
+        }
+      ],
+      "methodology": "Company self-reported claim on official website",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "FSWizard",
+      "metric": "average_rating_claimed",
+      "value": 4.7,
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://fswizard.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "FSWizard Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.7/5 store rating claimed",
+          "archive_url": null,
+          "notes": "Company claims on official website"
+        }
+      ],
+      "methodology": "Company self-reported claim on official website",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "G-Wizard Calculator",
+      "metric": "users_claimed",
+      "value": "100,000+",
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://www.cnccookbook.com/g-wizard-feeds-speeds-calculator-mill/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "G-Wizard CNC Speeds and Feeds Calculator - CNCCookbook",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Over 100,000 machinists from thousands of companies have used our software",
+          "archive_url": null,
+          "notes": "Exact quote from official website"
+        },
+        {
+          "url": "https://www.cnccookbook.com/g-wizard-feeds-speeds-calculator-mill/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "G-Wizard CNC Speeds and Feeds Calculator - CNCCookbook",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "worked with over 100,000 CNC'ers",
+          "archive_url": null,
+          "notes": "Alternative phrasing found on same page"
+        }
+      ],
+      "methodology": "Company self-reported claim on official website - note 'used' vs 'active users'",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "G-Wizard Calculator",
+      "metric": "customer_companies_claimed",
+      "value": "thousands",
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://www.cnccookbook.com/g-wizard-feeds-speeds-calculator-mill/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "G-Wizard CNC Speeds and Feeds Calculator - CNCCookbook",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "from thousands of companies",
+          "archive_url": null,
+          "notes": "Qualitative claim from official website"
+        }
+      ],
+      "methodology": "Company self-reported claim on official website",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "G-Wizard Calculator",
+      "metric": "market_position_claimed",
+      "value": "market leader",
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://www.cnccookbook.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "CNCCookbook Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "The market leader used by 100,000+ CNC'ers at thousands of the leading manufacturers",
+          "archive_url": null,
+          "notes": "Marketing claim from website"
+        }
+      ],
+      "methodology": "Company marketing claim on official website",
+      "confidence": "likely"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "ios_review_count",
+      "value": 161,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "161 ratings",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "ios_rating",
+      "value": 4.0,
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "4.0 out of 5 stars",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "price",
+      "value": "Free",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Free (USD)",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "developer_name",
+      "value": "Harvey Tool",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Developer: Harvey Tool",
+          "archive_url": null,
+          "notes": "Official Apple App Store listing - by Harvey Performance Company"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "last_update_date",
+      "value": "2023-06-06",
+      "platform": "iOS",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "June 6, 2023 (version 2.0.2)",
+          "archive_url": null,
+          "notes": "Last update over 1.5 years ago"
+        }
+      ],
+      "methodology": "Direct observation from iOS App Store",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "optimized_products_claimed",
+      "value": 30000,
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://apps.apple.com/us/app/machining-advisor-pro/id1321154225",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - iOS App Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "optimization for 30,000+ products",
+          "archive_url": null,
+          "notes": "Marketing claim in app description"
+        }
+      ],
+      "methodology": "Company claim in app store description",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "android_review_count",
+      "value": 120,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.machining.advisor.pro&hl=en_US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "120 reviews (another source reported 112)",
+          "archive_url": null,
+          "notes": "Web search reported conflicting counts: 120 vs 112"
+        }
+      ],
+      "methodology": "Reported from Google Play Store search results",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "android_downloads",
+      "value": "10,000+",
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.machining.advisor.pro&hl=en_US",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - Google Play Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "10K+ downloads",
+          "archive_url": null,
+          "notes": "Exact text from Google Play Store"
+        }
+      ],
+      "methodology": "Direct observation from Google Play Store (exact bracket text)",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "Machining Advisor Pro",
+      "metric": "android_rating",
+      "value": 2.4,
+      "platform": "Android",
+      "sources": [
+        {
+          "url": "https://appgrooves.com/app/machining-advisor-pro-by-harvey-performance-company",
+          "source_type": "app_store",
+          "retrieved_date": "2025-11-11",
+          "title": "Machining Advisor Pro - AppGrooves",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "2.4 star rating with 112 reviews",
+          "archive_url": null,
+          "notes": "Low rating indicates user dissatisfaction - significantly lower than iOS"
+        }
+      ],
+      "methodology": "Third-party aggregation of Google Play Store data",
+      "confidence": "confirmed"
+    },
+    {
+      "app_name": "HSMAdvisor",
+      "metric": "platform_type",
+      "value": "Desktop Windows Software",
+      "platform": "Windows",
+      "sources": [
+        {
+          "url": "https://hsmadvisor.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "HSMAdvisor Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Advanced CNC Speed And Feed Machinist Calculator",
+          "archive_url": null,
+          "notes": "Desktop application, not mobile app store presence"
+        }
+      ],
+      "methodology": "Direct observation from company website",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "HSMAdvisor",
+      "metric": "trial_period",
+      "value": "30 days",
+      "platform": "Windows",
+      "sources": [
+        {
+          "url": "https://hsmadvisor.com/",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "HSMAdvisor Official Website",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Download HSMAdvisor and enjoy full functionality for 30 days",
+          "archive_url": null,
+          "notes": "Free trial with limited material after expiration"
+        }
+      ],
+      "methodology": "Direct observation from company website",
+      "confidence": "verified"
+    },
+    {
+      "app_name": "HSMAdvisor",
+      "metric": "bundled_app",
+      "value": "FSWizard PRO (included free)",
+      "platform": "All",
+      "sources": [
+        {
+          "url": "https://hsmadvisor.com/buy",
+          "source_type": "company_official",
+          "retrieved_date": "2025-11-11",
+          "title": "HSMAdvisor Store",
+          "author": null,
+          "publication_date": null,
+          "excerpt": "Unlimited Monthly subscription includes free subscription to FSWizard PRO",
+          "archive_url": null,
+          "notes": "Same developer (Eldar Gerfanov) bundles products"
+        }
+      ],
+      "methodology": "Company website product information",
+      "confidence": "confirmed"
+    }
+  ]
+}
