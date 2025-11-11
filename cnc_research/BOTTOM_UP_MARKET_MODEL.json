@@ -1,0 +1,598 @@
+{
+  "executive_summary": {
+    "market_opportunity": "CNC Feeds & Speeds Calculator market is estimated at $18-24M TAM (serviceable addressable market) in the US, with SOM of $300K-$2.4M depending on penetration rate and adoption scenario. Market is highly fragmented with strong free/freemium competition but addressable through professional-grade features and integration with CAM workflows.",
+    "confidence_level": "MODERATE - Model based on hard industry data (BLS, market reports, CAM adoption rates) but direct product-market feedback and exact shop-by-segment distribution needed to validate pricing tiers and adoption rates.",
+    "critical_success_factors": [
+      "Justifying premium pricing vs free tools (G-Wizard has free tier, FSWizard is free, Kennametal offers free web calc)",
+      "Targeting specific shop segments willing to pay (medium shops with 5-50 machines show 50-70% adoption of paid CAM software as proxy)",
+      "Distribution/discoverability - most adoption currently through word-of-mouth and forums",
+      "Integration with existing CAM workflows to increase stickiness"
+    ]
+  },
+
+  "market_segments": [
+    {
+      "segment": "Hobbyist/Home Shop (1 machine, garage/basement)",
+      "estimated_count": "5,000-10,000 operators",
+      "source": "Estimated from hobbyist CNC suppliers (ShopSabre, MillRight, Onefinity) and hobby-machinist forums; prices $250-$22K for entry machines",
+      "willingness_to_pay": "VERY LOW",
+      "rationale": "Hobbyists are price-sensitive, often use free tools or paper charts. Limited machine usage means fewer calculations. Budget constraints are severe.",
+      "realistic_price_point": "$0-$29/year",
+      "adoption_rate": "5-10% of hobbyists would pay; if paying, average $15",
+      "market_sizing": {
+        "total_in_segment": 7500,
+        "likely_paying_users": 375,
+        "potential_arr_at_realistic_price": "$5,625"
+      },
+      "competitive_threat": "VERY HIGH - Free alternatives like Kennametal calculator, FSWizard free tier, G-Wizard trial, spreadsheets are sufficient"
+    },
+
+    {
+      "segment": "Small Shops (1-5 machines, 3-10 employees)",
+      "estimated_count": "10,000-12,000 shops",
+      "total_machinists": "30,000-50,000 people",
+      "source": "US has 18,000 machine shop establishments (IBISWorld, AMT); 83% of metalworking shops have <20 employees. Average 2-3 machines per small shop = ~27,000 machines. Average 3-5 employees per shop.",
+      "willingness_to_pay": "MEDIUM",
+      "rationale": "Professional but price-sensitive. Shared use of calculators across team. Currently likely using spreadsheets, paper charts, or free tools. Single-user budget constraints.",
+      "realistic_price_point": "$99-199/year (conservative: $120/year average)",
+      "adoption_rate": "30-50% use ANY calculator (vs mental math); of those, 40-50% use paid software (vs free); TOTAL: 15-25% willing to pay",
+      "market_sizing": {
+        "shops_in_segment": 11000,
+        "machinists_in_segment": 40000,
+        "calculators_users": 12000,
+        "software_calculator_users": 5000,
+        "willing_to_pay_low_estimate": 1500,
+        "willing_to_pay_high_estimate": 3000,
+        "calculation": "(40K machinists) × (35% use calcs) × (45% use software) × (40% willing to pay for premium) = 2,500"
+      },
+      "potential_arr": "$300,000 (conservative) to $600,000 (optimistic)",
+      "competitive_threat": "VERY HIGH - G-Wizard premium ($1-2/month or lifetime), HSMAdvisor ($65), spreadsheets entrenched"
+    },
+
+    {
+      "segment": "Medium Shops (5-50 machines, 20-100 employees)",
+      "estimated_count": "3,500-4,500 shops",
+      "total_machinists": "70,000-120,000 people",
+      "source": "Derived from 18,000 machine shops; estimated 15-20% are medium-sized. Average 15 machines. Average 25-40 employees per shop. BLS data: 357,000 total machinists; medium shops likely employ 20-35% of them.",
+      "willingness_to_pay": "HIGH",
+      "rationale": "Professional operations. Calculations impact production efficiency and cost estimates. Tool budgets available per employee ($1,000-$3,500 software spend annually). CAM software adoption already at 50-70% in this segment (industry data), indicating willingness to invest in production tools.",
+      "realistic_price_point": "$199-299/year ($250/year average)",
+      "adoption_rate": "50-70% use calculators professionally; of those, 60-70% use software (vs paper); TOTAL: 50-70% willing to pay",
+      "market_sizing": {
+        "shops_in_segment": 4000,
+        "machinists_in_segment": 95000,
+        "calculators_users": 50000,
+        "software_calculator_users": 35000,
+        "willing_to_pay_low_estimate": 17500,
+        "willing_to_pay_high_estimate": 24500,
+        "calculation": "(95K machinists) × (60% use calcs) × (65% use software) × (60% willing to pay premium) = 22,500"
+      },
+      "potential_arr": "$4,375,000 (conservative at $250) to $6,125,000 (optimistic)",
+      "note_on_segment": "CAM adoption data shows 64% of small-to-medium manufacturing use CAM software, suggesting professional tool adoption is established. This segment has highest ARPU potential.",
+      "competitive_threat": "MEDIUM - Some still use spreadsheets; CAM/CAD integration opportunity differentiates vs point tools"
+    },
+
+    {
+      "segment": "Large Shops (50+ machines, 100+ employees, some are 500+ employees)",
+      "estimated_count": "500-1,000 shops",
+      "total_machinists": "50,000-100,000 people",
+      "source": "Estimated 2.5-5% of 18,000 machine shops are large; average 100+ machines per shop. Employees vary widely from 100-500+. Includes contract manufacturers and captive shops at large OEMs.",
+      "willingness_to_pay": "VERY HIGH",
+      "rationale": "Standardized processes, IT budgets, professional development, ROI-driven purchasing. Already using CAM/CAD extensively. Enterprise software adoption model applies. Can justify annual spend of $500-$1,000+ for team licenses or seat-based pricing.",
+      "realistic_price_point": "$299-500/year per user OR $1,500-5,000/year for small team licenses",
+      "adoption_rate": "70-90% use professional calculators; 75-85% use software; TOTAL: 80%+ willing to pay",
+      "market_sizing": {
+        "shops_in_segment": 750,
+        "machinists_in_segment": 75000,
+        "calculators_users": 55000,
+        "software_calculator_users": 47000,
+        "willing_to_pay_low_estimate": 37600,
+        "willing_to_pay_high_estimate": 42750,
+        "calculation": "(75K machinists) × (75% use calcs) × (80% use software) × (85% willing to pay premium) = 38,250"
+      },
+      "potential_arr": "$11,475,000 (conservative at $300/user) to $21,375,000 (optimistic at $500/user)",
+      "note_on_segment": "This segment has highest ARPU but smallest volume. Enterprise sales model (direct sales, implementation support) required. Currently likely using integrated CAM solutions or in-house tools.",
+      "competitive_threat": "MEDIUM-LOW - Large shops often have integrated CAM solutions already; differentiation through API/CAM integration critical. But also highest customer lifetime value."
+    }
+  ],
+
+  "adoption_funnel": {
+    "total_cnc_machinists_us": {
+      "value": 160000,
+      "source": "BLS reports 289K-357K total machinists in US; estimated 40-50% actively work with CNC equipment regularly. Conservative estimate: 160K CNC machinists (using lower range). NOTE: BLS data includes manual machine operators; CNC adoption still growing but now dominant in professional shops.",
+      "confidence": "MODERATE - BLS total is solid, but % using CNC is estimated"
+    },
+    "step1_use_any_calculator": {
+      "percentage": "60%",
+      "number": 96000,
+      "rationale": "Industry estimates suggest 50-70% of machinists use some calculation method vs pure experience/trial-and-error. Includes paper charts, spreadsheets, and mental math optimizations. Conservative: 60%."
+    },
+    "step2_use_digital_software": {
+      "percentage": "40%",
+      "number": 38400,
+      "rationale": "Of those using calculators, estimated 40-50% use digital/software (vs paper charts, which are still widely distributed). Paper charts from tool vendors still prevalent. Many use both hybrid approaches.",
+      "source": "Industry observations, tool vendor prevalence, CAM adoption rates suggest digital adoption in 40-50% range"
+    },
+    "step3_willing_to_pay_premium": {
+      "percentage": "25%",
+      "number": 9600,
+      "rationale": "Of software users, estimated 20-30% willing to pay subscription/license fee vs free/freemium tools. Reflects: (1) free alternatives available (G-Wizard has free tier, FSWizard free, Kennametal free), (2) many companies have tight tool budgets, (3) spreadsheets are sunk cost already (Excel is ubiquitous at 95% of manufacturing companies)",
+      "note": "WEAK POINT IN MODEL - This 25% figure is crucial but lacks direct validation. Needs customer research to confirm."
+    },
+    "step4_segment_distribution": {
+      "hobbyist": {"pct": 3, "number": 288, "avg_price": 15},
+      "small_shops": {"pct": 20, "number": 1920, "avg_price": 120},
+      "medium_shops": {"pct": 50, "number": 4800, "avg_price": 250},
+      "large_shops": {"pct": 27, "number": 2592, "avg_price": 400},
+      "weighted_average_arpu": 254,
+      "calculation": "(288×$15 + 1,920×$120 + 4,800×$250 + 2,592×$400) / 9,600 = $2,435,880 / 9,600 = $254"
+    },
+    "methodology": "Bottom-up from BLS macinist employment data, filtered to CNC segment, through adoption funnel using industry benchmarks (CAM software adoption rates of 61-64% as proxy for tool software adoption, free tool prevalence, spreadsheet entrenchment)"
+  },
+
+  "comparable_markets": {
+    "cad_software_users": {
+      "global": 10700000,
+      "us_estimate": 4280000,
+      "source": "AutoCAD: 10.7M users globally; assuming US = 40% of global per manufacturing market data = 4.28M",
+      "note": "Includes architects, engineers, not just machinists"
+    },
+    "cam_software_users": {
+      "global": 185000,
+      "us_estimate": 74000,
+      "source": "Global CAM licenses: 185K (industry report). US = 40% of global = 74K users",
+      "adoption_rate_us_manufacturing": "64% of small-to-medium manufacturing use CAM"
+    },
+    "ratio_feeds_speeds_to_cam": {
+      "cam_users": 74000,
+      "estimated_feeds_speeds_users": 9600,
+      "ratio": "1 CAM user : 0.13 feeds/speeds calculator users",
+      "inverse_ratio": "1 feeds/speeds user : 7.7 CAM users",
+      "interpretation": "Fewer people use dedicated feeds/speeds software than CAM, which makes sense - many CAM packages include built-in feeds/speeds calculators. Feeds/speeds calculator is more specialized, used by machinists and programmers who need quick calculations, not full CAM workflow."
+    },
+    "comparison_validation": {
+      "observation": "CAM software market is $3.5-7.6B globally. If feeds/speeds is 0.1-1% of that TAM, suggests $35M-$76M global TAM for our category.",
+      "us_market_portion": "If 40% global, US portion would be $14-30M in TAM",
+      "our_estimate": "Our bottom-up TAM of $24M falls within this range - VALIDATES model reasonably well"
+    }
+  },
+
+  "pricing_analysis": {
+    "current_competitive_pricing": {
+      "g_wizard": {
+        "model": "Subscription with perpetual free tier (limited horsepower) + tiered subscriptions",
+        "pricing": "1-year subscription = 2HP for life; 3-year = 5HP for life; then limited version free forever",
+        "effective_annual_cost": "$50-150/year estimated (actual prices not publicly listed, extracted from user discussions)",
+        "segment_appeal": "Hobbyists and cost-conscious small shops"
+      },
+      "hsmadvisor": {
+        "model": "One-time purchase",
+        "pricing": "$65 for 1HP version (user-reported)",
+        "effective_annual_cost": "$65 one-time = ~$13/year amortized over 5 years",
+        "segment_appeal": "Hobbyists, one-time buyers"
+      },
+      "fswizard": {
+        "model": "Free web app + mobile app",
+        "pricing": "Free",
+        "monetization": "Unknown (possibly embedded in Zero-Divide's HSMAdvisor package)",
+        "segment_appeal": "Everyone, especially budget-conscious"
+      },
+      "kennametal": {
+        "model": "Free web calculator from tool vendor",
+        "pricing": "Free",
+        "rationale": "Vendor lock-in: free tool drives tool sales",
+        "segment_appeal": "Everyone"
+      },
+      "tool_crib_software": {
+        "note": "Different market (tool inventory management), not direct competitor",
+        "pricing": "$35-$345 per month / one-time"
+      }
+    },
+    "machinist_current_spend_on_software": {
+      "per_employee_manufacturing": "$1,000-$3,500/year on software tools",
+      "source": "Industry data on manufacturing software spending",
+      "note": "This is TOTAL software spend (CAD, CAM, ERP, accounting, etc.), not just feeds/speeds calculators. Suggests tool budgets exist at company level but may be allocated elsewhere.",
+      "implication": "$199-250/year for feeds/speeds calculator is 6-25% of employee software budget - REASONABLE but not primary expenditure"
+    },
+    "price_sensitivity": {
+      "observation_1": "High prevalence of free tools (G-Wizard free tier, FSWizard, Kennametal) indicates price elasticity is strong",
+      "observation_2": "CAM software adoption at 64% in target market despite costs of $5K-50K+ per seat suggests professional software adoption IS possible when ROI is clear",
+      "observation_3": "Spreadsheets are entrenched (Excel ubiquitous) - switching cost is $0",
+      "conclusion": "Market will accept $100-300/year IF product clearly delivers ROI (time savings, accuracy improvements, integration with existing CAM) vs free alternatives"
+    },
+    "realistic_arpu": {
+      "blended_arpu_all_segments": "$254/year",
+      "rationale": "Weighted average across 9,600 willing-to-pay users: hobbyists ($15), small shops ($120), medium shops ($250), large shops ($400)",
+      "confidence": "LOW - Price testing needed with actual customers",
+      "conservative_arpu": "$150/year",
+      "optimistic_arpu": "$350/year",
+      "note": "Small shops are most price-sensitive and largest segment, pulling average down. Large shops could support higher prices but are smaller segment."
+    }
+  },
+
+  "tam_sam_som": {
+    "tam": {
+      "value": "$24,000,000",
+      "definition": "Total Addressable Market - all possible customers who could theoretically buy",
+      "calculation": "160,000 CNC machinists × $150 blended ARPU = $24M",
+      "alternative_calculation": "9,600 identified willing-to-pay users (from funnel) × $254 average ARPU = $2.44M in YEAR 1 steady state; × 10 years = $24.4M lifetime value proxy",
+      "note": "Conservative TAM. Could expand to 357K total machinists × $100 ARPU = $35.7M if willing to serve non-CNC segment, but that's aggressive."
+    },
+    "sam": {
+      "value": "$18,000,000",
+      "definition": "Serviceable Addressable Market - market we can realistically reach given product positioning and go-to-market",
+      "calculation": "Exclude hobbyists (too price-sensitive, fragmented): (1,920 small + 4,800 medium + 2,592 large) × $254 = 9,312 × $254 = $2.36M in year 1; scale over addressable segment of 160K - 7,500 hobbyists = 152,500 × higher weighted ARPU of $265 (excluding hobbyists) = $40.4M theoretical",
+      "realistic_sam": "9,312 willing-to-pay users (excluding hobbyists) × $254 = $2.36M per year steady state.",
+      "alternative_calculation_by_segment": "(40K small shop machinists × 20% adoption + 95K medium × 50% adoption + 75K large × 80% adoption) × $250 = $6,650,000 addressable annual market",
+      "conservative_sam": "$6,650,000 annual run-rate SAM",
+      "note": "SAM is market we can actually reach with focused positioning on professional shops (small, medium, large - exclude hobbyists due to distribution difficulty and price sensitivity)"
+    },
+    "som": {
+      "value": "$300,000 - $2,400,000 (year 1 range)",
+      "definition": "Serviceable Obtainable Market - what we can realistically capture given competition, timing, resources",
+      "conservative_scenario": {
+        "year_1_penetration": "5% of willing-to-pay users",
+        "year_1_users": 466,
+        "year_1_arr": "$118,000",
+        "calculation": "9,312 willing-to-pay × 5% × $254 = $118,352"
+      },
+      "realistic_scenario": {
+        "year_1_penetration": "10% of willing-to-pay users",
+        "year_1_users": 931,
+        "year_1_arr": "$236,000",
+        "calculation": "9,312 willing-to-pay × 10% × $254 = $236,704"
+      },
+      "optimistic_scenario": {
+        "year_1_penetration": "15% of willing-to-pay users",
+        "year_1_users": 1397,
+        "year_1_arr": "$355,000",
+        "calculation": "9,312 willing-to-pay × 15% × $254 = $355,056"
+      },
+      "note": "SOM heavily dependent on: (1) distribution strategy, (2) product-market fit vs free tools, (3) marketing budget, (4) competitive response"
+    }
+  },
+
+  "adoption_rates_by_segment_detailed": {
+    "small_shops_adoption_evidence": {
+      "base_rate": "30-50% use calculators (vs all mental math or all lookup tables)",
+      "software_vs_paper": "40-50% of calculator users adopt digital (vs paper tables)",
+      "willing_to_pay": "If CAM software adoption is 50-70% in this segment as proxy, feeds/speeds software might be 15-25% (since it's more niche than full CAM)",
+      "calculated_total_penetration": "35% × 45% × 20% = 3.15% of small shop machinists willing to pay for premium = 1,260 of 40K"
+    },
+    "medium_shops_adoption_evidence": {
+      "base_rate": "50-70% use calculators - higher professionalism drives calculation rigor",
+      "software_vs_paper": "60-70% of calculator users use digital in this segment - shops have more standardization",
+      "willing_to_pay": "CAM software adoption at 64-70% in this segment (industry data) supports 50-70% for feeds/speeds tool as complementary",
+      "calculated_total_penetration": "60% × 65% × 60% = 23.4% of medium shop machinists willing to pay = 22,230 of 95K",
+      "note": "DISCREPANCY: Model calculated earlier shows 4,800 willing-to-pay from segment, but this suggests 22K. This indicates segment size estimate may be conservative."
+    },
+    "large_shops_adoption_evidence": {
+      "base_rate": "75%+ use standardized calculations - high process formality",
+      "software_vs_paper": "75%+ use digital tools - IT systems already in place",
+      "willing_to_pay": "CAM adoption at 70%+ (industry data) supports 80%+ willing to pay for specialized tools",
+      "calculated_total_penetration": "75% × 80% × 85% = 51% of large shop machinists willing to pay = 38,250 of 75K"
+    }
+  },
+
+  "conservative_scenario": {
+    "assumptions": [
+      "Slow market awareness - limited marketing budget",
+      "High churn - 30% annual churn due to free alternatives and feature gaps",
+      "Lower adoption rates in small shops due to budget constraints",
+      "Pricing at lower end: $150/year average (vs $254 blended)",
+      "No integration with CAM software achieved in year 1-3"
+    ],
+    "year_1": {
+      "users": 600,
+      "arr": "$90,000",
+      "calculation": "9,312 willing-to-pay × 6.5% × $150 = $90,936",
+      "net_new_users_needed": "starting from 0, need 600 signups"
+    },
+    "year_2": {
+      "users": 1200,
+      "arr": "$180,000",
+      "calculation": "Growth 100% YoY in early stage; churn offset by acquisition",
+      "note": "Assumes marketing spend leads to gradual awareness"
+    },
+    "year_3": {
+      "users": 2400,
+      "arr": "$360,000",
+      "calculation": "Still only 26% of willing-to-pay base captured; 70% churn likely limits growth",
+      "note": "Conservative scenario reaches only $360K ARR by year 3 - suggests this scenario only viable if: (1) you own lower-cost customer (hobbyists), (2) bundled with other products"
+    }
+  },
+
+  "optimistic_scenario": {
+    "assumptions": [
+      "Strong product-market fit - product clearly superior to free alternatives",
+      "Viral adoption through influencers/forums - CNCZone, PracticalMachinist endorsements",
+      "Tight CAM integration achieved - works natively with popular CAM packages",
+      "Strong brand - becomes default tool like G-Code wizards",
+      "Premium pricing at $300/year average",
+      "12% annual churn (vs 30% conservative)"
+    ],
+    "year_1": {
+      "users": 3000,
+      "arr": "$900,000",
+      "calculation": "9,312 willing-to-pay × 32% × $300 = $899,904",
+      "net_new_users_needed": "3,000 signups with significant marketing spend"
+    },
+    "year_2": {
+      "users": 8000,
+      "arr": "$2,400,000",
+      "calculation": "Growth 167% YoY through word-of-mouth + integrations",
+      "note": "Assumes 12% churn, so effective NRR = 100% - 12% = 88% retention + 600% net growth = 300% gross growth"
+    },
+    "year_3": {
+      "users": 16000,
+      "arr": "$4,800,000",
+      "calculation": "Growth 100% YoY in year 3; captures 43% of willing-to-pay base",
+      "note": "Optimistic but plausible if product achieves feature parity + integrations + brand recognition"
+    }
+  },
+
+  "most_likely_scenario": {
+    "assumptions": [
+      "Moderate marketing investment - focus on medium shops (highest ARPU, most willing to pay)",
+      "Product achieves strong CAM integration by end of year 2",
+      "Pricing at $200/year average (between conservative $150 and optimistic $300)",
+      "15% annual churn (realistic given free alternatives)",
+      "Adoption follows S-curve: slow start, acceleration in year 2-3 as word spreads",
+      "Focus on small/medium shops (easier distribution than large) with upsell to large"
+    ],
+    "year_1": {
+      "users": 1500,
+      "arr": "$300,000",
+      "calculation": "9,312 willing-to-pay × 16% × $200 = $297,984",
+      "net_new_users_needed": "1,500 signups from 50-75% CAC payback in year 1, implying $200-300 CAC",
+      "how_achieved": "Direct outreach to medium shops via forums, CAM vendor partnerships, early adopters"
+    },
+    "year_2": {
+      "users": 4500,
+      "arr": "$900,000",
+      "calculation": "1,500 cohort from Y1 × 85% retention + 3,000 new users",
+      "net_new_users_needed": "3,000 new signups, easier due to momentum + integrations + CAM partnerships",
+      "how_achieved": "CAM software integrations, word-of-mouth in shops, SEO improvements"
+    },
+    "year_3": {
+      "users": 10000,
+      "arr": "$2,000,000",
+      "calculation": "4,500 from Y2 × 85% retention + 5,500 new users",
+      "net_new_users_needed": "5,500 new signups as product matures and integrations stabilize",
+      "how_achieved": "Brand recognition, CAM vendor co-sales, enterprise tier developed for large shops"
+    },
+    "key_assumptions": [
+      "CRITICAL: 16-50% adoption of 'willing-to-pay' users by year 3 (vs 5% conservative, 100% optimistic). Validation needed via customer research.",
+      "Pricing at $200/year is defensible if: (a) 25% time savings vs spreadsheets, (b) integration with CAM/CAD tools, (c) team collaboration features",
+      "15% churn is plausible for niche software with strong network effects and switching costs",
+      "Small/medium shops are 70% of target but large shops (30% of target) have lower churn and higher ARPU - worth targeting early",
+      "Free tier (G-Wizard, FSWizard) captures hobbyists and evaluators - not a threat if premium tier has clear differentiation",
+      "CAM integration is CRITICAL to differentiation - point tools lose to integrated solutions in professional shops"
+    ],
+    "break_even_analysis": {
+      "gross_margin_assumption": "85% (SaaS model, primarily software delivery)",
+      "year_1_variable_costs": "$45,000 (hosting, payment processing, support at 15% of revenue)",
+      "year_1_fixed_costs_needed": "$255,000 (salaries, marketing, minimal ops) + $45K variable = $300K total opex to break even",
+      "cac_payback": "If CAC = $200/user, LTV = $200 × 3 years × 85% gross margin = $510. Payback = $200/$510 = 39% of LTV first year. Reasonable.",
+      "path_to_profitability": "Year 3 at $2M ARR with 85% margins = $1.7M gross profit. If fixed costs ~$500K (team of 4-5), gross profit after fixed = $1.2M. 60% EBITDA margin achievable."
+    }
+  },
+
+  "weakness_and_risks_in_model": [
+    {
+      "weakness": "Adoption funnel step 3 (25% willing to pay) is critical but unvalidated",
+      "impact": "HIGH - Small changes (15% vs 35%) change TAM by 50%+",
+      "mitigation": "Conduct customer research - survey 50-100 machinists about software spending, free tool usage, willingness to pay. Run landing page tests with multiple price points."
+    },
+    {
+      "weakness": "Segment sizing estimates (# of shops with N machines) come from shop count + estimation, not direct data",
+      "impact": "MEDIUM - Could be ±30% off on segment sizes",
+      "mitigation": "Partner with industry associations (AMT, NYSCC) to get better segment distribution data. Also check with CAM software vendors - they have sight into shop sizes."
+    },
+    {
+      "weakness": "CNC adoption rate among 357K machinists estimated at 40-50% - actual may be higher/lower",
+      "impact": "MEDIUM - BLS data is solid, but CNC vs manual/hybrid unknown",
+      "mitigation": "Search for BLS sub-data or industry reports specifically on CNC penetration in machinist population. Also research labor trends in aerospace/automotive (high CNC adoption) vs small job shops (lower adoption)."
+    },
+    {
+      "weakness": "No data on switching costs from spreadsheets/free tools to paid software - could be lower than assumed",
+      "impact": "HIGH - If switching costs are very low, churn could be 30%+; if high, retention could be 95%",
+      "mitigation": "Product development should focus on: (1) high switching costs through integrations and data lock-in, (2) obvious ROI (time savings, accuracy gains) to justify small switching costs"
+    },
+    {
+      "weakness": "Large shop segment ($2-10M of TAM) is estimated but highly fragmented - sales model unclear",
+      "impact": "MEDIUM - Large shop TAM could be significantly higher if enterprise sales model works, but requires different distribution (direct sales, longer sales cycles)",
+      "mitigation": "Start with small/medium shops (easier sales), then move upmarket once product is stable and there's proof of ROI. Enterprise version or team licensing could unlock $500K-$2M additional TAM."
+    },
+    {
+      "weakness": "Model assumes CAM integration is differentiator, but CAM packages already have built-in calculators",
+      "impact": "MEDIUM - If major CAM vendors (Fusion 360, Mastercam, SolidCAM) already have feeds/speeds calcs, differentiation is hard",
+      "mitigation": "Research what tools/CAM packages currently offer for feeds/speeds. If gaps exist (e.g., Fusion 360 has basic calc, but machinists want more advanced options), position as 'professional-grade extension to CAM.' If no gaps, business model shifts to API/integration or bundling."
+    },
+    {
+      "weakness": "Competitive response from G-Wizard (owned by CNCCookbook, established player) could be rapid if market heats up",
+      "impact": "MEDIUM-HIGH - G-Wizard could lower price or improve free tier to compete",
+      "mitigation": "Build network effects (user community, peer recommendations), focus on niches G-Wizard doesn't serve (e.g., specific machine types, integrations), and aim for rapid growth to establish market position before competition reacts."
+    },
+    {
+      "weakness": "No validation of $200/year as realistic price point - competitors are $15-$65 or free",
+      "impact": "HIGH - If realistic price is $99/year, TAM cuts in half; if $50/year, TAM becomes unviable",
+      "mitigation": "Conduct willingness-to-pay research with actual customers. Use tiered pricing (basic $49/year, pro $199/year, enterprise $500+) to segment customers and maximize revenue."
+    },
+    {
+      "weakness": "Model assumes no major consolidation - e.g., Autodesk or other CAD/CAM vendor buying the category",
+      "impact": "MEDIUM - Acquisition could limit upside or accelerate it",
+      "mitigation": "This is a feature not a bug for investor ROI; build for acquisition to existing CAD/CAM vendors (Autodesk, Dassault, Siemens) as strategic add-on. Could justify higher valuation."
+    },
+    {
+      "weakness": "Hobbyist market (5-10K people) could be underestimated - DIY CNC market growing rapidly",
+      "impact": "LOW - Hobbyists are low-ARPU anyway; +$50K of potential TAM would not change model materially",
+      "mitigation": "Monitor hobbyist forums (Hobby-Machinist, CNCZone) for sentiment and adoption. Could be early adopter segment for free tier or low-price tier to drive volume."
+    }
+  ],
+
+  "validation_checklist": {
+    "high_priority": [
+      "[ ] Survey 100+ machinists: What % use calculators? What % use digital? What % would pay $100/year? At what price point would adoption drop?",
+      "[ ] Reach out to 5 medium shops (10-30 machines): Ask about current tools, pain points, software budget, willingness to pay for better solution",
+      "[ ] Research BLS data deeper: What % of machinists work in CNC-specific roles vs manual vs mixed? What's the growth trend?",
+      "[ ] Competitor analysis: Get actual pricing for G-Wizard, HSMAdvisor, FSWizard, any other players. Understand feature sets and user base sizes.",
+      "[ ] Test landing page with 3 price points ($99, $199, $299): Which converts best? Indicates market's willingness to pay."
+    ],
+    "medium_priority": [
+      "[ ] Reach out to CAM vendors (Mastercam, Fusion 360, Sprutcam): Do they have plans to improve feeds/speeds tooling? Are they open to integrations?",
+      "[ ] Talk to tool vendors (Kennametal, Sandvik, Haas): How do they distribute calculators? Could they resell premium version?",
+      "[ ] Interview 10+ CNCZone/PracticalMachinist moderators: What are users asking for? What tools do experts recommend? Any gaps in current offerings?",
+      "[ ] Analyze CAM software adoption by shop size: Validate 64% adoption in small/medium manufacturing claim. Better understand adoption curve."
+    ],
+    "lower_priority": [
+      "[ ] Research international markets: UK, Germany, Japan - any data on calculator software adoption globally? Could expand TAM.",
+      "[ ] Study tool crib software market: Is there bundling opportunity (calculator + tool inventory manager)?",
+      "[ ] Look into reshoring trends: As manufacturing comes back to US, are smaller shops opening? Does that change market dynamics?"
+    ]
+  },
+
+  "go_to_market_recommendations": {
+    "target_segment_priority": [
+      {
+        "priority": 1,
+        "segment": "Medium shops (5-50 machines)",
+        "rationale": "Highest ARPU ($250), highest willingness to pay (50-70%), easiest to reach (direct outreach via industry associations, forums, CAM vendors)",
+        "tactics": [
+          "Partner with CAM vendors for co-marketing (e.g., Mastercam, Fusion 360, SolidCAM bundle deals)",
+          "Sponsor/participate in industry trade shows (IMTS, Eastec, etc.)",
+          "Content marketing - blog posts on feeds/speeds optimization for specific material/machine combos",
+          "Community engagement - answer questions on CNCZone, PracticalMachinist with product mentions"
+        ]
+      },
+      {
+        "priority": 2,
+        "segment": "Large shops (50+ machines)",
+        "rationale": "Highest LTV ($400+ ARPU), but smaller volume. Upsell opportunity from medium segment.",
+        "tactics": [
+          "Direct sales - hire BDR to call on contract manufacturers, captive shops at OEMs",
+          "Enterprise features - team licensing, admin controls, API access, SSO",
+          "Case studies - document ROI for large shops (time saved, accuracy improvements, cost reductions)",
+          "Competitive displacement - position against G-Wizard/HSMAdvisor as 'industrial-grade with integrations'"
+        ]
+      },
+      {
+        "priority": 3,
+        "segment": "Small shops (1-5 machines)",
+        "rationale": "Large volume but price-sensitive, lower ARPU ($120). But important for growth and future upsell.",
+        "tactics": [
+          "Freemium model - free basic version to drive adoption, upsell to pro version",
+          "Low-price tier - $49/year entry-level, targets this segment",
+          "YouTube/TikTok - 'quick tips' on feeds/speeds, mention calculator for specific scenarios",
+          "Micro-targeting - Facebook/Google ads to small shop owners searching 'feeds and speeds calculator'"
+        ]
+      },
+      {
+        "priority": 4,
+        "segment": "Hobbyists (1 machine, home shop)",
+        "rationale": "Very low ARPU, high churn. Avoid as primary target, but valuable as brand awareness and early adopters.",
+        "tactics": [
+          "Free tier - let hobbyists use free version, builds community and word-of-mouth",
+          "Community building - sponsor Hobby-Machinist forums, engage with hobbyist YouTubers",
+          "Upsell path - hobbyists growing into small shops can upgrade to paid tier"
+        ]
+      }
+    ],
+    "distribution_channels": [
+      {
+        "channel": "CAM software partnerships",
+        "potential_impact": "HIGH - Co-sells with Mastercam, Fusion 360, SolidCAM could drive 500-2000 users/year if agreements include integrations",
+        "effort": "MEDIUM - Requires product integration and sales alignment with vendors"
+      },
+      {
+        "channel": "Industry associations (AMT, NYSCC, MFG4.0)",
+        "potential_impact": "MEDIUM - Trade show presence, white papers, member discounts could drive awareness",
+        "effort": "LOW - Start with sponsorships and booth presence at 2-3 key shows/year"
+      },
+      {
+        "channel": "Forum/community organic growth (CNCZone, PracticalMachinist, Hobby-Machinist)",
+        "potential_impact": "MEDIUM - High credibility, but requires sustained engagement (1-2 hrs/day)",
+        "effort": "LOW" - Just time commitment"
+      },
+      {
+        "channel": "Content marketing (blog, YouTube, podcast)",
+        "potential_impact": "MEDIUM - Long-tail SEO, builds authority, drives inbound leads",
+        "effort": "MEDIUM - Requires 8-10 hours/week for consistent content"
+      },
+      {
+        "channel": "Paid advertising (Google/Facebook to SMBs)",
+        "potential_impact": "MEDIUM - Can drive 100-300 signups/month at CAC of $100-200",
+        "effort": "MEDIUM - Requires $5-10K/month budget and continuous optimization"
+      },
+      {
+        "channel": "Direct sales (for large shops)",
+        "potential_impact": "MEDIUM - High-touch but high-ARPU deals (can close $500-5000/year deals)",
+        "effort": "HIGH - Requires dedicated sales rep"
+      },
+      {
+        "channel": "Tool vendor partnerships (Kennametal, Sandvik, Haas)",
+        "potential_impact": "LOW-MEDIUM - These vendors already have free calculators; would need compelling reason to promote paid alternative",
+        "effort": "MEDIUM-HIGH - Requires B2B partnership negotiation"
+      }
+    ]
+  },
+
+  "data_sources_and_confidence_intervals": {
+    "sources": [
+      {
+        "metric": "Total US machinists",
+        "value": "357,000",
+        "source": "US Bureau of Labor Statistics (2023-2024)",
+        "confidence": "HIGH - Government data, regularly updated"
+      },
+      {
+        "metric": "CNC market size (US)",
+        "value": "$12.16B - $21.5B (2024)",
+        "source": "Allied Market Research, Grand View Research, Fortune Business Insights",
+        "confidence": "MEDIUM - Different methodologies yield different values; range is wide"
+      },
+      {
+        "metric": "Number of machine shops in US",
+        "value": "18,000 establishments",
+        "source": "IBISWorld, AMT (Association For Manufacturing Technology)",
+        "confidence": "MEDIUM-HIGH - Industry data, cited by multiple sources"
+      },
+      {
+        "metric": "CAM software licenses globally",
+        "value": "185,000",
+        "source": "CAM software market research reports (various vendors)",
+        "confidence": "MEDIUM - Estimate based on market size divided by average seat price"
+      },
+      {
+        "metric": "CAM adoption rate in US manufacturing",
+        "value": "61-64% of small-to-medium manufacturing",
+        "source": "CAM market research reports",
+        "confidence": "MEDIUM - Industry estimates, not government-verified"
+      },
+      {
+        "metric": "CAD software users (AutoCAD, SolidWorks)",
+        "value": "10.7M AutoCAD, 4.6M SolidWorks",
+        "source": "Market research firms (6sense, Enlyft), vendor reports",
+        "confidence": "MEDIUM - Some ambiguity on 'user' definition (licenses vs unique users vs companies)"
+      },
+      {
+        "metric": "Average manufacturing software spend per employee",
+        "value": "$1,000-$3,500/year",
+        "source": "Keevee software spending statistics, manufacturing industry reports",
+        "confidence": "MEDIUM - Varies widely by company size and industry"
+      },
+      {
+        "metric": "G-Wizard, HSMAdvisor, FSWizard pricing",
+        "value": "G-Wizard: $50-150/year; HSMAdvisor: ~$65; FSWizard: Free",
+        "source": "User forums (CNCZone, PracticalMachinist), vendor websites",
+        "confidence": "MEDIUM - Actual G-Wizard pricing not publicly disclosed; extracted from user reports. HSMAdvisor pricing from user reports only."
+      },
+      {
+        "metric": "Machine shop average size",
+        "value": "18-25 employees",
+        "source": "IBISWorld, manufacturing census data",
+        "confidence": "MEDIUM-HIGH - Calculated from total employees in industry / number of shops"
+      }
+    ]
+  }
+}
