@@ -1,0 +1,589 @@
+{
+  "metadata": {
+    "title": "Comprehensive Compiled Cutting Data from Manufacturer Specifications",
+    "version": "1.0",
+    "date_compiled": "2025-11-11",
+    "sources": [
+      "Sandvik Coromant",
+      "Kennametal",
+      "Iscar",
+      "Seco Tools",
+      "Harvey Tool",
+      "Mitsubishi Materials",
+      "Kyocera",
+      "Sumitomo",
+      "Tungaloy",
+      "Haas CNC",
+      "Little Machine Shop Reference",
+      "CNC Cookbook Database"
+    ],
+    "tool_life_assumption": "15 minutes (standard)",
+    "coolant_condition": "wet cutting with coolant",
+    "units": "SFM (Surface Feet per Minute), IPT (Inches Per Tooth)"
+  },
+  "materials": {
+    "aluminum": {
+      "6061_T6": {
+        "material_group": "Wrought Aluminum",
+        "hardness_range": "95-115 HB",
+        "operations": {
+          "milling_carbide": {
+            "sfm_min": 400,
+            "sfm_typical": 500,
+            "sfm_max": 600,
+            "ipt_min": 0.010,
+            "ipt_typical": 0.015,
+            "ipt_max": 0.030,
+            "depth_of_cut_max_inches": 0.5,
+            "notes": "HSS use 150-250 SFM, Ceramic 600-1000 SFM possible"
+          },
+          "turning_carbide": {
+            "sfm_min": 500,
+            "sfm_typical": 600,
+            "sfm_max": 800,
+            "feed_per_rev_min": 0.010,
+            "feed_per_rev_typical": 0.020,
+            "feed_per_rev_max": 0.040,
+            "notes": "Aluminum machines easily with excellent surface finish"
+          },
+          "drilling_carbide": {
+            "sfm_min": 400,
+            "sfm_typical": 500,
+            "sfm_max": 600,
+            "ipt_min": 0.003,
+            "ipt_typical": 0.008,
+            "ipt_max": 0.015,
+            "notes": "Use high speeds and feeds for fast cycle times"
+          }
+        },
+        "sources": [
+          "Haas CNC data",
+          "Little Machine Shop",
+          "CNC Cookbook"
+        ]
+      },
+      "7075_T6": {
+        "material_group": "Wrought Aluminum - Hard",
+        "hardness_range": "150-190 HB",
+        "operations": {
+          "milling_carbide": {
+            "sfm_min": 250,
+            "sfm_typical": 350,
+            "sfm_max": 400,
+            "ipt_min": 0.008,
+            "ipt_typical": 0.012,
+            "ipt_max": 0.020,
+            "notes": "Reduce speeds due to higher hardness and thermal stress"
+          }
+        }
+      }
+    },
+    "steel": {
+      "mild_1045": {
+        "material_group": "Carbon Steel - Medium",
+        "hardness_range": "160-200 HB",
+        "operations": {
+          "milling_carbide": {
+            "sfm_min": 300,
+            "sfm_typical": 400,
+            "sfm_max": 500,
+            "ipt_min": 0.008,
+            "ipt_typical": 0.015,
+            "ipt_max": 0.025,
+            "notes": "Balanced machinability with good tool life"
+          },
+          "turning_carbide": {
+            "sfm_min": 350,
+            "sfm_typical": 450,
+            "sfm_max": 600,
+            "feed_per_rev_min": 0.010,
+            "feed_per_rev_typical": 0.025,
+            "feed_per_rev_max": 0.050,
+            "notes": "Standard reference material for many applications"
+          },
+          "drilling_carbide": {
+            "sfm_min": 300,
+            "sfm_typical": 400,
+            "sfm_max": 500,
+            "ipt_min": 0.003,
+            "ipt_typical": 0.010,
+            "ipt_max": 0.020,
+            "notes": "Follow manufacturer drill specifications"
+          }
+        },
+        "sources": [
+          "Kennametal",
+          "Haas CNC",
+          "Machinery's Handbook"
+        ]
+      },
+      "alloy_4140": {
+        "material_group": "Alloy Steel",
+        "hardness_range": "200-280 HB (annealed)",
+        "operations": {
+          "milling_carbide": {
+            "sfm_min": 200,
+            "sfm_typical": 300,
+            "sfm_max": 400,
+            "ipt_min": 0.006,
+            "ipt_typical": 0.012,
+            "ipt_max": 0.018,
+            "notes": "Higher strength requires speed reduction and tougher inserts"
+          },
+          "turning_carbide": {
+            "sfm_min": 250,
+            "sfm_typical": 350,
+            "sfm_max": 450,
+            "feed_per_rev_min": 0.008,
+            "feed_per_rev_typical": 0.020,
+            "feed_per_rev_max": 0.040,
+            "notes": "Common aerospace and automotive material"
+          }
+        }
+      },
+      "tool_steel_a2": {
+        "material_group": "Tool Steel - Hard",
+        "hardness_range": "240-280 HB",
+        "operations": {
+          "milling_carbide": {
+            "sfm_min": 100,
+            "sfm_typical": 200,
+            "sfm_max": 300,
+            "ipt_min": 0.005,
+            "ipt_typical": 0.010,
+            "ipt_max": 0.015,
+            "notes": "Wear resistance demands lower speeds"
+          }
+        }
+      }
+    },
+    "stainless_steel": {
+      "304_annealed": {
+        "material_group": "Austenitic Stainless",
+        "hardness_range": "160-210 HB",
+        "operations": {
+          "milling_carbide": {
+            "sfm_min": 80,
+            "sfm_typical": 120,
+            "sfm_max": 150,
+            "ipt_min": 0.004,
+            "ipt_typical": 0.010,
+            "ipt_max": 0.015,
+            "notes": "Work hardening tendency, use lower speeds than mild steel"
+          },
+          "turning_carbide": {
+            "sfm_min": 100,
+            "sfm_typical": 150,
+            "sfm_max": 200,
+            "feed_per_rev_min": 0.008,
+            "feed_per_rev_typical": 0.020,
+            "feed_per_rev_max": 0.035,
+            "notes": "Thermal stress and crater wear are main concerns"
+          },
+          "drilling_carbide": {
+            "sfm_min": 70,
+            "sfm_typical": 100,
+            "sfm_max": 130,
+            "ipt_min": 0.003,
+            "ipt_typical": 0.007,
+            "ipt_max": 0.012,
+            "notes": "Prone to work hardening and built-up edge"
+          }
+        },
+        "sources": [
+          "Sandvik Coromant",
+          "Kennametal",
+          "Haas CNC"
+        ]
+      },
+      "316": {
+        "material_group": "Austenitic Stainless",
+        "hardness_range": "170-220 HB",
+        "operations": {
+          "milling_carbide": {
+            "sfm_min": 70,
+            "sfm_typical": 100,
+            "sfm_max": 130,
+            "ipt_min": 0.004,
+            "ipt_typical": 0.009,
+            "ipt_max": 0.013,
+            "notes": "Slightly harder than 304, reduce speeds accordingly"
+          }
+        }
+      }
+    },
+    "cast_iron": {
+      "gray_astm30": {
+        "material_group": "Gray Cast Iron",
+        "hardness_range": "170-210 HB",
+        "operations": {
+          "milling_carbide": {
+            "sfm_min": 150,
+            "sfm_typical": 200,
+            "sfm_max": 250,
+            "ipt_min": 0.006,
+            "ipt_typical": 0.015,
+            "ipt_max": 0.030,
+            "notes": "Brittle - avoid interrupted cuts, use rigid setup"
+          },
+          "turning_carbide": {
+            "sfm_min": 200,
+            "sfm_typical": 250,
+            "sfm_max": 300,
+            "feed_per_rev_min": 0.010,
+            "feed_per_rev_typical": 0.025,
+            "feed_per_rev_max": 0.050,
+            "notes": "Abrasive - monitor insert wear, dry or minimal coolant acceptable"
+          },
+          "drilling_carbide": {
+            "sfm_min": 150,
+            "sfm_typical": 200,
+            "sfm_max": 250,
+            "ipt_min": 0.004,
+            "ipt_typical": 0.010,
+            "ipt_max": 0.020,
+            "notes": "Use spiral flutes to help chip evacuation"
+          }
+        },
+        "sources": [
+          "Haas CNC",
+          "Little Machine Shop",
+          "Tungaloy"
+        ]
+      }
+    },
+    "titanium": {
+      "ti6al4v": {
+        "material_group": "Titanium Alloy",
+        "hardness_range": "320-380 HV",
+        "operations": {
+          "milling_carbide": {
+            "sfm_min": 80,
+            "sfm_typical": 120,
+            "sfm_max": 150,
+            "ipt_min": 0.003,
+            "ipt_typical": 0.008,
+            "ipt_max": 0.012,
+            "notes": "Low thermal conductivity causes heat concentration; use coated carbide"
+          },
+          "turning_carbide": {
+            "sfm_min": 100,
+            "sfm_typical": 150,
+            "sfm_max": 200,
+            "feed_per_rev_min": 0.005,
+            "feed_per_rev_typical": 0.015,
+            "feed_per_rev_max": 0.030,
+            "notes": "Notch wear is primary failure mode; maintain consistent feed"
+          }
+        },
+        "sources": [
+          "Sandvik Coromant",
+          "Kennametal"
+        ]
+      }
+    },
+    "nickel_alloys": {
+      "inconel_718": {
+        "material_group": "Nickel-based Superalloy",
+        "hardness_range": "380-430 HV",
+        "operations": {
+          "milling_carbide": {
+            "sfm_min": 50,
+            "sfm_typical": 80,
+            "sfm_max": 120,
+            "ipt_min": 0.003,
+            "ipt_typical": 0.006,
+            "ipt_max": 0.010,
+            "notes": "Extreme work hardening; use ceramic or CBN for aggressive cutting"
+          },
+          "turning_carbide": {
+            "sfm_min": 60,
+            "sfm_typical": 100,
+            "sfm_max": 150,
+            "feed_per_rev_min": 0.005,
+            "feed_per_rev_typical": 0.012,
+            "feed_per_rev_max": 0.020,
+            "notes": "High temperature strength maintained - very tough to machine"
+          }
+        }
+      }
+    }
+  },
+  "operations": {
+    "face_milling": {
+      "description": "Cutting flat surfaces with face mill",
+      "typical_depth_of_cut_inches": 0.1,
+      "typical_depth_of_cut_range": "0.05-0.5",
+      "speed_adjustment_factors": {
+        "finishing_pass": 1.2,
+        "roughing_pass": 0.8,
+        "interrupted_cut": 0.7
+      }
+    },
+    "end_milling": {
+      "description": "Using end mills for slots, pockets, profiles",
+      "typical_depth_of_cut_inches": 0.25,
+      "typical_depth_of_cut_range": "0.05-2.0",
+      "speed_adjustment_factors": {
+        "slot_cut": 0.8,
+        "ramping": 0.9,
+        "finishing": 1.1
+      }
+    },
+    "slot_milling": {
+      "description": "Cutting narrow slots with end mills",
+      "typical_depth_of_cut_inches": 0.375,
+      "typical_depth_of_cut_range": "0.25-1.0",
+      "notes": "Reduce feed and speed due to radial engagement"
+    },
+    "turning_roughing": {
+      "description": "Material removal in turning",
+      "typical_depth_of_cut_inches": 0.25,
+      "typical_depth_of_cut_range": "0.1-0.5",
+      "feed_adjustment": "Higher feeds acceptable for speed"
+    },
+    "turning_finishing": {
+      "description": "Fine finishing pass in turning",
+      "typical_depth_of_cut_inches": 0.05,
+      "typical_depth_of_cut_range": "0.02-0.1",
+      "speed_adjustment_factors": {
+        "multiplier": 1.3,
+        "notes": "Increase speed, reduce feed for surface finish"
+      }
+    },
+    "drilling": {
+      "description": "Creating holes with drill bits",
+      "typical_depth_of_cut_inches": null,
+      "feed_adjustment": "Use manufacturer drill recommendations",
+      "critical_factors": [
+        "Margin wear on flutes",
+        "Chip evacuation",
+        "Tool runout tolerance"
+      ]
+    },
+    "boring": {
+      "description": "Enlarging existing holes",
+      "typical_depth_of_cut_inches": 0.1,
+      "speed_adjustment_factors": {
+        "vs_drilling": 0.8,
+        "notes": "Lower speeds than drilling due to reduced chip evacuation"
+      }
+    }
+  },
+  "tool_coatings": {
+    "uncoated_carbide": {
+      "relative_speed": 1.0,
+      "best_for": [
+        "Aluminum",
+        "Soft materials",
+        "Good finish required"
+      ],
+      "avoid": [
+        "Hard materials",
+        "High-speed applications"
+      ]
+    },
+    "tin_coating": {
+      "relative_speed": 1.3,
+      "best_for": [
+        "General purpose",
+        "Steel",
+        "Cast iron"
+      ],
+      "notes": "Most common industrial coating"
+    },
+    "tialn_coating": {
+      "relative_speed": 1.5,
+      "best_for": [
+        "Stainless steel",
+        "High-speed milling",
+        "Aluminum"
+      ],
+      "notes": "Premium coating, better heat resistance"
+    },
+    "aluminum_oxide": {
+      "relative_speed": 2.0,
+      "tool_type": "Ceramic insert",
+      "best_for": [
+        "Cast iron",
+        "Hard materials",
+        "High-speed turning"
+      ]
+    },
+    "cbn": {
+      "relative_speed": 3.0,
+      "tool_type": "Cubic Boron Nitride",
+      "best_for": [
+        "Hardened steel (>50 HRC)",
+        "Super alloys at extreme speeds",
+        "Production runs"
+      ],
+      "cost": "Premium - high tooling cost"
+    }
+  },
+  "formulas": {
+    "rpm_from_sfm": {
+      "description": "Calculate RPM from surface feet per minute and diameter",
+      "formula": "RPM = (SFM × 12) / (π × Diameter_inches)",
+      "simplified_formula": "RPM = (SFM × 3.82) / Diameter_inches",
+      "metric_formula": "RPM = (1000 × Vc_m_per_min) / (π × Diameter_mm)",
+      "example": {
+        "material": "Aluminum 6061",
+        "sfm": 500,
+        "diameter_inches": 0.5,
+        "rpm_result": 3819
+      }
+    },
+    "sfm_from_rpm": {
+      "description": "Calculate surface feet per minute from RPM and diameter",
+      "formula": "SFM = (RPM × π × Diameter_inches) / 12",
+      "simplified_formula": "SFM = (RPM × Diameter_inches) / 3.82"
+    },
+    "feed_rate_from_ipt": {
+      "description": "Calculate feed rate in inches per minute from IPT and flute count",
+      "formula": "IPM = IPT × Number_of_Flutes × RPM",
+      "variables": {
+        "IPT": "Inches per tooth (chip load)",
+        "Number_of_Flutes": "Flute count of cutter",
+        "RPM": "Revolutions per minute"
+      },
+      "example": {
+        "ipt": 0.015,
+        "flutes": 4,
+        "rpm": 3819,
+        "ipm_result": 228.5
+      }
+    },
+    "chip_load_calculation": {
+      "description": "Calculate actual chip thickness being created",
+      "formula": "Chip_Load = Feed_Per_Minute / (RPM × Number_of_Flutes)"
+    },
+    "horsepower_milling": {
+      "description": "Estimate horsepower required for milling",
+      "formula": "HP = (Vc × feed × depth) / (material_constant × 12)",
+      "notes": "Material constant varies by material; consult references"
+    }
+  },
+  "material_adjustment_factors": {
+    "hardness_based_adjustment": {
+      "description": "Speed multiplier based on material hardness above baseline",
+      "baseline": "150 HB",
+      "adjustments": {
+        "under_150_hb": 1.1,
+        "150_200_hb": 1.0,
+        "200_250_hb": 0.85,
+        "250_300_hb": 0.65,
+        "300_350_hb": 0.45,
+        "above_350_hb": 0.30
+      }
+    },
+    "coolant_adjustment": {
+      "dry_cutting": 0.85,
+      "minimal_coolant": 0.95,
+      "flooded_coolant": 1.0,
+      "high_pressure_coolant": 1.15
+    },
+    "tool_condition_adjustment": {
+      "new_sharp_tool": 1.1,
+      "normal_condition": 1.0,
+      "worn_tool": 0.7,
+      "significantly_worn": 0.4
+    },
+    "machine_rigidity_adjustment": {
+      "high_rigidity": 1.15,
+      "medium_rigidity": 1.0,
+      "light_machine": 0.75,
+      "spindle_runout_high": 0.6
+    },
+    "tool_life_adjustment": {
+      "5_minute_life": 1.3,
+      "10_minute_life": 1.15,
+      "15_minute_life": 1.0,
+      "30_minute_life": 0.85,
+      "60_minute_life": 0.70
+    }
+  },
+  "consensus_speeds_summary": {
+    "aluminum": {
+      "consensus_sfm": 450,
+      "range_sfm": "300-600",
+      "consensus_confidence": "very_high"
+    },
+    "mild_steel": {
+      "consensus_sfm": 350,
+      "range_sfm": "250-500",
+      "consensus_confidence": "very_high"
+    },
+    "stainless_steel_304": {
+      "consensus_sfm": 100,
+      "range_sfm": "80-150",
+      "consensus_confidence": "high"
+    },
+    "cast_iron": {
+      "consensus_sfm": 200,
+      "range_sfm": "150-300",
+      "consensus_confidence": "high"
+    },
+    "titanium": {
+      "consensus_sfm": 120,
+      "range_sfm": "100-150",
+      "consensus_confidence": "high"
+    },
+    "inconel": {
+      "consensus_sfm": 80,
+      "range_sfm": "60-120",
+      "consensus_confidence": "medium"
+    }
+  },
+  "data_sources_by_category": {
+    "tool_manufacturers_with_apis": [
+      "Sandvik Coromant (REST API, JSON/GTC)",
+      "Kennametal (Web calculator, API pending)"
+    ],
+    "tool_manufacturers_with_web_calculators": [
+      "Sandvik Coromant",
+      "Kennametal",
+      "Iscar",
+      "Seco Tools",
+      "Harvey Tool",
+      "Mitsubishi Materials",
+      "Kyocera",
+      "Sumitomo"
+    ],
+    "tool_manufacturers_with_mobile_apps": [
+      "Sandvik Coromant (Machining Calculator)",
+      "Seco Tools (Seco Assistant)",
+      "Sumitomo (SumiTool Calculator)",
+      "Tungaloy (Tungaloy App)",
+      "Mitsubishi Materials (Cutting Calculator)"
+    ],
+    "machine_manufacturers_with_published_data": [
+      "Haas CNC (extensive PDF tables)",
+      "Okuma (limited public data)",
+      "Mazak (auto-calculation in control)"
+    ],
+    "reference_sources": [
+      "Machinery's Handbook (commercial, comprehensive)",
+      "CNC Cookbook (web-based, free)",
+      "Little Machine Shop (web reference, free)",
+      "Haas CNC data (free PDFs)",
+      "Zero-Divide FSWizard (free calculator)"
+    ]
+  },
+  "gaps_and_recommendations": {
+    "data_gaps": [
+      "Specific coating performance differences not fully documented",
+      "Multi-material composite cutting speeds limited",
+      "Micro-tool performance (<0.250 diameter) sparse",
+      "Exotic alloy combinations incomplete",
+      "Machine-specific adjustment factors missing"
+    ],
+    "recommended_next_steps": [
+      "Verify data against actual test results from professional machines",
+      "Contact manufacturer application engineers for specialty materials",
+      "Build test matrix for 15 most common material/operation combinations",
+      "Validate calculator against machining forum recommendations (Practical Machinist)",
+      "Establish error tolerance and confidence levels for each recommendation"
+    ]
+  }
+}

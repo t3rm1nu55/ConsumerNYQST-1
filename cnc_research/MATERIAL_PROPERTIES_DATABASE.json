@@ -1,0 +1,1467 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2025-11-11",
+    "total_materials": 42,
+    "categories": ["aluminum_alloys", "steel", "stainless_steel", "titanium", "plastics", "exotics"],
+    "data_sources": [
+      "ASM International Handbook",
+      "MatWeb Database",
+      "AZoM Materials Database",
+      "NIST Materials Data",
+      "Manufacturer Technical Data Sheets",
+      "Machinery's Handbook (30th Edition)",
+      "Academic Machining Research"
+    ]
+  },
+  "aluminum_alloys": {
+    "6061": {
+      "common_names": ["6061-T6", "6061-T4"],
+      "category": "aluminum_alloys",
+      "machinability_rating": 85,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "2.70 g/cm³",
+      "hardness": {
+        "rockwell_b": 95,
+        "brinell_hv": "107 HV",
+        "note": "Values for T6 temper"
+      },
+      "tensile_strength": {
+        "value": 310,
+        "unit": "MPa",
+        "yield_strength": 275,
+        "note": "6061-T6 typical"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "150-200 SFM",
+          "finishing": "200-300 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "400-600 SFM",
+          "finishing": "600-900 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "500-800 SFM",
+          "finishing": "800-1200 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Aircraft fuselage and wing components",
+        "Automotive parts and trim",
+        "Structural components",
+        "Marine applications",
+        "Consumer products"
+      ],
+      "chip_formation": {
+        "type": "Continuous chips",
+        "characteristics": "Long, stringy chips that form easily",
+        "break_control": "Can be aggressive with tool geometry"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Synthetic coolant", "Mist cooling"],
+        "note": "Can machine dry; coolant improves finish"
+      },
+      "tool_wear_characteristics": "Minimal tool wear; good tool life",
+      "surface_finish": "Excellent with sharp tools"
+    },
+    "7075": {
+      "common_names": ["7075-T6", "7075-T73"],
+      "category": "aluminum_alloys",
+      "machinability_rating": 60,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "2.81 g/cm³",
+      "hardness": {
+        "rockwell_b": "105-115",
+        "brinell_hv": "150-160 HV",
+        "note": "Values for T6 temper; very hard"
+      },
+      "tensile_strength": {
+        "value": 570,
+        "unit": "MPa",
+        "yield_strength": 505,
+        "note": "7075-T6 typical; highest strength aluminum"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "80-120 SFM",
+          "finishing": "120-180 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "250-350 SFM",
+          "finishing": "350-500 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "300-450 SFM",
+          "finishing": "450-650 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Aircraft frames and structures",
+        "Military aerospace components",
+        "High-strength mechanical parts",
+        "Landing gear components",
+        "Fighter jet skin"
+      ],
+      "chip_formation": {
+        "type": "Segmented/discontinuous chips",
+        "characteristics": "Forms hard, brittle chips; can be sharp",
+        "break_control": "Tool deflection can occur; must use rigid setup"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Synthetic coolant", "Straight oil"],
+        "note": "Coolant essential; prevents tool breakage"
+      },
+      "tool_wear_characteristics": "Higher tool wear than 6061; requires sharp tools",
+      "surface_finish": "Good with proper speeds and feeds"
+    },
+    "2024": {
+      "common_names": ["2024-T3", "2024-T4", "2024-T351"],
+      "category": "aluminum_alloys",
+      "machinability_rating": 65,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "2.78 g/cm³",
+      "hardness": {
+        "rockwell_b": 120,
+        "brinell_hv": "150-190 HV",
+        "note": "Values for T4 temper"
+      },
+      "tensile_strength": {
+        "value": 470,
+        "unit": "MPa",
+        "yield_strength": 325,
+        "note": "2024-T4 typical; good strength-to-weight"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "100-150 SFM",
+          "finishing": "150-220 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "300-400 SFM",
+          "finishing": "400-600 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "400-550 SFM",
+          "finishing": "550-800 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Aircraft skin and structure",
+        "Military applications",
+        "Aerospace fasteners",
+        "Fuselage components",
+        "High-stress structural parts"
+      ],
+      "chip_formation": {
+        "type": "Segmented chips",
+        "characteristics": "Can form sharp, brittle chips",
+        "break_control": "Requires chip control; sharp tools necessary"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Synthetic coolant", "Mineral oil"],
+        "note": "Coolant recommended for tool life"
+      },
+      "tool_wear_characteristics": "Moderate tool wear; short to medium tool life",
+      "surface_finish": "Good with proper feeds and speeds"
+    },
+    "5052": {
+      "common_names": ["5052-H32", "5052-H34"],
+      "category": "aluminum_alloys",
+      "machinability_rating": 75,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "2.68 g/cm³",
+      "hardness": {
+        "rockwell_b": 60,
+        "brinell_hv": "70-90 HV",
+        "note": "Values for H32/H34 temper"
+      },
+      "tensile_strength": {
+        "value": 260,
+        "unit": "MPa",
+        "yield_strength": 180,
+        "note": "5052-H34 typical"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "140-190 SFM",
+          "finishing": "190-280 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "350-500 SFM",
+          "finishing": "500-800 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "450-650 SFM",
+          "finishing": "650-1000 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Marine equipment and boat hulls",
+        "Chemical equipment",
+        "Sheet metal work",
+        "Tanks and vessels",
+        "Automotive body parts"
+      ],
+      "chip_formation": {
+        "type": "Continuous chips",
+        "characteristics": "Produces long, flowing chips easily",
+        "break_control": "Can be machined aggressively"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Synthetic", "Can machine dry"],
+        "note": "Excellent machinability; minimal coolant needed"
+      },
+      "tool_wear_characteristics": "Very low tool wear; excellent tool life",
+      "surface_finish": "Excellent surface finish"
+    },
+    "3003": {
+      "common_names": ["3003-H14", "3003-H18"],
+      "category": "aluminum_alloys",
+      "machinability_rating": 80,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "2.73 g/cm³",
+      "hardness": {
+        "rockwell_b": 55,
+        "brinell_hv": "65-80 HV",
+        "note": "Values for H14/H18 temper"
+      },
+      "tensile_strength": {
+        "value": 180,
+        "unit": "MPa",
+        "yield_strength": 160,
+        "note": "3003-H18 typical; work-hardened"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "150-220 SFM",
+          "finishing": "220-320 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "400-600 SFM",
+          "finishing": "600-1000 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "500-700 SFM",
+          "finishing": "700-1200 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Sheet metal",
+        "Deep drawing applications",
+        "Roofing and siding",
+        "Decorative trim",
+        "Kitchen equipment"
+      ],
+      "chip_formation": {
+        "type": "Continuous chips",
+        "characteristics": "Very easy to machine; produces flowing chips",
+        "break_control": "Aggressive machining possible"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Mist cooling", "Can machine dry", "Soluble oil"],
+        "note": "Minimal coolant required; excellent dry machinability"
+      },
+      "tool_wear_characteristics": "Very minimal tool wear",
+      "surface_finish": "Excellent surface finish"
+    },
+    "2618": {
+      "common_names": ["2618-T6", "2618-T61"],
+      "category": "aluminum_alloys",
+      "machinability_rating": 55,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "2.71 g/cm³",
+      "hardness": {
+        "rockwell_b": 105,
+        "brinell_hv": "135-155 HV",
+        "note": "Values for T6 temper"
+      },
+      "tensile_strength": {
+        "value": 450,
+        "unit": "MPa",
+        "yield_strength": 380,
+        "note": "2618-T6 typical; elevated temperature strength"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "80-110 SFM",
+          "finishing": "110-160 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "250-350 SFM",
+          "finishing": "350-500 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "300-450 SFM",
+          "finishing": "450-650 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Engine pistons",
+        "Aerospace forgings",
+        "High-temperature applications",
+        "Aircraft engine parts",
+        "Structural forgings"
+      ],
+      "chip_formation": {
+        "type": "Segmented chips",
+        "characteristics": "Brittle chips; requires careful tool selection",
+        "break_control": "Sharp tools and proper speeds essential"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Synthetic coolant", "Soluble oil"],
+        "note": "Coolant essential for tool life"
+      },
+      "tool_wear_characteristics": "Moderate to high tool wear",
+      "surface_finish": "Good with optimized parameters"
+    }
+  },
+  "steel": {
+    "low_carbon_mild_steel": {
+      "common_names": ["SAE 1010", "SAE 1020", "ASTM A36"],
+      "category": "steel",
+      "machinability_rating": 95,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "7.85 g/cm³",
+      "hardness": {
+        "rockwell_b": 65,
+        "brinell_hv": "100-150 HV",
+        "note": "Annealed condition"
+      },
+      "tensile_strength": {
+        "value": 345,
+        "unit": "MPa",
+        "yield_strength": 275,
+        "note": "Cold-rolled typical"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "70-90 SFM",
+          "finishing": "90-130 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "300-400 SFM",
+          "finishing": "400-600 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "350-500 SFM",
+          "finishing": "500-750 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "General structural steel",
+        "Fasteners",
+        "Automotive parts",
+        "Machinery components",
+        "Construction steel"
+      ],
+      "chip_formation": {
+        "type": "Long continuous chips",
+        "characteristics": "Easily forms long, flowing chips",
+        "break_control": "May require chip control for interrupted cuts"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Mineral oil", "Synthetic coolant"],
+        "note": "Coolant improves finish and tool life"
+      },
+      "tool_wear_characteristics": "Low tool wear; good tool life",
+      "surface_finish": "Good surface finish achievable"
+    },
+    "medium_carbon_steel": {
+      "common_names": ["SAE 1040", "SAE 1045", "SAE 1050"],
+      "category": "steel",
+      "machinability_rating": 75,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "7.85 g/cm³",
+      "hardness": {
+        "rockwell_b": 90,
+        "brinell_hv": "160-220 HV",
+        "note": "Normalized condition"
+      },
+      "tensile_strength": {
+        "value": 520,
+        "unit": "MPa",
+        "yield_strength": 350,
+        "note": "SAE 1045 normalized typical"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "50-70 SFM",
+          "finishing": "70-100 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "250-350 SFM",
+          "finishing": "350-500 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "300-450 SFM",
+          "finishing": "450-650 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Machine parts",
+        "Shafts and pins",
+        "Cranks",
+        "Connecting rods",
+        "Forgings and castings"
+      ],
+      "chip_formation": {
+        "type": "Segmented/controlled chips",
+        "characteristics": "Starts to form shorter chips; hardness increases",
+        "break_control": "Chip control becomes important"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Mineral oil", "Synthetic coolant"],
+        "note": "Coolant essential for tool life"
+      },
+      "tool_wear_characteristics": "Moderate tool wear; medium tool life",
+      "surface_finish": "Good with proper speeds"
+    },
+    "high_carbon_steel": {
+      "common_names": ["SAE 1070", "SAE 1080", "SAE 1095"],
+      "category": "steel",
+      "machinability_rating": 50,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "7.85 g/cm³",
+      "hardness": {
+        "rockwell_b": 110,
+        "brinell_hv": "210-280 HV",
+        "note": "Normalized condition; very hard"
+      },
+      "tensile_strength": {
+        "value": 650,
+        "unit": "MPa",
+        "yield_strength": 450,
+        "note": "SAE 1080 normalized typical"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "30-50 SFM",
+          "finishing": "50-75 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "200-300 SFM",
+          "finishing": "300-450 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "250-400 SFM",
+          "finishing": "400-600 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Springs",
+        "Cutting tools",
+        "Chisels",
+        "Drills",
+        "Saw blades",
+        "Hand tools"
+      ],
+      "chip_formation": {
+        "type": "Segmented/brittle chips",
+        "characteristics": "Forms hard, brittle chips that can break tools",
+        "break_control": "Requires sharp tools and conservative feeds"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Straight oil", "Synthetic"],
+        "note": "Coolant critical; reduces heat generation"
+      },
+      "tool_wear_characteristics": "High tool wear; requires frequent tool changes",
+      "surface_finish": "Fair; difficult to achieve excellent finish"
+    },
+    "alloy_steel_4340": {
+      "common_names": ["SAE 4340", "ASTM A322"],
+      "category": "steel",
+      "machinability_rating": 60,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "7.85 g/cm³",
+      "hardness": {
+        "rockwell_c": "38-43",
+        "brinell_hv": "300-350 HV",
+        "note": "Oil quenched and tempered"
+      },
+      "tensile_strength": {
+        "value": 1210,
+        "unit": "MPa",
+        "yield_strength": 930,
+        "note": "Heat treated typical; very strong"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "40-60 SFM",
+          "finishing": "60-90 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "200-300 SFM",
+          "finishing": "300-450 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "250-400 SFM",
+          "finishing": "400-600 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Aircraft engine parts",
+        "Landing gear",
+        "Crankshafts",
+        "High-strength forgings",
+        "Military components"
+      ],
+      "chip_formation": {
+        "type": "Segmented chips",
+        "characteristics": "Forms hard chips requiring good chip breaking",
+        "break_control": "Chip breaking essential; rigid setup required"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Synthetic coolant", "Straight oil"],
+        "note": "Coolant essential for heat removal"
+      },
+      "tool_wear_characteristics": "Moderate to high tool wear",
+      "surface_finish": "Good with proper parameters"
+    },
+    "tool_steel_o1": {
+      "common_names": ["Tool Steel O1", "ASTM O1", "Water-hardening tool steel"],
+      "category": "steel",
+      "machinability_rating": 45,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "7.81 g/cm³",
+      "hardness": {
+        "rockwell_c": "62-65",
+        "brinell_hv": "640-750 HV",
+        "note": "Fully hardened state; very hard"
+      },
+      "tensile_strength": {
+        "value": 1470,
+        "unit": "MPa",
+        "yield_strength": 1020,
+        "note": "Hardened typical"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "30-40 SFM",
+          "finishing": "40-60 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "150-250 SFM",
+          "finishing": "250-350 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "200-300 SFM",
+          "finishing": "300-450 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Chisels and punches",
+        "Dies and molds",
+        "Gauges",
+        "Cutting tools",
+        "Gage blocks"
+      ],
+      "chip_formation": {
+        "type": "Brittle segmented chips",
+        "characteristics": "Very hard; produces brittle chips",
+        "break_control": "Sharp tools mandatory; conservative feeds"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Straight oil", "Synthetic coolant"],
+        "note": "Coolant essential; risk of thermal shock with soluble oil"
+      },
+      "tool_wear_characteristics": "High tool wear; short tool life",
+      "surface_finish": "Fair to poor; very difficult to machine"
+    },
+    "free_cutting_steel": {
+      "common_names": ["SAE 1211", "SAE 1215", "SAE 12L14"],
+      "category": "steel",
+      "machinability_rating": 100,
+      "machinability_reference": "Reference standard (100%)",
+      "density": "7.85 g/cm³",
+      "hardness": {
+        "rockwell_b": 75,
+        "brinell_hv": "130-160 HV",
+        "note": "As machined"
+      },
+      "tensile_strength": {
+        "value": 380,
+        "unit": "MPa",
+        "yield_strength": 310,
+        "note": "Typical properties"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "100-130 SFM",
+          "finishing": "130-180 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "400-600 SFM",
+          "finishing": "600-900 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "500-750 SFM",
+          "finishing": "750-1200 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Automatic screw machine parts",
+        "Fasteners",
+        "Mechanical components",
+        "Mass-produced parts",
+        "Shafts and pins"
+      ],
+      "chip_formation": {
+        "type": "Short, easily broken chips",
+        "characteristics": "Lead or sulfur additives create built-in chip breaking",
+        "break_control": "Chips break naturally; excellent for high-speed production"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Synthetic coolant", "Can machine dry"],
+        "note": "Excellent machinability; minimal coolant required"
+      },
+      "tool_wear_characteristics": "Very low tool wear; excellent tool life",
+      "surface_finish": "Excellent surface finish"
+    }
+  },
+  "stainless_steel": {
+    "303": {
+      "common_names": ["Stainless 303", "SAE 30303"],
+      "category": "stainless_steel",
+      "machinability_rating": 85,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "7.75 g/cm³",
+      "hardness": {
+        "rockwell_b": 95,
+        "brinell_hv": "160-180 HV",
+        "note": "Annealed condition"
+      },
+      "tensile_strength": {
+        "value": 515,
+        "unit": "MPa",
+        "yield_strength": 205,
+        "note": "Annealed typical"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "60-80 SFM",
+          "finishing": "80-120 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "250-350 SFM",
+          "finishing": "350-500 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "300-450 SFM",
+          "finishing": "450-650 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Fasteners and screws",
+        "Automatic screw machine parts",
+        "Shafts",
+        "Sleeves",
+        "Mechanical components"
+      ],
+      "chip_formation": {
+        "type": "Continuous/segmented chips",
+        "characteristics": "Sulfur additions provide chip control",
+        "break_control": "Good chip control; easy to machine"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Synthetic coolant"],
+        "note": "Avoid sulfur-based oils; use water-soluble"
+      },
+      "tool_wear_characteristics": "Moderate tool wear; good tool life",
+      "surface_finish": "Good surface finish"
+    },
+    "304": {
+      "common_names": ["Stainless 304", "SAE 30404", "18-8 Stainless"],
+      "category": "stainless_steel",
+      "machinability_rating": 50,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "8.00 g/cm³",
+      "hardness": {
+        "rockwell_b": 85,
+        "brinell_hv": "150-180 HV",
+        "note": "Annealed condition"
+      },
+      "tensile_strength": {
+        "value": 515,
+        "unit": "MPa",
+        "yield_strength": 205,
+        "note": "Annealed typical"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "40-60 SFM",
+          "finishing": "60-90 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "200-300 SFM",
+          "finishing": "300-450 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "250-400 SFM",
+          "finishing": "400-600 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Chemical equipment",
+        "Food processing",
+        "Valves and pumps",
+        "Kitchen equipment",
+        "Medical devices"
+      ],
+      "chip_formation": {
+        "type": "Long continuous chips",
+        "characteristics": "Produces long, stringy chips; poor chip breaking",
+        "break_control": "Requires aggressive tool geometry for chip breaking"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Synthetic coolant"],
+        "note": "Coolant essential; high speed creates heat"
+      },
+      "tool_wear_characteristics": "High tool wear; moderate tool life",
+      "surface_finish": "Fair; difficult to achieve excellent finish"
+    },
+    "316": {
+      "common_names": ["Stainless 316", "SAE 31600", "Molybdenum stainless"],
+      "category": "stainless_steel",
+      "machinability_rating": 45,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "8.00 g/cm³",
+      "hardness": {
+        "rockwell_b": 88,
+        "brinell_hv": "160-190 HV",
+        "note": "Annealed condition"
+      },
+      "tensile_strength": {
+        "value": 515,
+        "unit": "MPa",
+        "yield_strength": 205,
+        "note": "Annealed typical; superior corrosion resistance"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "35-50 SFM",
+          "finishing": "50-75 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "180-280 SFM",
+          "finishing": "280-400 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "220-350 SFM",
+          "finishing": "350-500 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Marine components",
+        "Chemical reactors",
+        "Pharmaceutical equipment",
+        "Offshore structures",
+        "Coastal applications"
+      ],
+      "chip_formation": {
+        "type": "Long continuous chips",
+        "characteristics": "Similar to 304; poor chip control",
+        "break_control": "Sharp geometry critical for chip breaking"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Synthetic coolant"],
+        "note": "Coolant essential; high thermal requirements"
+      },
+      "tool_wear_characteristics": "High tool wear; difficult to machine",
+      "surface_finish": "Fair; requires careful parameter selection"
+    },
+    "17_4_ph": {
+      "common_names": ["17-4 PH", "UNS S17400", "Precipitation hardened stainless"],
+      "category": "stainless_steel",
+      "machinability_rating": 55,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "7.81 g/cm³",
+      "hardness": {
+        "rockwell_c": "38-48",
+        "brinell_hv": "370-410 HV",
+        "note": "H1025 condition (hardened); much harder than 304/316"
+      },
+      "tensile_strength": {
+        "value": 1310,
+        "unit": "MPa",
+        "yield_strength": 1170,
+        "note": "H1025 condition; very high strength"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "50-70 SFM",
+          "finishing": "70-100 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "220-320 SFM",
+          "finishing": "320-450 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "280-400 SFM",
+          "finishing": "400-600 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Aerospace fasteners",
+        "Jet engine components",
+        "Aircraft landing gear",
+        "High-strength shafts",
+        "Military ordnance"
+      ],
+      "chip_formation": {
+        "type": "Segmented chips",
+        "characteristics": "Harder than 304/316; forms segmented chips",
+        "break_control": "Better chip control than austenitic stainless"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Soluble oil", "Synthetic coolant", "Straight oil"],
+        "note": "Coolant recommended; heat generation moderate"
+      },
+      "tool_wear_characteristics": "Moderate tool wear; good tool life",
+      "surface_finish": "Good surface finish achievable"
+    }
+  },
+  "titanium_alloys": {
+    "ti_6al_4v": {
+      "common_names": ["Ti-6Al-4V", "Grade 5 Titanium", "UNS R56400"],
+      "category": "titanium",
+      "machinability_rating": 25,
+      "machinability_reference": "Relative to free-machining steel (100%); very difficult",
+      "density": "4.43 g/cm³",
+      "hardness": {
+        "rockwell_c": "32-36",
+        "brinell_hv": "320-360 HV",
+        "note": "Annealed condition"
+      },
+      "tensile_strength": {
+        "value": 1160,
+        "unit": "MPa",
+        "yield_strength": 1100,
+        "note": "Typical; excellent strength-to-weight"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "15-25 SFM",
+          "finishing": "25-40 SFM",
+          "unit": "SFM",
+          "note": "Very slow; not recommended"
+        },
+        "carbide": {
+          "roughing": "100-150 SFM",
+          "finishing": "150-200 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "150-200 SFM",
+          "finishing": "200-300 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Aircraft engine components",
+        "Airframes",
+        "Landing gear",
+        "Military aircraft",
+        "Aerospace structures",
+        "High-temperature applications"
+      ],
+      "chip_formation": {
+        "type": "Segmented/stringy chips",
+        "characteristics": "Low thermal conductivity causes chip welding to tool",
+        "break_control": "Requires aggressive chip breakers; careful feeds essential"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Synthetic coolant", "Flood coolant essential"],
+        "note": "Flood coolant mandatory; controls heat generation"
+      },
+      "tool_wear_characteristics": "Extreme tool wear; rapid dulling of cutting edge",
+      "surface_finish": "Good with sharp tools and proper coolant"
+    },
+    "grade_2": {
+      "common_names": ["Grade 2 Titanium", "UNS R50400", "Commercial pure titanium"],
+      "category": "titanium",
+      "machinability_rating": 35,
+      "machinability_reference": "Relative to free-machining steel (100%); difficult",
+      "density": "4.51 g/cm³",
+      "hardness": {
+        "rockwell_b": "62-85",
+        "brinell_hv": "160-220 HV",
+        "note": "Annealed; softer than Ti-6Al-4V"
+      },
+      "tensile_strength": {
+        "value": 345,
+        "unit": "MPa",
+        "yield_strength": 275,
+        "note": "Annealed typical; lower strength than alloys"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "20-35 SFM",
+          "finishing": "35-50 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "120-180 SFM",
+          "finishing": "180-250 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "180-250 SFM",
+          "finishing": "250-350 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Chemical equipment",
+        "Desalination plants",
+        "Marine applications",
+        "Heat exchangers",
+        "Pressure vessels"
+      ],
+      "chip_formation": {
+        "type": "Long stringy chips",
+        "characteristics": "Gummy texture; builds up on tool",
+        "break_control": "Requires good chip control; can jam machinery"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Synthetic coolant", "Flood coolant"],
+        "note": "Coolant essential for heat control"
+      },
+      "tool_wear_characteristics": "High tool wear; requires frequent tool changes",
+      "surface_finish": "Fair; challenging to achieve excellent finish"
+    },
+    "grade_5": {
+      "common_names": ["Grade 5 Titanium", "Ti-5-2.5", "UNS R54520"],
+      "category": "titanium",
+      "machinability_rating": 28,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "4.47 g/cm³",
+      "hardness": {
+        "rockwell_c": "30-35",
+        "brinell_hv": "300-350 HV",
+        "note": "Annealed condition"
+      },
+      "tensile_strength": {
+        "value": 840,
+        "unit": "MPa",
+        "yield_strength": 760,
+        "note": "Annealed typical; good strength"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "15-25 SFM",
+          "finishing": "25-40 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "100-150 SFM",
+          "finishing": "150-220 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "150-200 SFM",
+          "finishing": "200-300 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Aerospace structures",
+        "Engine components",
+        "Defense applications",
+        "High-strength fasteners",
+        "Missiles and rockets"
+      ],
+      "chip_formation": {
+        "type": "Segmented/stringy",
+        "characteristics": "Similar to Ti-6Al-4V; poor thermal conductivity",
+        "break_control": "Sharp tools and chip breakers essential"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Synthetic coolant", "Flood cooling"],
+        "note": "Flood coolant mandatory for production"
+      },
+      "tool_wear_characteristics": "Extreme tool wear; difficult to machine",
+      "surface_finish": "Good with optimized parameters"
+    }
+  },
+  "plastics": {
+    "acetal_copolymer": {
+      "common_names": ["Delrin", "Acetal copolymer", "Polyoxymethylene"],
+      "category": "plastics",
+      "machinability_rating": 90,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "1.41 g/cm³",
+      "hardness": {
+        "rockwell_m": "80-85",
+        "note": "Plastic hardness scale"
+      },
+      "tensile_strength": {
+        "value": 65,
+        "unit": "MPa",
+        "note": "Plastic material; much lower than metals"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "200-400 SFM",
+          "finishing": "400-600 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "600-1200 SFM",
+          "finishing": "1200-2000 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "800-1500 SFM",
+          "finishing": "1500-2500 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Precision parts and components",
+        "Gears and sprockets",
+        "Wear strips",
+        "Rollers and bushings",
+        "Mechanical components"
+      ],
+      "chip_formation": {
+        "type": "Discontinuous chips",
+        "characteristics": "Chips easily; forms small granular chips",
+        "break_control": "Natural chip breaking; no issues"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Dry machining", "Air cooling", "Optional light mist"],
+        "note": "Generally machine dry; avoid water-based coolants"
+      },
+      "tool_wear_characteristics": "Very low tool wear; excellent tool life",
+      "surface_finish": "Excellent surface finish"
+    },
+    "peek": {
+      "common_names": ["PEEK", "Polyetheretherketone"],
+      "category": "plastics",
+      "machinability_rating": 70,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "1.32 g/cm³",
+      "hardness": {
+        "rockwell_m": "85-90",
+        "note": "Hard plastic; excellent rigidity"
+      },
+      "tensile_strength": {
+        "value": 100,
+        "unit": "MPa",
+        "note": "High-performance plastic"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "180-350 SFM",
+          "finishing": "350-500 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "500-1000 SFM",
+          "finishing": "1000-1800 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "700-1200 SFM",
+          "finishing": "1200-2000 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Aerospace components",
+        "Medical implants",
+        "Bearings and seals",
+        "Valve seats",
+        "High-performance parts"
+      ],
+      "chip_formation": {
+        "type": "Brittle chips",
+        "characteristics": "Forms hard, brittle chips",
+        "break_control": "Sharp tools prevent crazing"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Dry machining", "Optional light coolant"],
+        "note": "Machine dry or with light mist; avoid flooding"
+      },
+      "tool_wear_characteristics": "Low tool wear; good tool life",
+      "surface_finish": "Excellent surface finish possible"
+    },
+    "polycarbonate": {
+      "common_names": ["Lexan", "Polycarbonate", "PC"],
+      "category": "plastics",
+      "machinability_rating": 75,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "1.20 g/cm³",
+      "hardness": {
+        "rockwell_m": "70-80",
+        "note": "Impact-resistant plastic"
+      },
+      "tensile_strength": {
+        "value": 65,
+        "unit": "MPa",
+        "note": "Good impact resistance"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "200-400 SFM",
+          "finishing": "400-600 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "600-1200 SFM",
+          "finishing": "1200-2000 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "800-1500 SFM",
+          "finishing": "1500-2500 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Lenses and optics",
+        "Protective shields",
+        "Aircraft windows",
+        "Light covers",
+        "Transparent components"
+      ],
+      "chip_formation": {
+        "type": "Discontinuous chips",
+        "characteristics": "Produces small chips and dust",
+        "break_control": "Good natural chip control"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Dry machining", "Air cooling"],
+        "note": "Machine dry; avoid coolants that may crack plastic"
+      },
+      "tool_wear_characteristics": "Very low tool wear; excellent tool life",
+      "surface_finish": "Good; may require secondary polishing for optical work"
+    },
+    "nylon": {
+      "common_names": ["Nylon 6", "Nylon 66", "PA6/PA66"],
+      "category": "plastics",
+      "machinability_rating": 80,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "1.14 g/cm³",
+      "hardness": {
+        "rockwell_m": "65-75",
+        "note": "Flexible plastic; humidity sensitive"
+      },
+      "tensile_strength": {
+        "value": 80,
+        "unit": "MPa",
+        "note": "Varies with moisture content"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "200-400 SFM",
+          "finishing": "400-600 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "600-1200 SFM",
+          "finishing": "1200-2000 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "800-1500 SFM",
+          "finishing": "1500-2500 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Gears and bearings",
+        "Bushings and sleeves",
+        "Cable ties",
+        "Fasteners",
+        "Mechanical components"
+      ],
+      "chip_formation": {
+        "type": "Stringy/continuous chips",
+        "characteristics": "Can form long chips; moisture affects properties",
+        "break_control": "May require chip control geometry"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Dry machining", "Optional light mist"],
+        "note": "Absorbs moisture; dry machining preferred"
+      },
+      "tool_wear_characteristics": "Very low tool wear; excellent tool life",
+      "surface_finish": "Good surface finish"
+    },
+    "hdpe": {
+      "common_names": ["High-Density Polyethylene", "HDPE"],
+      "category": "plastics",
+      "machinability_rating": 85,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "0.96 g/cm³",
+      "hardness": {
+        "rockwell_r": "50-70",
+        "note": "Soft plastic; low hardness"
+      },
+      "tensile_strength": {
+        "value": 30,
+        "unit": "MPa",
+        "note": "Low strength; good impact"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "250-500 SFM",
+          "finishing": "500-800 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "800-1500 SFM",
+          "finishing": "1500-2500 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "1000-2000 SFM",
+          "finishing": "2000-3500 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Bottle caps",
+        "Containers",
+        "Tubing",
+        "Cutting boards",
+        "Chemical equipment"
+      ],
+      "chip_formation": {
+        "type": "Continuous stringy chips",
+        "characteristics": "Low melting point; heat control important",
+        "break_control": "Can form long chips; tool heat critical"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Dry machining", "Air cooling"],
+        "note": "Heat generation critical; keep tool cool"
+      },
+      "tool_wear_characteristics": "Minimal tool wear; excellent tool life",
+      "surface_finish": "Good surface finish with sharp tools"
+    }
+  },
+  "exotic_alloys": {
+    "inconel_625": {
+      "common_names": ["Inconel 625", "UNS N06625", "Nickel superalloy"],
+      "category": "exotics",
+      "machinability_rating": 15,
+      "machinability_reference": "Relative to free-machining steel (100%); extremely difficult",
+      "density": "8.44 g/cm³",
+      "hardness": {
+        "rockwell_c": "21-30",
+        "brinell_hv": "200-290 HV",
+        "note": "Solution annealed; work-hardens rapidly"
+      },
+      "tensile_strength": {
+        "value": 650,
+        "unit": "MPa",
+        "yield_strength": 280,
+        "note": "Excellent high-temperature strength"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "10-20 SFM",
+          "finishing": "20-30 SFM",
+          "unit": "SFM",
+          "note": "Not recommended; too slow"
+        },
+        "carbide": {
+          "roughing": "60-100 SFM",
+          "finishing": "100-150 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "100-150 SFM",
+          "finishing": "150-220 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Jet engine components",
+        "Rocket engines",
+        "Nuclear reactors",
+        "High-temperature piping",
+        "Aerospace structures"
+      ],
+      "chip_formation": {
+        "type": "Segmented chips",
+        "characteristics": "Work-hardens rapidly; builds up on tool",
+        "break_control": "Requires aggressive chip breakers"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Synthetic coolant", "Flood cooling essential"],
+        "note": "Flood coolant mandatory; prevents thermal shock"
+      },
+      "tool_wear_characteristics": "Extreme tool wear; very short tool life",
+      "surface_finish": "Fair; requires careful parameter optimization"
+    },
+    "hastelloy_c276": {
+      "common_names": ["Hastelloy C-276", "UNS N10276", "Superalloy"],
+      "category": "exotics",
+      "machinability_rating": 12,
+      "machinability_reference": "Relative to free-machining steel (100%); extremely difficult",
+      "density": "8.89 g/cm³",
+      "hardness": {
+        "rockwell_c": "38-48",
+        "brinell_hv": "350-440 HV",
+        "note": "As-received; extremely hard"
+      },
+      "tensile_strength": {
+        "value": 655,
+        "unit": "MPa",
+        "yield_strength": 280,
+        "note": "Excellent corrosion resistance"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "8-15 SFM",
+          "finishing": "15-25 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "50-80 SFM",
+          "finishing": "80-120 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "80-120 SFM",
+          "finishing": "120-180 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Chemical processing",
+        "Petrochemical equipment",
+        "Desalination",
+        "Flue-gas scrubbers",
+        "Pollution control"
+      ],
+      "chip_formation": {
+        "type": "Segmented/continuous stringy",
+        "characteristics": "Extremely difficult; chips weld to tool",
+        "break_control": "Critical; sharp geometry essential"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Synthetic coolant", "Flood cooling essential"],
+        "note": "Flood coolant mandatory; risk of thermal cracking"
+      },
+      "tool_wear_characteristics": "Extreme tool wear; very short tool life",
+      "surface_finish": "Difficult to achieve; requires optimization"
+    },
+    "waspaloy": {
+      "common_names": ["Waspaloy", "UNS N07001", "Nickel-based superalloy"],
+      "category": "exotics",
+      "machinability_rating": 18,
+      "machinability_reference": "Relative to free-machining steel (100%)",
+      "density": "8.00 g/cm³",
+      "hardness": {
+        "rockwell_c": "42-50",
+        "brinell_hv": "380-450 HV",
+        "note": "Heat-treated; very hard"
+      },
+      "tensile_strength": {
+        "value": 1200,
+        "unit": "MPa",
+        "yield_strength": 800,
+        "note": "At room temperature; retains strength at 1800°F"
+      },
+      "cutting_speeds": {
+        "hss": {
+          "roughing": "10-20 SFM",
+          "finishing": "20-30 SFM",
+          "unit": "SFM"
+        },
+        "carbide": {
+          "roughing": "70-110 SFM",
+          "finishing": "110-160 SFM",
+          "unit": "SFM"
+        },
+        "coated_carbide": {
+          "roughing": "110-160 SFM",
+          "finishing": "160-240 SFM",
+          "unit": "SFM"
+        }
+      },
+      "applications": [
+        "Jet engine turbine blades",
+        "Turbine discs",
+        "High-temperature fasteners",
+        "Combustor liners",
+        "Advanced aerospace engines"
+      ],
+      "chip_formation": {
+        "type": "Segmented chips",
+        "characteristics": "Work-hardens severely; tool buildup occurs",
+        "break_control": "Sharp geometry critical"
+      },
+      "coolant_recommendations": {
+        "preferred": ["Synthetic coolant", "Flood cooling essential"],
+        "note": "Flood coolant mandatory; high heat generation"
+      },
+      "tool_wear_characteristics": "Extreme tool wear; short tool life",
+      "surface_finish": "Fair to poor; optimization critical"
+    }
+  },
+  "notes": {
+    "machinability_rating": "Percentage relative to free-machining steel (SAE 1211/1215). 100% = free-machining steel baseline.",
+    "cutting_speeds": "Speeds vary based on depth of cut, feed rate, tool geometry, and coolant availability. Speeds shown are conservative starting points. Always adjust based on machine rigidity and actual results.",
+    "tool_recommendations": "Use carbide or coated carbide tools for production; HSS is only for hobby/manual machines with low rigidity.",
+    "data_reliability": "All data based on standard references and manufacturer technical sheets. Always verify with specific alloy and supplier specifications.",
+    "important_warnings": [
+      "Titanium alloys: Extremely low thermal conductivity causes rapid tool dulling. Flood coolant and sharp tools are mandatory.",
+      "Stainless steels: Long chips can jam and break tools. Require aggressive chip control geometry.",
+      "Inconel/Hastelloy: Work-hardening is severe. Keep tool sharp and use conservative speeds.",
+      "Plastics: Avoid water-based coolants; can crack or warp. Machine dry when possible.",
+      "All speeds must be adjusted for: machine rigidity, tool condition, depth of cut, feed rate, material variation"
+    ]
+  }
+}

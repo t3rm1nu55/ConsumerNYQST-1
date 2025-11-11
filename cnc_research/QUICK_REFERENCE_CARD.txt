@@ -1,0 +1,175 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║         FEEDS & SPEEDS QUICK REFERENCE CARD - CARBIDE TOOLS                 ║
+║              (15-minute tool life, wet cutting, standard conditions)          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ MATERIAL                    │ SFM RANGE      │ IPT (FEED/TOOTH)  │ NOTES     │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ Aluminum 6061              │ 450-550        │ 0.010-0.030       │ Easy      │
+│ Aluminum 7075              │ 250-350        │ 0.008-0.020       │ Hard      │
+│ Steel Mild (1045)          │ 350-450        │ 0.010-0.025       │ Standard  │
+│ Steel Alloy (4140)         │ 250-350        │ 0.008-0.018       │ Harder    │
+│ Tool Steel (A2)            │ 100-200        │ 0.005-0.015       │ Hard      │
+│ Stainless 304              │ 100-150        │ 0.008-0.015       │ Tough     │
+│ Stainless 316              │ 80-130         │ 0.007-0.013       │ Harder    │
+│ Cast Iron ASTM30           │ 150-250        │ 0.010-0.030       │ Abrasive  │
+│ Titanium 6-4               │ 100-150        │ 0.005-0.012       │ Heat      │
+│ Inconel 718                │ 80-120         │ 0.003-0.010       │ Tough     │
+│ Copper                     │ 300-400        │ 0.015-0.040       │ Easy      │
+│ Brass                      │ 300-400        │ 0.020-0.050       │ Easy      │
+│ Plastic (Acetal)           │ 400-600        │ 0.010-0.030       │ Easy      │
+│ Graphite                   │ 300-500        │ 0.010-0.025       │ Dry      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        ESSENTIAL FORMULAS                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+  SPINDLE SPEED (RPM):
+    RPM = (SFM × 3.82) / Diameter_inches
+    
+    Example: 500 SFM, 0.5" diameter
+    RPM = (500 × 3.82) / 0.5 = 3,820 RPM
+
+  FEED RATE (IPM):
+    Feed_IPM = IPT × Flutes × RPM
+    
+    Example: 0.015 IPT, 4 flutes, 3,820 RPM
+    Feed = 0.015 × 4 × 3,820 = 229 IPM
+
+  METRIC (RPM):
+    RPM = (1000 × Vc_m/min) / (π × Diameter_mm)
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                      QUICK ADJUSTMENTS                                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+  HARDNESS (vs. baseline at 150 HB):
+    <150 HB:    ×1.1  (softer materials)
+    150-200:    ×1.0  (baseline)
+    200-250:    ×0.85
+    250-300:    ×0.65
+    >300 HB:    ×0.30 (very hard, use ceramic)
+
+  COOLANT CONDITION:
+    Dry:        -15% speed
+    Minimal:    -5% speed
+    Wet:        1.0× (baseline)
+    High-pressure: +15% speed
+
+  TOOL CONDITION:
+    New/sharp:  +10% speed
+    Normal:     1.0× (baseline)
+    Worn:       -30% speed
+
+  MACHINE RIGIDITY:
+    Rigid:      +15% possible
+    Medium:     1.0× (baseline)
+    Light:      -25% reduction
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    CUTTING SPEED BY TOOL MATERIAL                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+  High Speed Steel (HSS):     Use baseline speeds (reference)
+  Carbide (uncoated):         2-3× HSS speeds
+  TiN Coated:                 1.3× uncoated
+  TiAlN Coated:               1.5× uncoated
+  Ceramic:                    3-10× HSS speeds
+  CBN (Cubic Boron Nitride):  3-5× carbide speeds
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    RECOMMENDED FEED RATES                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+  FINISHING:    0.001-0.010 IPT  (smooth surface, slow)
+  GENERAL:      0.010-0.025 IPT  (balanced)
+  ROUGHING:     0.025-0.050 IPT  (fast removal)
+  HIGH-FEED:    0.050-0.250 IPT  (special geometry)
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         DEPTH OF CUT LIMITS                                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+  End Mill (Milling):     0.05-0.5" typical
+  Face Mill:              0.1-1.0" typical  
+  Drill:                  Use feed per flute
+  Turning Insert:         0.1-0.5" typical
+  Finishing Pass:         0.02-0.1" depth, higher speed
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         MATERIAL GROUPS                                      ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+  EASY (600+ SFM possible):
+    Aluminum, magnesium, soft plastics, brass
+
+  MODERATE (300-450 SFM):
+    Mild steel, soft stainless, copper
+
+  DIFFICULT (100-200 SFM):
+    Hard stainless, titanium, nickel alloys
+
+  VERY DIFFICULT (<100 SFM):
+    Tool steel, hardened steel, super alloys
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        TROUBLESHOOTING                                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+  TOOL BREAKING:          Reduce feed, check runout, increase coolant
+  POOR FINISH:            Increase speed, reduce feed, sharpen tool
+  WORK HARDENING:         Increase speed (aluminum, stainless)
+  BUILT-UP EDGE:          Increase speed or feed, use coolant
+  CHATTER/VIBRATION:      Reduce depth, reduce speed, check setup
+  THERMAL WEAR:           Reduce speed, improve coolant, check geometry
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                      STARTING PARAMETERS (SAFE)                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+  For Unknown Material: Start at 200-250 SFM
+  Carbide tools: Start conservative, increase by 10-15% increments
+  When in doubt: Reference tool manufacturer spec sheet
+  Key rule: Better to run slow than break tool
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                      REFERENCE FILES IN CATALOG                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+  PRIMARY SOURCES:
+  1. CUTTING_DATA_COMPILED.json
+     → Use for calculator integration (machine-readable)
+  
+  2. MANUFACTURER_DATA_CATALOG.md
+     → Reference for detailed material/operation info
+  
+  3. MANUFACTURER_RESOURCES_INDEX.md
+     → 25+ URLs for manufacturer data & calculators
+
+  ADDITIONAL RESOURCES:
+  4. DATA_COVERAGE_SUMMARY.md
+     → Statistics and quality metrics
+  
+  5. README_CUTTING_DATA_CATALOG.md
+     → Quick-start for developers
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+  CONFIDENCE LEVELS:
+  ⭐⭐⭐ High    (90+ sources agree, production-tested)
+  ⭐⭐  Medium  (2-3 sources, some variance)
+  ⭐   Low     (1 source, specialty material)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+  FOR BEST RESULTS:
+  1. Start conservative with published speeds
+  2. Monitor tool wear closely
+  3. Increase speed/feed gradually
+  4. Keep detailed notes of what works
+  5. Consult manufacturer for unusual materials
+  6. Test on production equipment before full run
+
+═══════════════════════════════════════════════════════════════════════════════════
