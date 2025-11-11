@@ -1,0 +1,697 @@
+{
+  "research_date": "2025-11-11",
+  "research_scope": "CNC Ecosystem Integration Opportunities for Feeds/Speeds Calculator",
+  "cam_software": [
+    {
+      "name": "Fusion 360",
+      "market_share": "~15-20% of accessible CAM market (free)",
+      "company": "Autodesk",
+      "platform": "Cloud-based, desktop",
+      "feeds_speeds_capability": "Manual entry required; no built-in calculator. Users must reference tool manufacturer data and manually input RPM/feedrate. Has tool library (.json format) for storing tool parameters.",
+      "user_complaints": [
+        "No automatic feeds/speeds calculator despite user requests since 2019",
+        "Manual calculation workflow is time-consuming",
+        "Tool library requires pre-population of all parameters",
+        "No integration with third-party calculators",
+        "Discrepancies between theoretical and actual machine behavior not captured"
+      ],
+      "integration_opportunities": [
+        "Plugin/add-in for automatic feeds/speeds calculation from tool library",
+        "API integration to sync with external feeds/speeds calculator",
+        "Tool library import from HSMAdvisor or other databases",
+        "Real-time parameter optimization based on material/tool selection",
+        "G-code parameter analysis and auto-adjustment suggestions"
+      ],
+      "api_available": "yes",
+      "api_notes": "Fusion 360 supports add-ins/plugins; tool library uses .json format. Limited official API documentation for parameter manipulation.",
+      "file_formats": [
+        ".json (tool library native)",
+        ".gcode",
+        ".tap",
+        ".ngc",
+        ".step",
+        ".iges"
+      ],
+      "integration_priority": "high",
+      "reasoning": "Large accessible user base, missing critical calculator functionality, active user requests, native tool library system ready for expansion"
+    },
+    {
+      "name": "Mastercam",
+      "market_share": "~25-30% (industry standard, professional market leader)",
+      "company": "CNC Software, Inc.",
+      "platform": "Desktop",
+      "feeds_speeds_capability": "Built-in feeds/speeds calculator with multiple calculation methods (from tool, from material, from defaults, user-defined). Integrates with tool library. Harvey Performance and other partners provide tool libraries with 24,000+ tools. CloudNC CAM Assist provides physics-based AI optimization.",
+      "user_complaints": [
+        "Tool library partners (Harvey Tool) deliberately don't prepopulate speeds/feeds, forcing manual research",
+        "Calculator requires experienced machinist knowledge to validate results",
+        "Different machine types need different feed parameters; calculator doesn't account for machine-specific constraints",
+        "Integration with third-party optimization tools is limited",
+        "No real-time optimization during cuts"
+      ],
+      "integration_opportunities": [
+        "Plugin for ML-based parameter optimization using historical shop data",
+        "Integration with tool management systems (WinTool, CRIBWISE, GigaTrak)",
+        "Real-time monitor integration for adaptive feeds/speeds during cutting",
+        "Machine-specific parameter profiles and constraint checking",
+        "CloudNC CAM Assist-style physics-based optimization as first-class feature"
+      ],
+      "api_available": "unknown",
+      "api_notes": "Mastercam has plugin ecosystem but public API documentation limited. VB scripting available but integration details unclear.",
+      "file_formats": [
+        ".mcx (Mastercam file)",
+        ".gcode/.tap",
+        ".dxf",
+        ".step",
+        ".iges"
+      ],
+      "integration_priority": "high",
+      "reasoning": "Market leader with professional user base; existing calculator but users request optimization; established plugin ecosystem; high user frustration with manual workflows"
+    },
+    {
+      "name": "SolidCAM",
+      "market_share": "~10-15% (SOLIDWORKS, Inventor, Onshape integrated CAM)",
+      "company": "SolidCAM Ltd.",
+      "platform": "Integrated with SolidWorks, Inventor, Onshape",
+      "feeds_speeds_capability": "Advanced iMachining optimization automatically calculates and adapts feeds/speeds throughout cut. Dynamically optimizes based on depth, tool engagement, material hardness. Calculates optimized stepovers and cutting strategies. Most advanced built-in optimization of any CAM tool.",
+      "user_complaints": [
+        "iMachining optimization is powerful but lacks transparency about how parameters are calculated",
+        "No learning from user feedback or historical job results",
+        "Users can't easily override or fine-tune optimization decisions",
+        "Integration with external material/tool databases limited",
+        "No real-time feedback from actual cutting conditions"
+      ],
+      "integration_opportunities": [
+        "Feedback loop system to learn from actual cutting results and refine optimization",
+        "Integration with tool databases (Sandvik Coromant, Kennametal, etc.)",
+        "Real-time computer vision integration for chip monitoring and parameter adjustment",
+        "Machine-specific constraint profiles for different CNC types",
+        "Explainable AI interface showing why parameters were selected"
+      ],
+      "api_available": "yes",
+      "api_notes": "Integrated within CAD platforms; API access depends on host (SolidWorks, Inventor). Plugin architecture available.",
+      "file_formats": [
+        ".gcode",
+        ".tap",
+        ".dxf",
+        ".step",
+        ".iges"
+      ],
+      "integration_priority": "medium",
+      "reasoning": "Most advanced optimization already built-in; integration opportunity is mostly learning/feedback loop rather than calculation. Integrated platform limits third-party plugin options."
+    },
+    {
+      "name": "HSMWorks / Autodesk HSM",
+      "market_share": "~5-10% (embedded in SolidWorks, Inventor, Fusion 360)",
+      "company": "Autodesk",
+      "platform": "SolidWorks, Inventor, Fusion 360 plugin",
+      "feeds_speeds_capability": "No built-in feeds/speeds calculator. Marketed as 'experienced machinist CAM'. Users must provide all speeds/feeds parameters. Relies on manual input or external calculators like HSMAdvisor.",
+      "user_complaints": [
+        "Lack of feeds/speeds calculator is major limitation compared to competitors",
+        "Users specifically request this feature",
+        "Requires external tools (G-Wizard, HSMAdvisor, FSWizard) for parameter calculation",
+        "No optimization or validation of user-input parameters",
+        "Tool library is just a container; doesn't assist with parameter selection"
+      ],
+      "integration_opportunities": [
+        "Build or integrate feeds/speeds calculator module directly into HSMWorks",
+        "Create plugin/extension for HSMAdvisor integration",
+        "AI-based parameter suggestion based on material/tool/machine combination",
+        "Tool library enhancement with pre-populated cutting data from manufacturers",
+        "Real-time parameter validation during operation"
+      ],
+      "api_available": "yes",
+      "api_notes": "Plugin architecture available within SolidWorks/Inventor/Fusion 360. Can access tool library and part geometry.",
+      "file_formats": [
+        ".hsmlib (tool library)",
+        ".json (Fusion 360 tool library)",
+        ".gcode",
+        ".tap"
+      ],
+      "integration_priority": "very_high",
+      "reasoning": "Significant user pain point; explicit feature request in forums; feeds/speeds calculator would solve major workflow gap; integration plugin would be high-value addition"
+    }
+  ],
+  "cad_software": [
+    {
+      "name": "SolidWorks",
+      "market_share": "~40-45% of CAD market globally",
+      "feeds_speeds_related": "Integrates with CAM software (SOLIDWORKS CAM via CAMWorks, SolidCAM, HSMWorks). Design-to-CAM workflow: CAD model -> CAM tool library setup -> machining operations. No direct feeds/speeds calculation in core CAD.",
+      "integration_opportunities": [
+        "CAM plugin that auto-calculates feeds/speeds from part geometry and material",
+        "Tool library assistant that recommends tools based on feature geometry",
+        "Design-for-manufacturability analysis including cutting parameters",
+        "Integration with external tool databases during CAM prep phase"
+      ]
+    },
+    {
+      "name": "Autodesk Inventor",
+      "market_share": "~15-20% of CAD market (primarily automotive, aerospace)",
+      "feeds_speeds_related": "Integrated CAM options: Inventor CAM (Autodesk HSM), SolidCAM. Similar to SolidWorks - CAD model is source for CAM operations, but Inventor CAM status uncertain per user feedback. No built-in feeds/speeds in core application.",
+      "integration_opportunities": [
+        "Strengthen Inventor CAM feeds/speeds capabilities through plugin",
+        "Tool library integration with Inventor parts catalog",
+        "Machine constraint modeling within design environment",
+        "Manufacturing cost/time estimation based on cutting parameters"
+      ]
+    },
+    {
+      "name": "AutoCAD",
+      "market_share": "~60-70% of drafting/2D CAD market (declining for 3D CAM)",
+      "feeds_speeds_related": "Limited CAM integration. Users typically export to specialized CAM software. No feeds/speeds functionality. Mostly used for 2D drawings rather than CNC programming.",
+      "integration_opportunities": [
+        "CAM plugin bridge to popular CAM packages",
+        "DXF export enhancements for CAM compatibility",
+        "Feeds/speeds calculator for simple 2D cutting profiles"
+      ]
+    }
+  ],
+  "cnc_controllers": [
+    {
+      "name": "FANUC (powers Haas, Doosan, Tsugami, Citizen, etc.)",
+      "market_share": "~35-40% of industrial CNC market",
+      "parameter_update_capability": "FOCAS (FANUC Open CNC API) enables real-time parameter updates. Requires Ethernet connection and licensed FOCAS option on controller. Can read/write machine parameters, start programs, adjust feed override, collect live operational data.",
+      "integration_opportunities": [
+        "Real-time feeds/speeds parameter override via FOCAS API",
+        "Live machine state monitoring to optimize parameters during cutting",
+        "Adaptive parameter adjustment based on actual spindle load/temperature",
+        "Historical data collection for ML-based optimization",
+        "Integration with shop floor management systems"
+      ],
+      "technical_feasibility": "high",
+      "api_available": "yes",
+      "api_notes": "FOCAS is standard but requires paid license/enable on machine. Well-documented protocol.",
+      "data_standards": "FOCAS protocol (DLL-based), G-code"
+    },
+    {
+      "name": "Siemens SINUMERIK / NX CAM",
+      "market_share": "~20-25% of industrial CNC market",
+      "parameter_update_capability": "OPC UA standard for real-time machine monitoring and parameter updates. NX CAM integrates with SenseNC for automated milling optimization. Post Hub cloud service for postprocessing.",
+      "integration_opportunities": [
+        "OPC UA integration for real-time parameter monitoring",
+        "SenseNC-style ML optimization as plugin for other CAM packages",
+        "Machine-specific constraint profiles and optimization"
+      ],
+      "technical_feasibility": "high",
+      "api_available": "yes",
+      "api_notes": "OPC UA is industry standard; Siemens leads manufacturing OPC UA implementation",
+      "data_standards": "OPC UA, G-code variants, STEP-NC (future)"
+    },
+    {
+      "name": "Mach3 / Mach4",
+      "market_share": "~5-8% (hobby to small professional shops)",
+      "parameter_update_capability": "Plugin architecture available. Mach3/4 can accept parameter updates via plugin interface. Popular for hobby/DIY CNC community. Running Windows-based control software.",
+      "integration_opportunities": [
+        "Feeds/speeds calculator plugin for Mach3/4",
+        "Real-time parameter optimization plugin",
+        "Tool library management integration"
+      ],
+      "technical_feasibility": "medium",
+      "api_available": "yes",
+      "api_notes": "Plugin API documented; VB scripting supported. Community-driven development.",
+      "data_standards": "G-code, Mach script"
+    },
+    {
+      "name": "LinuxCNC",
+      "market_share": "~2-3% (open-source, hobbyist, educational)",
+      "parameter_update_capability": "Open-source platform allows direct code modification. Real-time operating system. Can integrate with hardware monitors and sensors. Limited commercial use.",
+      "integration_opportunities": [
+        "Open-source feeds/speeds optimization module",
+        "Real-time sensor integration for adaptive parameters",
+        "Educational platform for ML-based optimization development"
+      ],
+      "technical_feasibility": "high",
+      "api_available": "yes",
+      "api_notes": "Fully open-source; community-driven. No licensing restrictions.",
+      "data_standards": "G-code, Python plugins, Real-time Linux"
+    }
+  ],
+  "tool_databases": [
+    {
+      "name": "HSMAdvisor",
+      "type": "Standalone calculator + tool database",
+      "capabilities": "Desktop calculator (Windows/Mac), Mobile app (iPhone/Android, FSWizard), tool database, tool inventory tracking, cutting data library, feeds/speeds calculation",
+      "market_position": "Leading standalone calculator; professional machinists pay for this",
+      "integration_potential": "Medium - would be potential competitor to AI feeds/speeds calculator, but could also be partnership/integration opportunity",
+      "strengths": [
+        "~200 materials in database (vs. G-Wizard's ~50)",
+        "Tool inventory management",
+        "Professional user base"
+      ],
+      "limitations": [
+        "No CAM integration",
+        "No real-time optimization",
+        "No machine-specific constraint handling",
+        "No learning from cutting outcomes"
+      ]
+    },
+    {
+      "name": "G-Wizard (CNCCookbook)",
+      "type": "Standalone calculator",
+      "capabilities": "Windows-based feeds/speeds calculator, tool crib software, DNC software, blog/forums",
+      "market_position": "Well-known calculator with active community",
+      "integration_potential": "Medium - established but users criticize deficiencies",
+      "strengths": [
+        "Large community and support resources",
+        "Integrated tooling database"
+      ],
+      "limitations": [
+        "Adobe Air dependency (security issue for some shops)",
+        "Calculation accuracy issues reported",
+        "Material library gaps (missing 304/303 stainless)",
+        "Limited material options vs. competitors",
+        "No CAM integration",
+        "User support responsiveness issues"
+      ]
+    },
+    {
+      "name": "FSWizard (Zero Divide)",
+      "type": "Standalone calculator",
+      "capabilities": "Mobile-first calculator (Android), bundled with HSMAdvisor ($97 total)",
+      "market_position": "Free/low-cost mobile option",
+      "integration_potential": "Low - simpler tool, often bundled with HSMAdvisor",
+      "strengths": [
+        "Free or very low cost",
+        "Mobile platform"
+      ],
+      "limitations": [
+        "Less comprehensive than HSMAdvisor",
+        "Limited material database",
+        "Mobile-only for many features"
+      ]
+    },
+    {
+      "name": "Major Tool Manufacturers Database",
+      "includes": "Sandvik Coromant, Kennametal, Seco Tools, Kyocera, OSG USA, Harvey Tool, Helical Solutions",
+      "capabilities": "Cutting data, tool specs, SFM/feedrate recommendations, online catalogs",
+      "market_position": "Authoritative source but scattered across vendor websites",
+      "integration_potential": "Very High - feeds/speeds calculator could pull live data from manufacturer APIs or cached databases",
+      "strengths": [
+        "Official, accurate cutting data",
+        "Continuously updated by manufacturers",
+        "Covers virtually all tool types"
+      ],
+      "limitations": [
+        "Data scattered across vendor websites",
+        "Requires manual lookup process",
+        "Some vendors don't expose data via API",
+        "Pricing/availability not included",
+        "No machine-specific optimization"
+      ]
+    },
+    {
+      "name": "WinTool",
+      "type": "Tool inventory management software",
+      "capabilities": "CNC tooling inventory, tool lifecycle management, integration with CAM software, barcode tracking, tool crib automation",
+      "market_position": "Professional tool management platform",
+      "integration_potential": "High - tool database can feed into feeds/speeds calculator with real shop tool data",
+      "strengths": [
+        "Real shop inventory tracking",
+        "Integration with CAM software",
+        "Professional adoption"
+      ],
+      "limitations": [
+        "Inventory only; doesn't calculate parameters",
+        "Requires separate feeds/speeds source"
+      ]
+    },
+    {
+      "name": "CRIBWISE (Sandvik Group)",
+      "type": "Digital tool inventory management",
+      "capabilities": "Tool database, specifications tracking, inventory management, integration with tool cabinets and crib systems",
+      "market_position": "Modern digital tool management solution",
+      "integration_potential": "High - feeds/speeds calculator can query real-time tool availability and specs",
+      "strengths": [
+        "Digital inventory tracking",
+        "Integration with automated tool cabinets",
+        "Professional platform"
+      ],
+      "limitations": [
+        "Inventory/specifications only",
+        "No parameter calculation"
+      ]
+    },
+    {
+      "name": "GigaTrak / Shop Floor Automations",
+      "type": "Tool tracking and shop management",
+      "capabilities": "Tool crib management, barcode-based tracking, maintenance scheduling, predictive tool management, machine monitoring",
+      "market_position": "Tool tracking focused platform",
+      "integration_potential": "Medium - tool data available but platform is more maintenance-focused",
+      "strengths": [
+        "Real-time tool tracking",
+        "Maintenance predictions",
+        "Multi-machine support"
+      ],
+      "limitations": [
+        "Maintenance/tracking focus, not cutting parameters"
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "category": "DNC Software",
+      "description": "Direct Numerical Control - transfers G-code to CNC machines, file versioning, machine monitoring",
+      "examples": ["eNETDNC", "ProDNC", "ConnectCNC", "GEWATEC", "OpenDNC (open-source)"],
+      "integration_potential": "Medium - DNC software could pass parameter data to controller, but mostly focused on file transfer",
+      "opportunities": [
+        "Real-time parameter adjustment during drip-feed operations",
+        "Parameter versioning and history tracking",
+        "Integration with shop floor management"
+      ]
+    },
+    {
+      "category": "Shop Floor Management",
+      "description": "Production tracking, machine monitoring, job scheduling, downtime analysis",
+      "examples": ["ShopFloorConnect (Wintriss)", "ShopFloorManager", "Shop Floor Automations", "TopSolid ShopFloor", "Predator Tracker"],
+      "integration_potential": "High - shop floor data can inform parameter optimization and historical learning",
+      "opportunities": [
+        "Parameter optimization using historical production data",
+        "Real-time machine state integration for adaptive cuts",
+        "Predictive maintenance and tool change scheduling",
+        "Production efficiency insights from cutting data"
+      ]
+    },
+    {
+      "category": "Real-Time Machine Monitoring",
+      "description": "Computer vision, sensor data, AI-powered tool wear detection, chip monitoring",
+      "examples": ["SolidShop (computer vision)", "OMNIedge (THK)", "TMAC", "Productive Machines SenseNC"],
+      "integration_potential": "Very High - real-time data is core to next-gen feeds/speeds optimization",
+      "opportunities": [
+        "Computer vision integration for chip formation analysis",
+        "Real-time spindle load/temperature monitoring",
+        "Tool wear detection and remaining life prediction",
+        "Automatic parameter adjustment during cutting based on sensor data",
+        "Anomaly detection for chatter or tool damage"
+      ],
+      "technical_notes": "Computer vision systems can detect chip color/formation, tool wear, spindle vibration, and surface quality"
+    },
+    {
+      "category": "AI-Powered CAM Plugins",
+      "description": "ML-based optimization, physics-based parameter calculation, automated toolpath generation",
+      "examples": ["CloudNC CAM Assist", "Productive Machines SenseNC", "Toolpath.com", "Siemens NX SenseNC"],
+      "integration_potential": "Very High - direct competitor and/or partnership opportunity",
+      "opportunities": [
+        "Standalone feeds/speeds calculator as SaaS alternative to CAM-embedded solutions",
+        "Plug into existing CAM ecosystems (Fusion 360, Mastercam plugins)",
+        "Provide cutting data API for CAM software consumption"
+      ],
+      "market_context": "CloudNC is funded startup, demonstrates market validation for AI-powered optimization"
+    },
+    {
+      "category": "Material Database",
+      "description": "Cutting data, material properties, machinability ratings, SFM recommendations",
+      "examples": ["Manufacturer databases (Sandvik, Kennametal), Metrology databases, Custom material libraries"],
+      "integration_potential": "High - material data is essential input for feeds/speeds calculation",
+      "opportunities": [
+        "Partner with tool manufacturers for live cutting data",
+        "Create standardized material property database",
+        "ML-based material classification from user input"
+      ]
+    }
+  ],
+  "integration_priorities": [
+    {
+      "rank": 1,
+      "integration_type": "Fusion 360 Plugin/Add-in",
+      "target_market": "20-30k accessible Fusion 360 CAM users",
+      "value_proposition": "Solve critical feature gap where HSMWorks lacks feeds/speeds calculator. Provide automatic parameter calculation from tool library + material selection. Position as essential Fusion 360 CAM companion tool.",
+      "technical_feasibility": "high",
+      "technical_notes": "Fusion 360 plugin architecture documented. Tool library .json format accessible. Could integrate HSMAdvisor data or build custom ML engine.",
+      "user_demand": "High - users explicitly request this feature; multiple forum threads about missing calculator functionality",
+      "evidence": [
+        "Autodesk stated in 2019 'don't expect feeds/speeds calculator anytime soon'",
+        "Users resort to manual entry or external tools (G-Wizard, HSMAdvisor)",
+        "Multiple feature requests in Autodesk community forums"
+      ],
+      "revenue_potential": "Subscription/licensing through Autodesk marketplace or standalone; estimated 2-5k paying users at $9.99-19.99/month = $240k-$1.2M/year",
+      "competitive_advantage": "First native Fusion 360 calculator with AI optimization; could become de facto standard"
+    },
+    {
+      "rank": 2,
+      "integration_type": "Mastercam Plugin - ML Optimization & Tool Library Enhancement",
+      "target_market": "50-80k Mastercam professional users",
+      "value_proposition": "Enhance Mastercam's built-in calculator with ML learning from shop data + real-time optimization. Add tool library pre-population from manufacturer databases. Create collaborative tool library sharing between shops.",
+      "technical_feasibility": "high",
+      "technical_notes": "Mastercam plugin ecosystem established. CloudNC already partners with Mastercam; proven integration model.",
+      "user_demand": "High - professional users frustrated with manual parameter fine-tuning; request for ML-based optimization",
+      "evidence": [
+        "Harvey Tool deliberately doesn't prepopulate speeds/feeds, forcing shops to do manual research",
+        "Forums discuss need for machine-specific parameter profiles",
+        "CloudNC CAM Assist partnership demonstrates market validation"
+      ],
+      "revenue_potential": "Plugin license through Mastercam marketplace; estimated 5-10k paying users at $99-199/month = $600k-$2.4M/year",
+      "competitive_advantage": "Leverages market leader position; first to bring real-time learning to professional CAM"
+    },
+    {
+      "rank": 3,
+      "integration_type": "Real-Time CNC Parameter Optimization via FOCAS/OPC UA",
+      "target_market": "Large shops with Haas/Fanuc/Siemens equipment (5-15k shops)",
+      "value_proposition": "Connect to CNC controller API (FOCAS for Fanuc/Haas, OPC UA for Siemens) to monitor cutting in real-time and suggest parameter adjustments. Integrate machine-specific constraint profiles. Prevent tool breakage and chatter.",
+      "technical_feasibility": "high",
+      "technical_notes": "FOCAS and OPC UA are established standards. Requires machine-specific driver development but well-documented protocols. DNC software could serve as bridge.",
+      "user_demand": "High - professional shops desperate to reduce tool breakage and optimize cycle time",
+      "evidence": [
+        "Machine downtime costs $500-2000/hour in production shops",
+        "Tool breakage is major pain point (discussed extensively in forums)",
+        "Adaptive feeds/speeds discussed as key to Industry 4.0"
+      ],
+      "revenue_potential": "Enterprise licensing model; estimated 1-5k shops at $2k-$10k/year = $2M-$50M/year at scale",
+      "competitive_advantage": "Only real-time optimization solution for professional shops; direct ROI through uptime/efficiency gains"
+    },
+    {
+      "rank": 4,
+      "integration_type": "Computer Vision Chip Monitoring + Auto-Adjust",
+      "target_market": "Premium shops willing to invest in automation (500-2k shops)",
+      "value_proposition": "Deploy low-cost camera to monitor chip formation in real-time. AI analyzes chip color/formation to detect chatter, tool wear, material variations. Auto-suggests parameter adjustments or pauses cut before tool failure.",
+      "technical_feasibility": "medium",
+      "technical_notes": "Computer vision research active (multiple academic papers, THK OMNIedge product). Requires camera hardware + ML model training. Integration with CNC controller needed.",
+      "user_demand": "Medium-High - shops with expensive jobs or difficult materials want this capability",
+      "evidence": [
+        "Multiple research projects on CV-based monitoring (SolidShop, academic papers)",
+        "THK OMNIedge product exists and integrates with Fanuc",
+        "Tool wear prediction identified as key pain point"
+      ],
+      "revenue_potential": "Hardware + software model; camera (~$200-500) + software subscription ($100-500/month) = estimated 500 shops = $600k-$3M/year",
+      "competitive_advantage": "First integrated CV+AI for feeds/speeds; prevents catastrophic tool failure"
+    },
+    {
+      "rank": 5,
+      "integration_type": "Tool Manufacturer API Integration & Live Cutting Data",
+      "target_market": "All CAM users who need current tool data (100k+ users)",
+      "value_proposition": "Create standardized API/database for tool cutting data from Sandvik Coromant, Kennametal, Seco, Kyocera, etc. Feeds/speeds calculator queries live manufacturer data. Automatic tool library updates as new products released.",
+      "technical_feasibility": "medium",
+      "technical_notes": "Requires partnerships with tool manufacturers. Some may have existing APIs (Sandvik, Kennametal). Would need to consolidate into unified format.",
+      "user_demand": "High - machinists constantly struggle with scattered tool data sources",
+      "evidence": [
+        "Manufacturer catalogs fragmented across vendor websites",
+        "Users request 'where do I get tool specs?' constantly in forums",
+        "Tool library prepopulation identified as major pain point"
+      ],
+      "revenue_potential": "SaaS API service to CAM/tool database software; estimated 50-100k API queries/month across industry = $10k-$100k/month subscription revenue = $120k-$1.2M/year",
+      "competitive_advantage": "Only unified authoritative source for manufacturer cutting data; becomes industry standard"
+    },
+    {
+      "rank": 6,
+      "integration_type": "Shop Floor Data Learning - Historical Optimization",
+      "target_market": "Professional shops with data collection (2-5k shops)",
+      "value_proposition": "Feed shop's historical production data (job history, material, tools, speeds/feeds, outcomes) into ML model. System learns what works in THIS shop on THIS equipment with THIS operators. Becomes personalized optimizer over time.",
+      "technical_feasibility": "medium",
+      "technical_notes": "Requires integration with shop floor management systems (ShopFloorConnect, eNETDNC, ERP systems). Data privacy/security critical. ML model retraining pipeline needed.",
+      "user_demand": "High - one machinist said 'real world data is better knowledge than any calculator'",
+      "evidence": [
+        "Shops maintain manual records of successful speeds/feeds for each material+tool+machine combo",
+        "Machinists value their own experience over generic recommendations",
+        "Practical Machinist forum: 'human memory not as good as using recorded facts'"
+      ],
+      "revenue_potential": "Premium tier on feeds/speeds calculator subscription; estimated 1-2k shops at $50-200/month = $600k-$4.8M/year",
+      "competitive_advantage": "No competitor offers this personalized learning approach; becomes more valuable as data accumulates"
+    }
+  ],
+  "file_format_standards": {
+    "cnc_programming": [
+      {
+        "format": "G-code (RS-274 / ISO 6983-1)",
+        "standard": "ISO 6983-1",
+        "description": "Most widely used CNC programming language. Many proprietary variants (Fanuc, Haas, Siemens, etc.).",
+        "file_extensions": [".gcode", ".nc", ".tap", ".ngc", ".g01"],
+        "compatibility_notes": "No true universal standard; post-processors required to convert between dialects. Fanuc is de facto default."
+      },
+      {
+        "format": "STEP-NC",
+        "standard": "ISO 14649",
+        "description": "Next-generation machining language embedding geometric data + tolerance info. Aims to replace G-code with semantic manufacturing instructions.",
+        "file_extensions": [".step", ".stp"],
+        "compatibility_notes": "Future standard; not yet widely adopted. Siemens NX leads STEP-NC adoption."
+      },
+      {
+        "format": "MTConnect",
+        "standard": "MTConnect v1.9+",
+        "description": "Machine monitoring data standard (XML over HTTP). Read-only protocol for collecting machine status, tool data, production metrics.",
+        "compatibility_notes": "Growing adoption; newer machines support it. Complementary to G-code (describes machine state, not part programs)."
+      },
+      {
+        "format": "OPC UA",
+        "standard": "OPC UA Specification",
+        "description": "Industrial data exchange standard (read/write). Used for real-time machine monitoring and parameter updates. More comprehensive than MTConnect.",
+        "compatibility_notes": "Siemens standard; growing adoption in Industry 4.0 initiatives. Requires OPC UA client on CAM/monitoring software."
+      }
+    ],
+    "tool_libraries": [
+      {
+        "format": "Fusion 360 Tool Library",
+        "standard": "JSON (.json)",
+        "description": "Fusion 360 native tool library format. Contains tool geometry, speeds/feeds, coolant info. JSON structure not fully documented by Autodesk.",
+        "compatibility": "Fusion 360 native. Can export to .hsmlib for HSMWorks/Inventor HSM compatibility.",
+        "integration_notes": "Tool library database accessible via plugin API. Third-party tools can import/export .json"
+      },
+      {
+        "format": "HSM Tool Library",
+        "standard": ".hsmlib",
+        "description": "Autodesk tool library format used in Inventor HSM, HSMWorks, Fusion 360. Interchangeable between these platforms.",
+        "compatibility": "Inventor, HSMWorks, Fusion 360 (export only)",
+        "integration_notes": "Standardized format; some third-party tool libraries support .hsmlib export"
+      },
+      {
+        "format": "Tab-Separated Values",
+        "standard": ".tsv",
+        "description": "Simple text-based tool library format. Spreadsheet-compatible. Supported by Fusion 360, HSM products.",
+        "compatibility": "Universal; can import into spreadsheets for manipulation",
+        "integration_notes": "Low-fidelity format; doesn't capture all tool properties, but useful for data migration"
+      }
+    ],
+    "cad_formats": [
+      {
+        "format": "STEP",
+        "standard": "ISO 10303-21",
+        "description": "Standardized 3D part format. Universal CAD/CAM interchange format.",
+        "file_extensions": [".step", ".stp"],
+        "cnc_relevance": "Primary format for transferring 3D designs to CAM software"
+      },
+      {
+        "format": "IGES",
+        "standard": "ANSI Y14.26M",
+        "description": "Initial Graphics Exchange Specification. Older 3D format; still widely supported.",
+        "file_extensions": [".iges", ".igs"],
+        "cnc_relevance": "Legacy format still used in some CAM workflows"
+      },
+      {
+        "format": "DXF",
+        "standard": "Autodesk proprietary (de facto standard)",
+        "description": "2D/3D drawing format. Common for simple parts and 2D CAM operations.",
+        "file_extensions": [".dxf"],
+        "cnc_relevance": "Standard for 2D CNC operations (plasma, laser, etc.). Less common for 3-axis milling"
+      }
+    ],
+    "api_standards": [
+      {
+        "api": "FOCAS",
+        "standard": "FANUC Open CNC API Specification",
+        "protocol": "Ethernet-based DLL library",
+        "data_model": "Machine control data (spindle speed, feed override, tool data, program status)",
+        "capabilities": "Read/write machine parameters, start/stop programs, collect live operational data",
+        "adoption": "Standard on Fanuc controllers (FANUC, Haas, Doosan, Tsugami, etc.)",
+        "licensing": "Paid option; must be enabled on CNC controller"
+      },
+      {
+        "api": "OPC UA",
+        "standard": "Open Platform Communications Unified Architecture",
+        "protocol": "Ethernet-based (client/server model)",
+        "data_model": "Comprehensive object-oriented data model; supports read/write of any industrial data",
+        "capabilities": "Real-time monitoring, parameter adjustment, complex process automation",
+        "adoption": "Growing standard in Industry 4.0; Siemens leader; OPC Foundation oversees standard",
+        "licensing": "Free specification; implementations vary"
+      },
+      {
+        "api": "MTConnect",
+        "standard": "MTConnect Protocol v1.9+",
+        "protocol": "HTTP/XML (read-only)",
+        "data_model": "Standardized machine observation data dictionary (device types, data items, events)",
+        "capabilities": "Real-time machine monitoring, data collection, OEE metrics",
+        "adoption": "Growing adoption; MTConnect Institute promotes standard; many newer machines support",
+        "licensing": "Royalty-free; open standard"
+      }
+    ]
+  },
+  "market_sizing": {
+    "target_user_base": {
+      "active_cnc_machinists_us": "~50,000-100,000",
+      "hobbyist_cnc_users_us": "~50,000-200,000",
+      "small_shops_us": "~15,000-25,000",
+      "professional_cnc_shops_us": "~2,000-5,000",
+      "global_cnc_market_professionals": "~500,000-1,000,000"
+    },
+    "existing_calculator_users": {
+      "g_wizard": "~5,000-10,000",
+      "hsmadvisor": "~3,000-8,000",
+      "fswizard": "~2,000-5,000",
+      "total_existing_calculator_market": "~10,000-20,000"
+    },
+    "revenue_projections_us_market": {
+      "scenario": "Capture 20% of active machinists at $199/year",
+      "paying_users": "~10,000-20,000",
+      "annual_revenue": "$2,000,000-$4,000,000",
+      "target_segment": "Professional shops + serious hobbyists"
+    }
+  },
+  "key_findings": {
+    "critical_gaps": [
+      "Fusion 360 CAM lacks native feeds/speeds calculator - major workflow gap",
+      "HSMWorks explicitly has NO calculator - users request this",
+      "Existing calculators (G-Wizard, HSMAdvisor, FSWizard) stagnant for 5+ years - no innovation",
+      "No AI-powered optimization in any consumer-accessible tool",
+      "Tool manufacturer cutting data scattered across websites - no unified API",
+      "No real-time optimization during cutting based on actual chip/load feedback"
+    ],
+    "market_validation": [
+      "Active professional user base pays for tools ($99-199/year)",
+      "Forum discussions show sustained frustration with manual workflows",
+      "CloudNC secured funding for AI CAM optimization - proves market demand",
+      "Tool manufacturers (Sandvik, Kennametal) have APIs/data - willing to partner",
+      "Existing tools have 10,000-20,000 users - demand exists"
+    ],
+    "competitive_advantages": [
+      "No AI-powered feeds/speeds calculator exists yet for general market",
+      "CloudNC is startup but focused on CAM-embedded solution, not standalone calculator",
+      "Existing calculators lack CAM integration, real-time optimization, ML learning",
+      "Window of opportunity before major CAM vendors build this natively"
+    ],
+    "ecosystem_readiness": [
+      "Fusion 360 plugin architecture mature and documented",
+      "Mastercam plugin ecosystem proven (CloudNC, Harvey Tool partnerships)",
+      "FOCAS API standard on all Fanuc/Haas equipment",
+      "OPC UA standard emerging for real-time monitoring",
+      "Tool manufacturer partnerships possible (demonstrated by Harvey Tool integration)"
+    ]
+  },
+  "recommendations": {
+    "phase_1_mvp": [
+      "Build Fusion 360 add-in with feeds/speeds calculator from material + tool + machine",
+      "Integrate with Fusion tool library (.json format)",
+      "Start with 50 common materials, 200 common tools, 10 machine profiles",
+      "Manual data entry; no ML/optimization yet",
+      "Target: Launch 3-4 months, capture 2-5k Fusion users at $12.99/month"
+    ],
+    "phase_2_expansion": [
+      "Mastercam plugin with same functionality",
+      "SolidCAM plugin partnership or integration",
+      "Add real-time parameter optimization (ML model trained on user data)",
+      "Integrate with tool management systems (WinTool, CRIBWISE, GigaTrak)",
+      "Add material/tool manufacturer data APIs (Sandvik, Kennametal partnerships)"
+    ],
+    "phase_3_premium": [
+      "FOCAS/OPC UA integration for real-time CNC parameter updates",
+      "Computer vision chip monitoring integration",
+      "Shop floor data learning from ShopFloorConnect/eNETDNC integration",
+      "Premium tier: $99-199/month for shops using advanced features"
+    ],
+    "partnership_opportunities": [
+      "Autodesk (Fusion 360 plugin marketplace)",
+      "CNC Software (Mastercam plugin)",
+      "SolidCAM (direct integration or plugin)",
+      "CloudNC (potential acquisition or partnership on AI engine)",
+      "Sandvik Coromant, Kennametal (tool cutting data APIs)",
+      "FANUC/Haas resellers (FOCAS integration support)",
+      "Wintriss (ShopFloorConnect integration)",
+      "Harvey Tool, Helical Solutions (tool library partnerships)"
+    ]
+  }
+}

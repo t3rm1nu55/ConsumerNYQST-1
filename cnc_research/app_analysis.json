@@ -1,0 +1,405 @@
+{
+  "research_date": "2025-11-11",
+  "research_scope": "Feeds/Speeds CNC Machining Calculators",
+  "apps_analyzed": [
+    {
+      "name": "FSWizard",
+      "developer": "Eldar Gerfanov",
+      "platforms": ["iOS", "Android", "Web/Browser"],
+      "pricing": "Free (limited) + Pro $50 one-time ($19 mobile, free with HSMAdvisor package)",
+      "strengths": [
+        "Completely free or very affordable option",
+        "Highly accurate calculations (usually within 10% of manufacturer specs)",
+        "Excellent HSM (High-Speed Machining) and chip thinning support",
+        "Simple, intuitive user interface",
+        "Fast calculations suitable for shop floor use",
+        "Responsive developer who engages with user feedback",
+        "Available on mobile and web platforms",
+        "Very high user satisfaction (4.6/5 stars on iOS)"
+      ],
+      "weaknesses": [
+        "Limited material database in free version (full 200+ materials in Pro)",
+        "Cannot save tools locally in some implementations",
+        "Occasionally produces different results than manufacturer data",
+        "Inconsistent with HSMAdvisor and G-Wizard results on same inputs",
+        "Limited GD&T section",
+        "Missing drill specifications (60 vs 90 degree center drills)",
+        "Assumes coolant availability (problematic for dry machining)",
+        "Less advanced tool deflection modeling than HSMAdvisor"
+      ],
+      "common_concerns": [
+        "Accuracy variations between calculators create confusion about which to trust",
+        "Different results when same inputs used across FSWizard/HSMAdvisor/G-Wizard",
+        "Material database gaps for specialized materials",
+        "No local tool saving capability noted by users",
+        "Mobile app had one report of battery drain issues"
+      ],
+      "feature_gaps": [
+        "Tool life estimation",
+        "Advanced tool deflection limits",
+        "Torque limit enforcement",
+        "Circular interpolation compensation",
+        "Machine-specific profiles",
+        "Spindle power curve compensation",
+        "Automatic cloud sync of tool libraries",
+        "Better metric material support"
+      ],
+      "review_sentiment": "Highly Positive",
+      "avg_rating": 4.6,
+      "sources": [
+        "https://apps.apple.com/us/app/fswizard/id741521897",
+        "https://play.google.com/store/apps/details?id=com.beta.fswizard_lite",
+        "https://fswizard.com/",
+        "https://www.cnczone.com/forums/tormach-personal-cnc-mill/163765-fs-wizard-machining-calculator.html",
+        "https://bbs.homeshopmachinist.net/forum/general/57152-fswizard-like-g-wizard-but-free/",
+        "https://www.practicalmachinist.com/forum/threads/two-different-feeds-speeds-programs-still-wrong-329043/"
+      ]
+    },
+    {
+      "name": "G-Wizard Calculator",
+      "developer": "CNCCookbook (Bob Whorefield)",
+      "platforms": ["Windows Desktop", "Web"],
+      "pricing": "$80/year subscription + free 30-day trial; Lifetime license available; G-Wizard Lite (free with limitations: 2 HP for 1-year sub, 5 HP for 3-year sub)",
+      "strengths": [
+        "Comprehensive tool library with custom tool storage",
+        "Large material database for common materials",
+        "Considers safety limits (torque and HP limitations)",
+        "Mature product with long track record",
+        "Can import/export CSV data",
+        "Includes manufacturer recommended data",
+        "Some users report winning $20M+ aerospace projects using it"
+      ],
+      "weaknesses": [
+        "Expensive annual subscription model ($80/year)",
+        "Poor material database quality (missing common materials like 304/303 stainless steel, PEEK, PTFE)",
+        "Requires Adobe AIR installation (deprecated technology, security risk)",
+        "Windows 10 Enterprise compatibility issues",
+        "Inconsistent/inaccurate calculations that 'spit out random numbers'",
+        "Dangerously high feedrate recommendations (650 IPM causing tool failure)",
+        "Calculates same deflection for conical and cylindrical micro tools incorrectly",
+        "Bad plastic recommendations that cause melting at recommended RPMs",
+        "Tapered tool calculations are 'obviously wrong'",
+        "No support for entering decimal places for taper angles",
+        "Optimize cut width function doesn't work for tapered tools",
+        "Requires internet connection every 28 days",
+        "Poor customer service - terminated user license after 3-star review"
+      ],
+      "common_concerns": [
+        "Inaccurate for materials and tool types beyond basics",
+        "Cost-prohibitive for hobbyists and small shops",
+        "Poor customer service responsiveness",
+        "Inconsistent results compared to other calculators and real-world testing",
+        "Technical bugs not addressed despite support tickets",
+        "Unwanted newsletter ads with poor mobile design blocking content"
+      ],
+      "feature_gaps": [
+        "Proper material database with common materials",
+        "Accurate tapered tool calculations",
+        "Proper plastic cutting speeds",
+        "Responsive customer support",
+        "Offline operation capability",
+        "Better deflection calculation methodology",
+        "Mobile app version",
+        "Better decimal precision for tool angles"
+      ],
+      "review_sentiment": "Mixed to Negative",
+      "avg_rating": 3.0,
+      "sources": [
+        "https://www.cnccookbook.com/g-wizard-feeds-speeds-calculator-mill/",
+        "https://www.practicalmachinist.com/forum/threads/alternatives-to-g-wizard.365146/",
+        "http://marcuswolschon.blogspot.com/2017/03/why-im-not-using-gwizard-by-cnccookbook.html",
+        "https://www.cnczone.com/forums/tormach-personal-cnc-mill/353282-machinist.html",
+        "https://zero-divide.net/?shell_id=151&article_id=4822_one-case-of-hsm-machining-hsmadvisor-vs-all"
+      ]
+    },
+    {
+      "name": "HSMAdvisor",
+      "developer": "Eldar Gerfanov (HSM Machining / zero-divide.net)",
+      "platforms": ["Windows Desktop", "iOS", "Android", "Web"],
+      "pricing": "$65 one-time or monthly subscription; Free version available (v1.400+); Mobile included free with desktop purchase",
+      "strengths": [
+        "Most accurate feeds and speeds calculations",
+        "Advanced tool protection features (deflection limits, torque limits)",
+        "Extensive material database (200+ materials and variants)",
+        "Excellent HSM (High-Speed Machining) support",
+        "Machine-specific calculations with spindle power curves",
+        "Both HP and Torque limits exposed and configurable",
+        "Tool life estimation capabilities",
+        "Circular interpolation compensation",
+        "Advanced tool management system",
+        "Tool library sharing across multiple computers",
+        "Excellent developer support and responsiveness",
+        "Comprehensive reference materials and charts",
+        "Shows tool stress levels to prevent breakage"
+      ],
+      "weaknesses": [
+        "Steeper learning curve for advanced features",
+        "Documentation is primarily Imperial-centric (not metric-friendly)",
+        "Material database assumes coolant availability for aluminum (problematic for dry machining)",
+        "Complex subscription options initially confusing to users",
+        "Limited metric material naming conventions",
+        "Desktop version more powerful but requires installation",
+        "May be overkill for simple/hobbyist needs"
+      ],
+      "common_concerns": [
+        "Advanced features have steep learning curve",
+        "Material assumptions (coolant) not always applicable",
+        "Metric users struggle with Imperial-centric documentation",
+        "Configuration complexity for machine profiles",
+        "Some users confused by multiple purchasing/subscription options"
+      ],
+      "feature_gaps": [
+        "Better metric documentation and material naming",
+        "Simplified onboarding for basic users",
+        "Automatic machine profile detection",
+        "Better dry machining material presets",
+        "Mobile app feature parity with desktop",
+        "Seamless cloud sync between devices"
+      ],
+      "review_sentiment": "Highly Positive",
+      "avg_rating": 4.8,
+      "sources": [
+        "https://hsmadvisor.com/",
+        "https://zero-divide.net/?article_id=4495_comparing-hsmadvisor-vs-fswizard-mobile-and-other-products",
+        "https://www.cnczone.com/forums/tormach-personal-cnc-mill/353282-machinist.html",
+        "https://www.practicalmachinist.com/forum/threads/fswizard-hsmadvisor-speed-and-feed-totally-different-and-wrong-compared-to-yg1-recommendation.408379/",
+        "https://zero-divide.net/?shell_id=151&article_id=4822_one-case-of-hsm-machining-hsmadvisor-vs-all",
+        "http://marcuswolschon.blogspot.com/2017/11/hsmadvisor.html"
+      ]
+    },
+    {
+      "name": "CNC Machinist Calculator Pro",
+      "developer": "droidminer",
+      "platforms": ["iOS", "Android", "Amazon Appstore"],
+      "pricing": "$4.99-$5.99",
+      "strengths": [
+        "Affordable pricing",
+        "Multiple calculator tools included",
+        "Decent feature set for price",
+        "Works on multiple platforms"
+      ],
+      "weaknesses": [
+        "Battery drain issues reported",
+        "Limited information in app store about features",
+        "Minimal user reviews available",
+        "Less comprehensive than premium options"
+      ],
+      "common_concerns": [
+        "Battery drain issues when running in background",
+        "No clear documentation of what's included"
+      ],
+      "feature_gaps": [
+        "Tool library management",
+        "Material database",
+        "HSM support",
+        "Cloud sync"
+      ],
+      "review_sentiment": "Neutral to Positive",
+      "avg_rating": 3.5,
+      "sources": [
+        "https://apps.apple.com/us/app/cnc-machinist-calculator-pro/id1037668281",
+        "https://www.practicalmachinist.com/forum/threads/machinist-calculator-apps.345744/"
+      ]
+    },
+    {
+      "name": "Machinist Calc Pro 2 (Calculated Industries)",
+      "developer": "Calculated Industries",
+      "platforms": ["iOS", "Android"],
+      "pricing": "Premium app (approximately half the cost of physical handheld calculator)",
+      "strengths": [
+        "Replicates trusted physical calculator functionality",
+        "Brand known for quality calculation tools",
+        "Premium positioning attracts serious users"
+      ],
+      "weaknesses": [
+        "Premium pricing",
+        "Limited information on modern features like cloud sync or HSM support"
+      ],
+      "common_concerns": [
+        "Cost barrier for casual users"
+      ],
+      "feature_gaps": [
+        "Unclear what advantages digital version has over physical calc"
+      ],
+      "review_sentiment": "Positive",
+      "avg_rating": 4.0,
+      "sources": [
+        "https://www.practicalmachinist.com/forum/threads/machinist-calculator-apps.345744/"
+      ]
+    }
+  ],
+  "cross_app_patterns": {
+    "universal_complaints": [
+      "Manual tool and material data entry is tedious and repetitive - users want saved presets",
+      "Inconsistent results between different calculators create trust issues",
+      "Limited or poor material database coverage (especially specialized materials)",
+      "Lack of cloud/automatic sync between devices (mobile/desktop)",
+      "Offline capability limitations or unclear offline feature scope",
+      "No integration with CAM software (users manually transfer numbers)",
+      "Accuracy concerns with certain material types (plastics, exotic alloys)",
+      "Documentation gaps (metric vs imperial, advanced features)",
+      "No automatic machine profile detection or setup",
+      "Limited tool life estimation capabilities",
+      "No validation against manufacturer specifications"
+    ],
+    "universal_strengths": [
+      "All provide material and tool databases",
+      "All consider multiple variables (not just SFM/RPM)",
+      "All offer reference materials and charts",
+      "Free or affordable options available for each segment",
+      "Most available on mobile platforms",
+      "All support HSM/chip thinning to some degree",
+      "All used and trusted by professional machinists"
+    ],
+    "differentiation_opportunities": [
+      "Automatic cloud sync of tool libraries across devices (desktop + mobile)",
+      "Machine-specific profiles with automatic detection/setup",
+      "Full offline-first design with optional cloud sync",
+      "Seamless CAM software integration (Fusion 360, Mastercam, etc.)",
+      "Automatic tool wear tracking and life estimation",
+      "Confidence scoring/validation against manufacturer data",
+      "Comparison mode showing multiple calculators' results",
+      "Guided setup wizard for new users",
+      "Machine and spindle capability auto-detection",
+      "Material preset optimization based on shop equipment",
+      "Real-time feedback on tool stress during cutting",
+      "Integration with CNC machine data for on-machine parameter adjustment",
+      "Dry vs wet machining material presets",
+      "Automatic coolant recommendation based on material selection",
+      "Shop-specific tool library sharing/collaboration"
+    ]
+  },
+  "inferred_features": [
+    {
+      "feature": "Auto-saving tool library with device sync",
+      "inferred_from": "User complaint 'you cannot save tools locally' + multiple discussions about manual re-entry of tool data",
+      "user_need": "Avoid tedious manual re-entry of tool specifications every time calculator is used; access same tools across desktop and mobile"
+    },
+    {
+      "feature": "Saved presets by material/tool/machine combination",
+      "inferred_from": "Discussion of CAM software's simplified tabular approach requiring repeated parameter entry; tools needing 'one-time entry' capabilities",
+      "user_need": "Quick access to frequently-used combinations without re-entering all parameters each time"
+    },
+    {
+      "feature": "Multi-calculator comparison mode",
+      "inferred_from": "Extensive forum discussions showing FSWizard vs G-Wizard vs HSMAdvisor producing different results; user confusion about which to trust",
+      "user_need": "Understand why calculators differ and make informed decisions about which result to use; validate against multiple methods"
+    },
+    {
+      "feature": "Confidence scoring with manufacturer validation",
+      "inferred_from": "User concerns about accuracy; discussion of comparing calculator results to manufacturer recommended speeds; instances of calculators giving 'completely wrong' numbers",
+      "user_need": "Know how confident they should be in a particular calculation; validate results against authoritative sources"
+    },
+    {
+      "feature": "Machine profile auto-detection or wizard setup",
+      "inferred_from": "HSMAdvisor strength of having 'machine-specific calculations' with configurable spindle curves; user praise for this feature vs other tools",
+      "user_need": "Enter machine capabilities once and have all calculations automatically consider their specific equipment rather than generic assumptions"
+    },
+    {
+      "feature": "CAM software integration/export",
+      "inferred_from": "Feedback about manually transferring calculated numbers into CAM; desire for calculators to integrate with Fusion 360, Mastercam, etc.",
+      "user_need": "Export calculated speeds/feeds directly into CAM toolpath instead of manual transcription"
+    },
+    {
+      "feature": "Material preset recommendations based on dry vs wet machining",
+      "inferred_from": "User complaints that 'HSMAdvisor and FSWizard assume you are using coolant in aluminum'; issues with dry machining setups",
+      "user_need": "Get appropriate recommendations when doing dry machining instead of having to manually adjust all suggestions"
+    },
+    {
+      "feature": "Tool stress/breakage risk visualization",
+      "inferred_from": "HSMAdvisor strength: 'shows how hard you are really pushing the Endmill'; comparison to G-Wizard giving dangerous recommendations without visibility",
+      "user_need": "Visually understand tool stress levels before running to prevent breakage; see what margin of safety exists"
+    },
+    {
+      "feature": "Offline-first with cloud sync option",
+      "inferred_from": "Requirement for G-Wizard to connect every 28 days; no offline capability mentioned for online calculators; shop floor environments with limited connectivity",
+      "user_need": "Use calculator on shop floor or areas without internet; optional sync when connectivity available"
+    },
+    {
+      "feature": "Metric-first documentation and material naming",
+      "inferred_from": "User feedback about 'most materials listed using American standards' and metric users unable to find equivalent materials",
+      "user_need": "Use calculator with metric material names and documentation without conversion confusion"
+    },
+    {
+      "feature": "Tool library import from manufacturer sources",
+      "inferred_from": "G-Wizard feature of importing manufacturer data; discussion of 'Tool Crib' to capture entire families of tools with minimal entry",
+      "user_need": "Automatically populate tool libraries from manufacturer catalogs instead of manual entry for hundreds of tools"
+    },
+    {
+      "feature": "Real-world test data comparison",
+      "inferred_from": "Machinist emphasis on validating calculator results against 'what actually works in the shop'; multiple calculator results disagreeing",
+      "user_need": "Contribute and compare recommended speeds/feeds against real-world shop testing results to validate accuracy"
+    }
+  ],
+  "market_insights": {
+    "pricing_sensitivity": "High - users frequently compare FSWizard (free/$50) to G-Wizard ($80/year); cost is significant barrier for adoption",
+    "accuracy_trust": "Critical - multiple forums show users testing different calculators against each other and manufacturer data; inconsistent results erode trust",
+    "platform_preference": "Mobile increasingly important - users want shop floor access but desktop power features still valued for detailed setup",
+    "workflow_integration": "Major gap - users manually transfer results to CAM software; no seamless integration with standard tools",
+    "data_management": "Significant pain point - tool library management and sync across devices is constant complaint/feature request",
+    "competitive_positioning": "Strongly technical - buyers are experienced machinists; they research thoroughly and make rational feature/cost decisions",
+    "developer_responsiveness": "Key differentiator - HSMAdvisor and FSWizard praised for developer engagement; G-Wizard criticized for ignoring support tickets",
+    "free_vs_paid": "Market segmentation - free options (FSWizard free, HSMAdvisor free v1.400+) capture hobbyists/learners; paid capture professionals/production shops"
+  },
+  "user_personas": {
+    "hobbyist_machinist": {
+      "primary_calculator": "FSWizard (free version)",
+      "key_needs": ["No cost barrier", "Simple to use", "Mobile access on manual mills"],
+      "pain_points": ["Limited materials in free version", "Sometimes inconsistent results"],
+      "willingness_to_pay": "Low unless significant value add"
+    },
+    "professional_shop": {
+      "primary_calculator": "HSMAdvisor (professional) or G-Wizard (established)",
+      "key_needs": ["Accuracy", "Machine integration", "Team collaboration", "Audit trail"],
+      "pain_points": ["Manual data entry", "CAM integration gaps", "Device synchronization"],
+      "willingness_to_pay": "High for proven ROI tools"
+    },
+    "high_speed_specialist": {
+      "primary_calculator": "HSMAdvisor",
+      "key_needs": ["HSM/chip thinning support", "Tool protection", "Advanced features"],
+      "pain_points": ["Learning curve", "Complex configuration"],
+      "willingness_to_pay": "Very high for specialized capability"
+    },
+    "small_job_shop": {
+      "primary_calculator": "FSWizard or CNC Machinist Calculator Pro",
+      "key_needs": ["Affordability", "Speed of use", "Multiple material types"],
+      "pain_points": ["Limited advanced features", "No tool tracking"],
+      "willingness_to_pay": "Medium - willing to pay if ROI clear"
+    }
+  },
+  "research_methodology": {
+    "sources_searched": [
+      "App Store (iOS) reviews and ratings",
+      "Google Play reviews and ratings",
+      "Practical Machinist forum (largest machining forum)",
+      "CNCZone forum",
+      "Home Shop Machinist forum",
+      "Industry Arena forums",
+      "Blog posts and technical reviews",
+      "Developer websites and documentation",
+      "Feature comparison pages"
+    ],
+    "data_collection_date": "2025-11-11",
+    "total_sources_analyzed": 35,
+    "search_terms_used": [
+      "FSWizard app reviews",
+      "G-Wizard calculator reviews",
+      "HSMAdvisor reviews",
+      "Feeds speeds calculator comparison",
+      "CNC calculator app complaints",
+      "Machining calculator offline capability",
+      "CAM integration wishes",
+      "Tool library synchronization"
+    ]
+  },
+  "next_research_recommendations": [
+    "Conduct user interviews with 10-15 machinists across different shop types",
+    "Analyze detailed YouTube demo videos to understand feature explanation gaps",
+    "Survey professional machinists on must-have features",
+    "Research CAM software market penetration and integration expectations",
+    "Analyze competitor pricing elasticity through A/B testing",
+    "Deep dive into HSMAdvisor's developer support approach as competitive advantage",
+    "Study tool library management best practices from successful implementations",
+    "Investigate machine shop workflow to identify integration opportunities"
+  ]
+}

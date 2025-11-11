@@ -1,0 +1,425 @@
+{
+  "research_date": "2025-11-11",
+  "research_objective": "Identify public domain and openly available resources on CNC feeds and speeds formulas and principles",
+  "resources": [
+    {
+      "name": "Machinery's Handbook - 6th Edition (1924)",
+      "type": "handbook",
+      "availability": "public domain",
+      "publication_date": "1924",
+      "key_formulas": [
+        "Cutting Speed (SFM/SMM)",
+        "RPM calculation from cutting speed and tool diameter",
+        "Feed rate calculations",
+        "Material-specific cutting speeds"
+      ],
+      "coverage": "Comprehensive reference with tables for cutting speeds and feeds across multiple materials and operations including turning, milling, drilling, boring, and reaming. Contains material-specific speed recommendations and tool geometry considerations.",
+      "url": "https://commons.m.wikimedia.org/wiki/File:Machinery's_Handbook,_(6th_Edition,_1924,_machineryshandbo00indu).pdf",
+      "alternative_urls": [
+        "https://en.wikisource.org/wiki/Page:Machinery's_Handbook,_(6th_Edition,_1924,_machineryshandbo00indu).pdf/11",
+        "https://library.uc.edu.kh/userfiles/pdf/19.Machinery's%20handbook.pdf"
+      ],
+      "file_size": "134.73 MB",
+      "pages": 1610,
+      "notes": "Oldest available public domain edition. Published before 1923 copyright cutoff. While content reflects early 20th century machining practices, the fundamental formulas and principles remain valid. Excellent for understanding historical development of feed/speed calculations and material speed tables."
+    },
+    {
+      "name": "Machinery's Handbook - 1st Edition (1914)",
+      "type": "handbook",
+      "availability": "public domain",
+      "publication_date": "1914",
+      "key_formulas": [
+        "Cutting Speed calculations",
+        "RPM formulas",
+        "Feed and speed relationships"
+      ],
+      "coverage": "Original inaugural edition with foundational cutting speed and feed rate information for machine shop operations.",
+      "url": "https://www.mooseforge.com/library/machinery_handbook_for_machine_shop_and_drafting_room_1914.pdf",
+      "notes": "Earliest public domain edition. Provides historical context for how feeds and speeds calculations evolved. Can be useful for understanding fundamental principles.",
+      "pages_estimate": "~1000"
+    },
+    {
+      "name": "Manufacturing Processes 4-5: Unit 2 - Speed and Feed",
+      "type": "textbook",
+      "availability": "freely available (open educational resource)",
+      "publisher": "Open Oregon Educational Resources",
+      "key_formulas": [
+        "RPM = (CS x 4) / D - where CS is cutting speed (SFM) and D is tool diameter in inches",
+        "IPM = F x N x RPM - where F is feed per tooth, N is number of teeth",
+        "Cutting speed relationships",
+        "Feed per tooth calculations"
+      ],
+      "coverage": "Explains cutting speed selection for different materials. Provides comprehensive material cutting speed tables (SFM values) for: steel types (low/medium/high carbon, stainless), cast iron, aluminum alloys (300-400 SFM), tool steel, copper, bronze, titanium. Covers turning, milling, and drilling operations.",
+      "material_speeds_included": {
+        "low_carbon_steel": "40-140 SFM",
+        "medium_carbon_steel": "70-120 SFM",
+        "stainless_steel": "50-140 SFM (varies by grade)",
+        "cast_iron": "50-120 SFM",
+        "aluminum_alloys": "300-400 SFM",
+        "tool_steel": "40-70 SFM",
+        "copper": "100-500 SFM",
+        "bronze": "30-150 SFM",
+        "titanium": "50-100 SFM"
+      },
+      "url": "https://openoregon.pressbooks.pub/manufacturingprocesses45/chapter/unit-two-cutting-speed/",
+      "notes": "Modern educational textbook freely available online. Emphasizes that harder materials require slower speeds while softer materials permit faster speeds. Excellent resource for understanding speed selection principles and material relationships."
+    },
+    {
+      "name": "CNC Feeds and Speeds Guide",
+      "type": "online guide",
+      "availability": "freely available",
+      "publisher": "CNC Cookbook",
+      "key_formulas": [
+        "Spindle RPM = (12 * Surface Speed) / (PI * Cutter Diameter)",
+        "Feed Rate = RPM × Number of Flutes × Chip Load",
+        "Chip Load = Feed Rate ÷ (RPM × Number of Flutes)",
+        "Material Removal Rate (MRR) considerations"
+      ],
+      "coverage": "Comprehensive guide covering spindle speed calculations, chip load definitions, surface speed for different materials, feed rate calculations. Addresses advanced concepts like radial chip thinning and tool rubbing in shallow cuts.",
+      "reference_speeds": {
+        "aluminum_hss": "250 SFM",
+        "stainless_steel_hss": "30 SFM",
+        "general_principle": "HSS tools use different speeds than carbide; softer materials permit higher speeds"
+      },
+      "url": "https://www.cnccookbook.com/feeds-speeds/",
+      "advanced_features": [
+        "Discussion of ~60 variables affecting cuts",
+        "Radial chip thinning explanations",
+        "Free online calculator available"
+      ],
+      "notes": "Excellent for understanding limitations of basic formulas and real-world complexities. Emphasizes importance of accounting for multiple variables beyond simple formula calculations. Modern resource aligned with contemporary machining practices."
+    },
+    {
+      "name": "General Speeds and Feeds Formulas - HSM Machining",
+      "type": "technical guide",
+      "availability": "freely available",
+      "publisher": "Zero-Divide HSM Machining",
+      "key_formulas": [
+        "RPM = 3.8 x SFM / Diameter (simplified imperial formula)",
+        "RPM = 318 x SMM / Diameter (simplified metric formula)",
+        "Full formula: RPM = 12 x SFM / (3.14 x Diameter) (imperial)",
+        "Full formula: RPM = 1000 x SMM / (3.14 x Diameter) (metric)",
+        "Feed Rate = RPM x N (teeth) x Chip Load (CL)"
+      ],
+      "coverage": "Comprehensive explanation of imperial and metric spindle speed formulas. Detailed definitions of SFM (Surface Feet Per Minute), SMM (Surface Meters Per Minute), and chip load. Simplified formulas provided for quick calculations.",
+      "key_definitions": {
+        "SFM": "Imperial. Surface Feet Per Minute, cutting speed, speed at which tool tip travels through material",
+        "SMM": "Metric equivalent, Surface Meters Per Minute",
+        "chip_load": "Advancement of cutter per revolution per cutting edge, affects surface finish and tool life"
+      },
+      "url": "https://zero-divide.net/?article_id=4209_general-speeds-and-feeds-formulas",
+      "formula_constants": {
+        "imperial_simplified": 3.8,
+        "metric_simplified": 318,
+        "full_imperial_divisor": 3.14
+      },
+      "notes": "Excellent resource for formula derivations and explanations. Shows both full and simplified versions of formulas. Clear definitions of key variables and their relationships."
+    },
+    {
+      "name": "Material Removal Rate - Machining Doctor",
+      "type": "technical guide",
+      "availability": "freely available",
+      "publisher": "Machining Doctor",
+      "key_formulas": [
+        "MRR (Milling) = RDOC × ADOC × Feed Rate (IPM)",
+        "MRR (Turning) = D × F × S (cc/min)",
+        "MRR (Drilling) = (Drill Diameter² × π/4) × Feed Rate × Spindle Speed (RPM)",
+        "General: MRR = Depth of Cut × Width of Cut × Feed Rate"
+      ],
+      "coverage": "Detailed formulas for calculating material removal rate across different machining operations (milling, turning, drilling). Explains how MRR relates to productivity and efficiency. Covers chip cross-section area and velocity calculations.",
+      "operation_specific_details": {
+        "milling": "RDOC (radial depth) × ADOC (axial depth) × feed rate",
+        "turning": "Depth of cut × feed rate × cutting speed",
+        "drilling": "Tool cross-sectional area × feed rate per rev × spindle speed"
+      },
+      "url": "https://www.machiningdoctor.com/calculators/metal-removal-rate/",
+      "notes": "Essential for understanding the relationship between feeds, speeds, and productivity. MRR is critical for production planning and tool selection. Clear operation-specific formulas provided."
+    },
+    {
+      "name": "Speeds and Feeds - Wikipedia",
+      "type": "encyclopedia reference",
+      "availability": "freely available",
+      "key_formulas": [
+        "Cutting speed relationships",
+        "RPM calculations",
+        "Feed rate principles"
+      ],
+      "coverage": "Overview of cutting speeds and feeds concepts, material selection influences, and process parameters. Discusses how cutting speeds are obtained from material manufacturers or reference books and charts.",
+      "url": "https://en.wikipedia.org/wiki/Speeds_and_feeds",
+      "notes": "Good introductory resource. Explains fundamental concepts and relationships. References both manufacturer data and reference books as sources for cutting speed values."
+    },
+    {
+      "name": "Harvey Tool Speeds and Feeds Resources",
+      "type": "manufacturer reference guide",
+      "availability": "freely available",
+      "publisher": "Harvey Tool (Tool Manufacturer)",
+      "key_formulas": [
+        "Tool manufacturer recommended cutting speeds for Harvey Tool products",
+        "Feed rate selections for different tool geometries"
+      ],
+      "coverage": "Comprehensive speeds and feeds library for specialty end mills, drills, and cutting tools. Includes Machining Advisor Pro (MAP) resource for generating customized cutting parameters for Harvey Tool end mills.",
+      "url": "https://www.harveytool.com/resources/speeds-feeds",
+      "secondary_url": "https://www.harveytool.com/resources/speeds-feeds-guide",
+      "services_available": [
+        "Free online speeds and feeds library",
+        "Machining Advisor Pro (MAP) for custom parameters",
+        "Harvey Performance In The Loupe educational articles"
+      ],
+      "notes": "Represents modern tool manufacturer approach to feeds and speeds. Shows how manufacturers provide cutting speed recommendations specific to their tool designs. Educational articles cover optimization principles."
+    },
+    {
+      "name": "MIT Design and Manufacturing II Course Materials",
+      "type": "university course materials",
+      "availability": "freely available (OpenCourseWare)",
+      "institution": "Massachusetts Institute of Technology",
+      "course_number": "2.008",
+      "coverage": "CAD/CAM process planning, G-Code programming, CNC machining labs covering milling and lathe operations. Practical application of feeds and speeds in process planning.",
+      "url": "https://ocw.mit.edu/courses/2-008-design-and-manufacturing-ii-spring-2004/",
+      "related_courses": [
+        "2.75 Precision Machine Design (covers error budgeting and accuracy)",
+        "2.670 Mechanical Engineering Tools (machine tool fundamentals)"
+      ],
+      "notes": "University-level engineering course materials covering practical application of feeds and speeds. Process planning emphasis provides context for how formulas are applied in real manufacturing situations."
+    },
+    {
+      "name": "MIT Precision Machine Design Course",
+      "type": "university course materials",
+      "availability": "freely available (OpenCourseWare)",
+      "institution": "Massachusetts Institute of Technology",
+      "course_number": "2.75",
+      "coverage": "Precision engineering theory and practice including machine tool design, accuracy principles, and performance characteristics. Foundational knowledge for understanding machine tool capabilities and limitations affecting feeds/speeds selections.",
+      "url": "https://ocw.mit.edu/courses/2-75-precision-machine-design-fall-2001/",
+      "key_topics": [
+        "Machine tool design and accuracy",
+        "Error budgeting",
+        "System performance optimization"
+      ],
+      "notes": "Provides engineering foundation for understanding machine tool limitations and how they impact feeds and speeds recommendations."
+    },
+    {
+      "name": "Little Machine Shop - Cutting Speeds Reference",
+      "type": "reference guide",
+      "availability": "freely available",
+      "publisher": "Little Machine Shop",
+      "key_formulas": [
+        "Cutting speed values for various materials",
+        "RPM calculations based on tool diameter and material"
+      ],
+      "coverage": "Reference tables for cutting speeds in turning, milling, and drilling operations. Includes calculator tool for determining proper speeds and feeds.",
+      "url": "https://littlemachineshop.com/reference/cuttingspeeds.php",
+      "notes": "Practical quick-reference resource for hobbyists and professionals. Tables provide material-specific speed recommendations."
+    },
+    {
+      "name": "Internal Tool Inc. - Carbide Tool Speeds and Feeds Guide",
+      "type": "manufacturer technical reference",
+      "availability": "freely available",
+      "publisher": "Internal Tool Inc. (Tool Manufacturer)",
+      "coverage": "Technical specifications for carbide cutting tools including recommended speeds and feeds for different materials and operations.",
+      "url": "https://internaltool.com/docs/reference/speeds-and-feeds.pdf",
+      "notes": "Manufacturer reference showing tool-specific speeds and feeds recommendations. Demonstrates how different tool materials (carbide vs HSS) have different optimal cutting speeds."
+    },
+    {
+      "name": "CNC Machining Optimization - Research Papers",
+      "type": "technical papers (academic)",
+      "availability": "mixed (some freely available, some restricted)",
+      "key_research_areas": [
+        "Optimization of cutting parameters for surface roughness minimization",
+        "Tool parameter and cutting parameter optimization",
+        "Energy efficiency in machining processes",
+        "Taguchi Method for parameter optimization",
+        "Response Surface Methodology (RSM)",
+        "Multi-objective optimization"
+      ],
+      "notable_papers": [
+        {
+          "title": "Optimization of Cutting Parameters to Minimize Surface Roughness in End Milling Using Taguchi Method",
+          "source": "ResearchGate",
+          "availability": "freely available PDF",
+          "url": "https://www.researchgate.net/publication/313256697"
+        },
+        {
+          "title": "Optimization Method of Tool Parameters and Cutting Parameters Considering Dynamic Change of Performance Indicators",
+          "source": "PMC (NIH Central)",
+          "availability": "open access",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8538737/"
+        },
+        {
+          "title": "Optimization techniques for energy efficiency in machining processes—a review",
+          "source": "International Journal of Advanced Manufacturing Technology",
+          "availability": "restricted (subscription required)",
+          "url": "https://link.springer.com/article/10.1007/s00170-023-10927-y"
+        }
+      ],
+      "coverage": "Advanced mathematical optimization of feeds and speeds beyond basic formulas. Covers surface finish, tool life, energy consumption, and production rate optimization using Taguchi Method, Grey Relational Analysis, Response Surface Methodology, and neural networks.",
+      "notes": "Represents cutting edge of feeds and speeds optimization. While original formulas and principles are relatively simple, academic research shows how multiple variables interact and how optimization can improve manufacturing outcomes."
+    }
+  ],
+  "formulas_summary": {
+    "rpm_calculation": {
+      "imperial_full": {
+        "formula": "RPM = (12 × SFM) / (π × D)",
+        "explanation": "Where SFM = Surface Feet Per Minute (cutting speed), D = tool diameter in inches, π ≈ 3.14159",
+        "simplified": "RPM = (3.8 × SFM) / D"
+      },
+      "metric_full": {
+        "formula": "RPM = (1000 × SMM) / (π × D)",
+        "explanation": "Where SMM = Surface Meters Per Minute (metric cutting speed), D = tool diameter in mm, π ≈ 3.14159",
+        "simplified": "RPM = (318 × SMM) / D"
+      },
+      "derivation_note": "The constant (3.8 for imperial, 318 for metric) comes from the geometric relationship between diameter and circumference (circumference = π × D). The formula converts linear cutting speed into rotational speed needed to achieve that speed at the tool's edge."
+    },
+    "feed_rate": {
+      "formula": "Feed Rate (IPM or mm/min) = RPM × Number of Flutes × Chip Load",
+      "alternative": "Vf = Fz × n × Z",
+      "explanation": "Where: Vf = feed velocity (inches or mm per minute), Fz = feed per tooth/chip load, n = RPM, Z = number of flutes/teeth. This determines how fast the tool advances through the material.",
+      "practical_note": "Each tooth removes a chip of thickness equal to chip load. Total material removed per minute = RPM × flutes × chip load."
+    },
+    "chip_load": {
+      "formula": "Chip Load = Feed Rate / (RPM × Number of Flutes)",
+      "alternative": "Fz = Vf / (n × Z)",
+      "explanation": "The thickness of material each tooth removes per revolution. Critical for tool life and surface finish. Affects whether tool rubs (too thin) or breaks (too thick).",
+      "units": "inches per tooth or mm per tooth",
+      "importance": "Most important parameter for tool performance. Too low = tool rubbing and poor finish; too high = tool breakage and poor surface finish."
+    },
+    "material_removal_rate": {
+      "milling": {
+        "formula": "MRR = RDOC × ADOC × Feed Rate (IPM)",
+        "explanation": "Where RDOC = Radial Depth of Cut, ADOC = Axial (Depth of Cut), Feed Rate in inches per minute. Measures cubic inches of material removed per minute.",
+        "units": "cubic inches per minute (in³/min)"
+      },
+      "turning": {
+        "formula": "MRR = D × F × S",
+        "explanation": "Where D = depth of cut, F = feed rate, S = cutting speed. Measured in cubic cm per minute.",
+        "units": "cubic centimeters per minute (cm³/min)"
+      },
+      "drilling": {
+        "formula": "MRR = (Drill Diameter² × π/4) × Feed Rate × Spindle Speed",
+        "explanation": "Cross-sectional area of drill × feed per revolution × RPM. Provides material removal rate in cubic units per minute.",
+        "units": "cubic inches/mm per minute"
+      },
+      "general": {
+        "formula": "MRR = Cross-sectional Area of Chip × Linear Velocity",
+        "explanation": "Represents volume of material removed per unit time. Critical for production planning and tool selection."
+      }
+    },
+    "cutting_speed_selection": {
+      "principle": "Cutting speed (SFM/SMM) depends on material hardness and tool material",
+      "hardness_relationship": "Harder materials require slower speeds; softer materials permit faster speeds",
+      "typical_ranges": {
+        "aluminum": "250-400 SFM",
+        "low_carbon_steel": "40-140 SFM",
+        "stainless_steel": "50-140 SFM",
+        "tool_steel": "40-70 SFM",
+        "cast_iron": "50-120 SFM",
+        "copper": "100-500 SFM",
+        "titanium": "50-100 SFM"
+      },
+      "note": "These ranges vary based on tool material (HSS vs carbide) and specific alloy composition. Manufacturer recommendations should be consulted for precise values."
+    },
+    "chip_load_guidelines": {
+      "definition": "Thickness of material each cutting tooth removes per revolution",
+      "too_low": "Causes tool rubbing, poor finish, and rapid tool wear",
+      "too_high": "Causes tool breakage and poor surface finish",
+      "optimization": "Sweet spot differs by material, tool, and operation. Modern CNC applications use sophisticated optimization considering 50+ variables."
+    }
+  },
+  "key_principles": {
+    "fundamental_relationship": "Cutting Speed (SFM/SMM) → RPM → Feed Rate = Chip Load achieved at desired tool advance rate",
+    "material_considerations": "Each material has optimal cutting speeds based on hardness, machinability, and thermal properties",
+    "tool_impact": "Tool material (HSS, carbide, ceramic) and geometry significantly affect achievable speeds and feeds",
+    "process_variables": "Depth of cut, width of cut, coolant, machine rigidity, and workpiece rigidity all affect optimal feeds and speeds",
+    "optimization_tradeoff": "Speed vs finish vs tool life - can't optimize all simultaneously; must balance based on application requirements"
+  },
+  "practical_application_order": [
+    {
+      "step": 1,
+      "task": "Determine cutting speed (SFM/SMM) based on material type and tool material from reference tables",
+      "sources": ["Machinery's Handbook", "Manufacturer recommendations", "Material speed tables"]
+    },
+    {
+      "step": 2,
+      "task": "Calculate RPM from cutting speed and tool diameter using RPM formula",
+      "formula": "RPM = (12 × SFM) / (π × D) or simplified: RPM = (3.8 × SFM) / D"
+    },
+    {
+      "step": 3,
+      "task": "Select chip load (feed per tooth) based on tool diameter, flute count, and material",
+      "consideration": "Smaller tools or harder materials typically use smaller chip loads"
+    },
+    {
+      "step": 4,
+      "task": "Calculate feed rate (IPM or mm/min) from RPM, flute count, and chip load",
+      "formula": "Feed Rate = RPM × Number of Flutes × Chip Load"
+    },
+    {
+      "step": 5,
+      "task": "Calculate material removal rate to verify productivity goals",
+      "formula": "MRR = Depth × Width × Feed Rate"
+    },
+    {
+      "step": 6,
+      "task": "Test and optimize - adjust speeds and feeds based on surface finish, tool wear, and production rate",
+      "note": "Real-world cutting often requires adjustment from calculated values"
+    }
+  ],
+  "summary_for_app_development": {
+    "core_calculation_engines_needed": [
+      "RPM calculator (from cutting speed and diameter)",
+      "Feed rate calculator (from RPM, flutes, and chip load)",
+      "Chip load calculator (from feed rate, RPM, and flutes)",
+      "Material removal rate calculator (from depths and feed)"
+    ],
+    "data_tables_needed": [
+      "Material cutting speed reference (SFM/SMM values by material)",
+      "Tool geometry database (flute counts, typical chip loads by tool type)",
+      "Tool material characteristics (HSS vs carbide speed differences)"
+    ],
+    "formula_constants_to_implement": [
+      "Imperial RPM constant: 3.8 (simplified) or 12/π (full)",
+      "Metric RPM constant: 318 (simplified) or 1000/π (full)",
+      "PI: 3.14159 (for full formula versions)"
+    ],
+    "validation_checks": [
+      "RPM should be within machine spindle capability range",
+      "Feed rate should not exceed rapid traverse speeds",
+      "Chip load should be within reasonable ranges (typically 0.001-0.030 inches)",
+      "Material removal rate should be achievable with machine power"
+    ],
+    "user_education_content": [
+      "Explanation of why formula constants work (geometric relationships)",
+      "Material speed selection guidance (hardness, machinability)",
+      "Chip load optimization (too low vs too high effects)",
+      "Real-world adjustment factors (machine rigidity, coolant, finish requirements)"
+    ]
+  },
+  "research_sources_quality_assessment": {
+    "public_domain_primary_sources": [
+      "Machinery's Handbook 1924 edition - Highly authoritative, contains comprehensive material speed tables",
+      "Machinery's Handbook 1914 edition - Original formulas and principles still valid"
+    ],
+    "open_educational_resources": [
+      "Open Oregon Manufacturing Processes - Modern, freely available, well-structured",
+      "MIT OpenCourseWare courses - University-level instruction, comprehensive coverage"
+    ],
+    "freely_available_modern_resources": [
+      "CNC Cookbook - Practical, comprehensive, with calculators",
+      "Zero-Divide HSM Machining - Clear formula explanations",
+      "Tool manufacturer guides (Harvey Tool, Internal Tool) - Current best practices"
+    ],
+    "academic_research": [
+      "Accessible via ResearchGate and PMC/NIH - Shows advanced optimization techniques",
+      "Some papers require institutional access - Increasingly practical optimization methods"
+    ],
+    "reliability_notes": "Formulas are stable across sources. Core RPM and feed rate formulas unchanged for 100+ years. Variation comes mainly in material speed tables and optimization approaches."
+  },
+  "next_steps_for_cnc_app_development": [
+    "Implement core formula calculators with validation",
+    "Create material speed reference database from Machinery's Handbook values and modern manufacturer data",
+    "Build chip load recommendation engine based on tool diameter and material",
+    "Add educational explanations for each formula derivation",
+    "Include practical examples and real-world adjustment guidance",
+    "Consider advanced features like material removal rate optimization",
+    "Add manufacturer-specific tool recommendations (Harvey Tool, Carbide tool specs)",
+    "Implement machine capability constraints (spindle limits, rapid traverse speeds)"
+  ]
+}

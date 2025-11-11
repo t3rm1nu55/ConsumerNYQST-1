@@ -1,0 +1,974 @@
+{
+  "research_date": "2025-11-11",
+  "research_scope": "CNC feeds and speeds calculator apps discussed across major machining forums",
+  "forums": [
+    {
+      "name": "PracticalMachinist.com",
+      "url": "https://www.practicalmachinist.com/forum/",
+      "activity_level": "high",
+      "total_threads_found": 10,
+      "threads_found": [
+        {
+          "title": "Suggested speed and feed app, calculator, website",
+          "url": "https://www.practicalmachinist.com/forum/threads/suggested-speed-and-feed-app-calculator-website.383022/",
+          "apps_mentioned": [
+            "FSWizard",
+            "HSMAdvisor",
+            "G-Wizard",
+            "Machining Advisor Pro",
+            "Micro 100 Speed and Feed Calculator",
+            "Trig-Man"
+          ],
+          "key_discussions": [
+            "Comparison of free vs paid calculator tools",
+            "Material removal rate and cutting force outputs",
+            "Dynamic toolpath compensation (chip thinning)",
+            "Cross-tool validation approach recommended"
+          ],
+          "pain_points": [
+            "FSWizard has clunky UI with screen repainting issues",
+            "Difficulty finding intuitive interfaces",
+            "Text box overlapping and font scaling problems",
+            "Easy to mess up inputs",
+            "Limited material libraries in free tools"
+          ],
+          "feature_wishes": [
+            "Material removal rate calculations",
+            "Step-over percentage guidance",
+            "Both milling and lathe capabilities",
+            "Required torque output",
+            "Horsepower calculations",
+            "Cutting force estimates",
+            "Better material database with more materials"
+          ],
+          "sentiment": "mixed - positive for some apps, critical of UI issues"
+        },
+        {
+          "title": "Alternatives to G-wizard?",
+          "url": "https://www.practicalmachinist.com/forum/threads/alternatives-to-g-wizard.365146/",
+          "apps_mentioned": [
+            "G-Wizard",
+            "HSMAdvisor",
+            "FSWizard",
+            "ME Consultant",
+            "Machining Advisor Pro",
+            "Harvey Tool reference PDFs",
+            "Excel spreadsheets with formulas"
+          ],
+          "key_discussions": [
+            "Adobe AIR dependency as blocker for G-Wizard",
+            "Windows 10 Enterprise compatibility issues",
+            "G-Wizard material library limitations",
+            "HSMAdvisor as primary replacement",
+            "Multiple calculator cross-verification recommended"
+          ],
+          "pain_points": [
+            "G-Wizard requires Adobe AIR (security policy blocker)",
+            "Won't load on Windows 10 Enterprise",
+            "Missing common materials (304/303 stainless, PEEK, PTFE)",
+            "Inconsistent/random speed and feed calculations",
+            "Limited material database coverage",
+            "Corporate security policy conflicts"
+          ],
+          "feature_wishes": [
+            "Better material library with common industrial materials",
+            "No Adobe AIR dependency",
+            "Cross-platform compatibility",
+            "Stainless steel varieties support",
+            "Specialty plastic support (PEEK, PTFE)"
+          ],
+          "sentiment": "negative - users seeking replacements for G-Wizard"
+        },
+        {
+          "title": "GWizard vs HSMAdvisor",
+          "url": "https://www.practicalmachinist.com/forum/threads/gwizard-vs-hsmadvisor.295972/",
+          "apps_mentioned": [
+            "G-Wizard",
+            "HSMAdvisor"
+          ],
+          "key_discussions": [
+            "Deflection calculation methodology differences",
+            "Stickout-to-diameter ratio vs comprehensive geometry modeling",
+            "Tool geometry impact on recommendations",
+            "Conservative vs aggressive calculation approaches",
+            "Trade-off between caution and material removal rate"
+          ],
+          "pain_points": [
+            "G-Wizard uses simplified deflection calculations",
+            "Difficulty comparing outputs from different tools",
+            "Risk of tool breakage if guidance too aggressive",
+            "Limited tool customization in G-Wizard"
+          ],
+          "feature_wishes": [
+            "Transparent deflection calculation methodology",
+            "Account for flute length, helix angle, taper angle",
+            "Stickout and shank diameter consideration",
+            "Machine-specific torque curve integration",
+            "Advanced tool geometry customization"
+          ],
+          "sentiment": "positive for HSMAdvisor - prefers conservative approach over aggressive HSM"
+        },
+        {
+          "title": "New Speed and Feed Calculator",
+          "url": "https://www.practicalmachinist.com/forum/threads/new-speed-and-feed-calculator.395652/",
+          "apps_mentioned": [
+            "FSWizard",
+            "G-Wizard",
+            "HSMAdvisor"
+          ],
+          "key_discussions": [
+            "Announcement of new FSWizard mobile app release",
+            "Features of advanced calculator tools"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "neutral - informational thread"
+        },
+        {
+          "title": "FSWizard / hsmadvisor speed and feed totally different (and wrong) compared to YG1 recommendation",
+          "url": "https://www.practicalmachinist.com/forum/threads/fswizard-hsmadvisor-speed-and-feed-totally-different-and-wrong-compared-to-yg1-recommendation.408379/",
+          "apps_mentioned": [
+            "FSWizard",
+            "HSMAdvisor"
+          ],
+          "key_discussions": [
+            "Discrepancies between calculator recommendations and tool manufacturer specs",
+            "Assumption of coolant availability in calculations",
+            "Averaging across multiple tool manufacturers",
+            "Validation of calculator outputs against real-world data"
+          ],
+          "pain_points": [
+            "Calculator outputs don't match manufacturer recommendations",
+            "Assumptions about coolant availability not always valid",
+            "Averaged data across manufacturers reduces accuracy",
+            "Reliability concerns when results conflict with manufacturer specs"
+          ],
+          "feature_wishes": [
+            "Tool-specific recommendation profiles",
+            "Coolant/dry cutting mode selection",
+            "Integration with manufacturer databases",
+            "Validation against real cutting data"
+          ],
+          "sentiment": "negative - frustration with inaccurate recommendations"
+        },
+        {
+          "title": "Machinist Calculator Apps",
+          "url": "https://www.practicalmachinist.com/forum/threads/machinist-calculator-apps.345744/",
+          "apps_mentioned": [
+            "FSWizard",
+            "G-Wizard",
+            "Machining Advisor Pro",
+            "ME Consultant Pro",
+            "Harvey Tool calculators"
+          ],
+          "key_discussions": [
+            "Availability across multiple platforms (web, Android, iOS)",
+            "Free vs paid calculator comparisons",
+            "Ease of use considerations"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "neutral - informational discussion"
+        },
+        {
+          "title": "New FSWizard Machinist Calc for iOS and Android",
+          "url": "https://www.practicalmachinist.com/forum/threads/new-fswizard-machinist-calc-for-ios-and-android.351148/",
+          "apps_mentioned": [
+            "FSWizard"
+          ],
+          "key_discussions": [
+            "Mobile app release and features",
+            "Cross-platform availability"
+          ],
+          "pain_points": [
+            "Font scaling issues in earlier versions"
+          ],
+          "feature_wishes": [
+            "Center drill depth feature accounting for 60 and 90 degree angles"
+          ],
+          "sentiment": "positive - community interest in mobile option"
+        }
+      ]
+    },
+    {
+      "name": "CNCZone.com",
+      "url": "https://www.cnczone.com/forums/",
+      "activity_level": "medium",
+      "total_threads_found": 8,
+      "threads_found": [
+        {
+          "title": "New FREE Feeds & Speeds Calculator",
+          "url": "https://www.cnczone.com/forums/tormach-personal-cnc-mill/300578-new-free-feeds-amp-speeds-calculator.html",
+          "apps_mentioned": [
+            "FSWizard",
+            "G-Wizard",
+            "HSMAdvisor"
+          ],
+          "key_discussions": [
+            "Free vs paid calculator options for small CNC machines",
+            "Tormach machine-specific considerations"
+          ],
+          "pain_points": [
+            "Some calculators give unrealistic results for smaller machines",
+            "Difficulty finding calculators tuned for hobby/small shop equipment"
+          ],
+          "feature_wishes": [
+            "Machine-specific calculator tuning",
+            "Realistic recommendations for smaller CNC machines"
+          ],
+          "sentiment": "mixed - looking for calculator suitable for Tormach machines"
+        },
+        {
+          "title": "HSMAdvisor vs G-Wizard vs Free calc?!",
+          "url": "https://www.cnczone.com/forums/tormach-personal-cnc-mill/353282-machinist.html",
+          "apps_mentioned": [
+            "HSMAdvisor",
+            "G-Wizard",
+            "FSWizard"
+          ],
+          "key_discussions": [
+            "Comparative analysis of three calculator options",
+            "Deflection calculation differences",
+            "Tool geometry considerations for small machines",
+            "Adobe AIR as blocking issue for G-Wizard",
+            "HSMAdvisor praise for small endmill support"
+          ],
+          "pain_points": [
+            "G-Wizard Adobe AIR dependency",
+            "G-Wizard unrealistic for small Tormach machines",
+            "G-Wizard gives insane output for small machines",
+            "G-Wizard doesn't account for shank/taper in deflection",
+            "Difficulty choosing between three options"
+          ],
+          "feature_wishes": [
+            "Machine power/torque profiling",
+            "Small endmill optimization",
+            "Advanced tool geometry consideration",
+            "No Adobe AIR dependency"
+          ],
+          "sentiment": "mixed - HSMAdvisor preferred over G-Wizard for Tormach"
+        },
+        {
+          "title": "FS Wizard Machining Calculator",
+          "url": "https://www.cnczone.com/forums/tormach-personal-cnc-mill/163765-fs-wizard-machining-calculator.html",
+          "apps_mentioned": [
+            "FSWizard",
+            "HSMAdvisor",
+            "G-Wizard"
+          ],
+          "key_discussions": [
+            "Long discussion thread tracking FSWizard development",
+            "User interface improvements over time",
+            "Cross-validation with other calculators"
+          ],
+          "pain_points": [
+            "Earlier versions had significant UI issues",
+            "Database entries with errors"
+          ],
+          "feature_wishes": [
+            "User feedback integration",
+            "Continuous UI improvement"
+          ],
+          "sentiment": "positive - long-running community discussion showing developer engagement"
+        }
+      ]
+    },
+    {
+      "name": "The Hobby-Machinist.com",
+      "url": "https://www.hobby-machinist.com/",
+      "activity_level": "medium",
+      "total_threads_found": 6,
+      "threads_found": [
+        {
+          "title": "Speeds/feeds app?",
+          "url": "https://www.hobby-machinist.com/threads/speeds-feeds-app.77041/",
+          "apps_mentioned": [
+            "FSWizard",
+            "G-Wizard",
+            "LMS Calculator",
+            "Machining Mate"
+          ],
+          "key_discussions": [
+            "Best calculator for hobbyist manual mills",
+            "Free vs paid options for hobby use",
+            "Compatibility with older manual mills"
+          ],
+          "pain_points": [
+            "Some calculators too complex for hobby use",
+            "Results don't scale well for hobby mill capabilities",
+            "Different calculator versions give inconsistent results"
+          ],
+          "feature_wishes": [
+            "Tailored recommendations for hobby/manual mills",
+            "Simplified interface options",
+            "Consistent results across versions"
+          ],
+          "sentiment": "mixed - seeking suitable calculator for hobby machining"
+        },
+        {
+          "title": "Feeds and Speeds calculator app.",
+          "url": "https://www.hobby-machinist.com/threads/feeds-and-speeds-calculator-app.98031/",
+          "apps_mentioned": [
+            "FSWizard",
+            "G-Wizard",
+            "Machinist Calc Pro"
+          ],
+          "key_discussions": [
+            "Mobile app recommendations for hobby machinists",
+            "Offline calculator capability",
+            "Tool database richness and accuracy"
+          ],
+          "pain_points": [
+            "Some tools give wrong numbers for small tools (causing tool breakage)",
+            "Complicated and lousy interfaces in some free apps",
+            "Support quality varies significantly",
+            "Database errors and inaccuracies"
+          ],
+          "feature_wishes": [
+            "Offline calculator option",
+            "Radial chip thinning consideration",
+            "Material database",
+            "Better small tool accuracy",
+            "Community database feature",
+            "Simplified interfaces"
+          ],
+          "sentiment": "mixed - critical of some tools but seeking good alternatives"
+        },
+        {
+          "title": "Suggestions for a good feed and speed calculator",
+          "url": "https://www.hobby-machinist.com/threads/suggestions-for-a-good-feed-and-speed-calculator.69479/",
+          "apps_mentioned": [
+            "FSWizard",
+            "G-Wizard"
+          ],
+          "key_discussions": [
+            "Starting point vs final authority discussion",
+            "Machine-specific calibration needs",
+            "Machine rigidity, wear, and setup factors",
+            "Best practices for using calculators"
+          ],
+          "pain_points": [
+            "No calculator accounts for individual machine characteristics",
+            "Calculators are guidelines, not definitive answers",
+            "Difficult to calibrate recommendations to specific shop"
+          ],
+          "feature_wishes": [
+            "Calibration capability with user's own data",
+            "Machine condition profiling",
+            "Community-contributed database of results",
+            "Shop-specific customization"
+          ],
+          "sentiment": "positive - educational discussion on proper calculator use"
+        },
+        {
+          "title": "Manual milling machine calculator app",
+          "url": "https://www.hobby-machinist.com/threads/manual-milling-machine-calculator-app.86903/",
+          "apps_mentioned": [
+            "FSWizard"
+          ],
+          "key_discussions": [
+            "Needs for manual vs CNC machines",
+            "Feed rate adjustment for manual machine limitations"
+          ],
+          "pain_points": [
+            "Calculators designed primarily for CNC machines",
+            "Manual machine operators need to adapt results"
+          ],
+          "feature_wishes": [
+            "Manual machine operation mode",
+            "Simplified rapid calculation for manual mills"
+          ],
+          "sentiment": "neutral - seeking appropriate tool for manual equipment"
+        },
+        {
+          "title": "Hobby-level feeds and speeds?",
+          "url": "https://www.hobby-machinist.com/threads/hobby-level-feeds-and-speeds.117714/",
+          "apps_mentioned": [
+            "G-Wizard",
+            "FSWizard"
+          ],
+          "key_discussions": [
+            "Conservative settings for hobby equipment",
+            "Managing machine limitations in calculations"
+          ],
+          "pain_points": [
+            "Professional calculators not conservative enough",
+            "Risk of tool breakage on hobby equipment"
+          ],
+          "feature_wishes": [
+            "Hobby equipment preset profiles",
+            "Conservative calculation modes"
+          ],
+          "sentiment": "negative - concern about inappropriate recommendations"
+        },
+        {
+          "title": "Feed rate app for vertical mill",
+          "url": "https://www.hobby-machinist.com/threads/feed-rate-app-for-vertical-mill.119376/",
+          "apps_mentioned": [
+            "Various mobile calculators"
+          ],
+          "key_discussions": [
+            "Mobile app accessibility in shop",
+            "Quick reference capability"
+          ],
+          "pain_points": [],
+          "feature_wishes": [
+            "Quick reference mode",
+            "Offline mobile capability"
+          ],
+          "sentiment": "neutral - informational"
+        }
+      ]
+    },
+    {
+      "name": "Home Shop Machinist Forum (bbs.homeshopmachinist.net)",
+      "url": "https://bbs.homeshopmachinist.net/forum/",
+      "activity_level": "medium",
+      "total_threads_found": 4,
+      "threads_found": [
+        {
+          "title": "What is a good free machinist app for Android???",
+          "url": "https://bbs.homeshopmachinist.net/forum/general/1847745-what-is-a-good-free-machinist-app-for-android",
+          "apps_mentioned": [
+            "FSWizard",
+            "HSMAdvisor",
+            "Machining Mate"
+          ],
+          "key_discussions": [
+            "Free Android app options",
+            "HSMAdvisor desktop purchase includes full Android app",
+            "Lite vs Pro versions"
+          ],
+          "pain_points": [
+            "Limited free Android options",
+            "Free versions often have missing features"
+          ],
+          "feature_wishes": [
+            "More free comprehensive options",
+            "Better lite version capabilities"
+          ],
+          "sentiment": "positive - good recommendations available"
+        },
+        {
+          "title": "FSWizard - Like G-Wizard but Free?",
+          "url": "https://bbs.homeshopmachinist.net/forum/general/57152-fswizard-like-g-wizard-but-free/",
+          "apps_mentioned": [
+            "FSWizard",
+            "G-Wizard",
+            "HSMAdvisor"
+          ],
+          "key_discussions": [
+            "FSWizard as free alternative to G-Wizard",
+            "Multiple tool options (web, mobile, desktop)",
+            "Developer (Eldar Gerfanov) engagement with forum",
+            "Version improvements and updates over time"
+          ],
+          "pain_points": [
+            "UI issues with screen repainting",
+            "Lack of confidence in some results",
+            "Unclear \"Safe torque\" terminology",
+            "Input errors easy to make",
+            "Database errors in earlier versions"
+          ],
+          "feature_wishes": [
+            "Clearer terminology",
+            "Better input validation",
+            "Improved database accuracy",
+            "More intuitive UI design"
+          ],
+          "sentiment": "mixed - positive for free option but critical of issues"
+        },
+        {
+          "title": "Slide rule speed and feed calculator",
+          "url": "https://bbs.homeshopmachinist.net/forum/general/51893-slide-rule-speed-and-feed-calculator",
+          "apps_mentioned": [
+            "Manual slide rule calculators"
+          ],
+          "key_discussions": [
+            "Preference for offline manual calculation tools",
+            "Shop use without computers"
+          ],
+          "pain_points": [
+            "Computer-based tools not always practical in shop"
+          ],
+          "feature_wishes": [
+            "Portable physical calculation aids",
+            "Offline reference materials"
+          ],
+          "sentiment": "positive - appreciation for analog solutions"
+        },
+        {
+          "title": "Feed and Speed Software?",
+          "url": "https://bbs.homeshopmachinist.net/forum/general/51983-feed-and-speed-software",
+          "apps_mentioned": [
+            "G-Wizard",
+            "FSWizard",
+            "HSMAdvisor"
+          ],
+          "key_discussions": [
+            "Software-based calculator options",
+            "Ease of use comparisons"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "neutral - informational"
+        }
+      ]
+    },
+    {
+      "name": "The Garage Journal Forum",
+      "url": "https://www.garagejournal.com/forum/",
+      "activity_level": "low",
+      "total_threads_found": 2,
+      "threads_found": [
+        {
+          "title": "Explain it to me like I'm five: Mill feeds and speeds",
+          "url": "https://www.garagejournal.com/forum/threads/explain-it-to-me-like-im-five-mill-feeds-and-speeds.475714/",
+          "apps_mentioned": [],
+          "key_discussions": [
+            "Fundamental explanation of feeds and speeds",
+            "Manual vs CNC machine differences"
+          ],
+          "pain_points": [
+            "Manual machining often relies on feel rather than calculation"
+          ],
+          "feature_wishes": [],
+          "sentiment": "neutral - educational discussion"
+        },
+        {
+          "title": "Machinist...how do you know the feed rate of your mill table?",
+          "url": "https://www.garagejournal.com/forum/threads/machinist-how-do-you-know-the-feed-rate-of-your-mill-table.466415/",
+          "apps_mentioned": [],
+          "key_discussions": [
+            "Practical feed rate determination on manual machines",
+            "Machine capability limitations"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "neutral - practical discussion"
+        }
+      ]
+    },
+    {
+      "name": "MYCNCUK.com",
+      "url": "https://www.mycncuk.com/",
+      "activity_level": "medium",
+      "total_threads_found": 5,
+      "threads_found": [
+        {
+          "title": "How-To: Feed Rate Calculation",
+          "url": "https://www.mycncuk.com/threads/2234-How-To-Feed-Rate-Calculation",
+          "apps_mentioned": [
+            "Manual calculation methods"
+          ],
+          "key_discussions": [
+            "Mathematical formulas for calculation",
+            "Manual vs software approaches",
+            "Experience-based adjustments"
+          ],
+          "pain_points": [
+            "Calculators are guidelines, not absolutes"
+          ],
+          "feature_wishes": [],
+          "sentiment": "positive - educational resource"
+        },
+        {
+          "title": "Is it unrealistic to use feed/speed calculators on home built machines?",
+          "url": "https://www.mycncuk.com/archive/index.php/t-9487.html",
+          "apps_mentioned": [
+            "FSWizard"
+          ],
+          "key_discussions": [
+            "Applicability to home-built CNC machines",
+            "Cutting force predictions for machine capability",
+            "Chatter mitigation through calculation"
+          ],
+          "pain_points": [
+            "Home-built machines may not handle calculator recommendations",
+            "Cutting force calculations needed to prevent chatter"
+          ],
+          "feature_wishes": [
+            "Machine stiffness/capability profiling",
+            "Cutting force outputs"
+          ],
+          "sentiment": "positive - practical discussion on tool usage"
+        },
+        {
+          "title": "HSM Advisor - High Speed Machining feed & speed calculator",
+          "url": "https://www.mycncuk.com/archive/index.php/t-7039.html",
+          "apps_mentioned": [
+            "HSMAdvisor"
+          ],
+          "key_discussions": [
+            "Advanced features of HSMAdvisor",
+            "Machine profiling capabilities"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "positive - appreciation for advanced features"
+        },
+        {
+          "title": "Feeds and speeds software?",
+          "url": "https://www.mycncuk.com/archive/index.php/t-9129.html",
+          "apps_mentioned": [
+            "HSMAdvisor",
+            "FSWizard",
+            "G-Wizard"
+          ],
+          "key_discussions": [
+            "Software options comparison",
+            "Recommendation for cross-checking between tools",
+            "Finding effective settings through iteration"
+          ],
+          "pain_points": [
+            "No single calculator is comprehensive",
+            "Cross-verification needed for confidence"
+          ],
+          "feature_wishes": [
+            "Consistency between different calculators"
+          ],
+          "sentiment": "mixed - tools available but require cross-validation"
+        },
+        {
+          "title": "Feed and speed equation",
+          "url": "http://www.mycncuk.com/threads/7309-Feed-and-speed-equation",
+          "apps_mentioned": [],
+          "key_discussions": [
+            "Mathematical foundations of feed/speed calculations"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "neutral - technical resource"
+        }
+      ]
+    },
+    {
+      "name": "Industry Arena",
+      "url": "https://en.industryarena.com/forum/",
+      "activity_level": "medium",
+      "total_threads_found": 4,
+      "threads_found": [
+        {
+          "title": "Speed and Feed Calculator",
+          "url": "https://en.industryarena.com/forum/speed-feed-calculator--33458.html",
+          "apps_mentioned": [
+            "ME Consultant Pro",
+            "FSWizard",
+            "Onsrud calculator"
+          ],
+          "key_discussions": [
+            "ME Consultant Pro user satisfaction",
+            "Manufacturer-provided calculators",
+            "Practical recommendations"
+          ],
+          "pain_points": [
+            "Some tools give fast feed rates for endmills/face mills",
+            "Database accuracy varies by tool type"
+          ],
+          "feature_wishes": [
+            "Verified manufacturer data integration"
+          ],
+          "sentiment": "positive for ME Consultant Pro, cautious for others"
+        },
+        {
+          "title": "HSMAdvisor vs G-Wizard vs Free calc?!",
+          "url": "https://en.industryarena.com/forum/hsmadvisor-vs-g-wizard-vs-free-calc--353282.html",
+          "apps_mentioned": [
+            "HSMAdvisor",
+            "G-Wizard",
+            "FSWizard"
+          ],
+          "key_discussions": [
+            "Comparative pros and cons",
+            "User preference variation",
+            "Technical requirements comparison"
+          ],
+          "pain_points": [
+            "G-Wizard Adobe AIR and internet dependency",
+            "No universal best tool"
+          ],
+          "feature_wishes": [
+            "Flexibility in deployment model"
+          ],
+          "sentiment": "mixed - each tool has advocates"
+        },
+        {
+          "title": "FS Wizard Machining Calculator (Extended thread)",
+          "url": "https://en.industryarena.com/forum/fs-wizard-machining-calculator--163765-9.html",
+          "apps_mentioned": [
+            "FSWizard"
+          ],
+          "key_discussions": [
+            "Development progress and improvements",
+            "User feedback integration"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "positive - active development appreciated"
+        },
+        {
+          "title": "Speeds and Feeds - Haas Mills",
+          "url": "https://en.industryarena.com/forum/speeds-feeds--52391.html",
+          "apps_mentioned": [],
+          "key_discussions": [
+            "Machine-specific optimization",
+            "Haas mill capabilities and limitations"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "neutral - practical discussion"
+        }
+      ]
+    },
+    {
+      "name": "eMastercam.com Forums",
+      "url": "https://www.emastercam.com/forums/",
+      "activity_level": "low",
+      "total_threads_found": 3,
+      "threads_found": [
+        {
+          "title": "Speed and feed calculator",
+          "url": "https://www.emastercam.com/forums/topic/79937-speed-and-feed-calculator/",
+          "apps_mentioned": [
+            "External calculators",
+            "Excel spreadsheets"
+          ],
+          "key_discussions": [
+            "Integration with Mastercam CAM software",
+            "Custom solution development"
+          ],
+          "pain_points": [
+            "Mastercam's built-in calculator may not integrate smoothly"
+          ],
+          "feature_wishes": [
+            "Better integrated calculator in Mastercam"
+          ],
+          "sentiment": "neutral - seeking better integration"
+        },
+        {
+          "title": "Speeds and feeds calculator",
+          "url": "https://www.emastercam.com/forums/topic/13455-speeds-and-feeds-calculator/",
+          "apps_mentioned": [
+            "External calculator tools"
+          ],
+          "key_discussions": [
+            "Third-party tool recommendations for Mastercam users"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "neutral - informational"
+        },
+        {
+          "title": "Desktop Feed/Speed Calculator",
+          "url": "https://www.emastercam.com/forums/topic/30446-desktop-feedspeed-calculator/",
+          "apps_mentioned": [
+            "Standalone desktop applications"
+          ],
+          "key_discussions": [
+            "Preference for desktop vs online calculators"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "neutral - preference discussion"
+        }
+      ]
+    },
+    {
+      "name": "GibbsCAM Support Forums",
+      "url": "https://forums.gibbscam.com/",
+      "activity_level": "low",
+      "total_threads_found": 3,
+      "threads_found": [
+        {
+          "title": "Cutting Speeds and Feeds",
+          "url": "https://forums.gibbscam.com/forum/gibbscam-discussion-forum/general-chat/1839-cutting-speeds-and-feeds",
+          "apps_mentioned": [
+            "GibbsCAM built-in calculator",
+            "Machining Data Handbook"
+          ],
+          "key_discussions": [
+            "Database sourced from Machining Data Handbook",
+            "Importance of multiple parameters affecting feeds/speeds",
+            "Starting points vs definitive recommendations"
+          ],
+          "pain_points": [
+            "Feeds and speeds recommendations can be 'all over the place'",
+            "Limited to starting points, not optimized for specific setups"
+          ],
+          "feature_wishes": [
+            "More accurate parameter consideration",
+            "Tool-specific optimization"
+          ],
+          "sentiment": "mixed - useful as starting point but needs verification"
+        },
+        {
+          "title": "Speed and feeds enhancement request",
+          "url": "https://forums.gibbscam.com/forum/gibbscam-discussion-forum/enhancement-ideas/76872-feeds-and-speeds-per-tool",
+          "apps_mentioned": [
+            "GibbsCAM enhancement feature"
+          ],
+          "key_discussions": [
+            "Persistent storage of speeds/feeds per tool",
+            "Material-specific configuration"
+          ],
+          "pain_points": [
+            "Can't save speeds/feeds configurations efficiently",
+            "Manual re-entry required for each material/tool combo"
+          ],
+          "feature_wishes": [
+            "Per-tool configuration persistence",
+            "Material database by tool type",
+            "Quick lookup for common combinations"
+          ],
+          "sentiment": "mixed - feature request indicating gap"
+        },
+        {
+          "title": "Change Speeds and Feeds",
+          "url": "https://forums.gibbscam.com/forum/gibbscam-discussion-forum/general-chat/5027-change-speeds-and-feeds",
+          "apps_mentioned": [
+            "GibbsCAM speed/feed adjustment"
+          ],
+          "key_discussions": [
+            "Adjusting calculated recommendations for specific machines"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "neutral - technical guidance"
+        }
+      ]
+    },
+    {
+      "name": "MyCNCUK HSM Machining Resources",
+      "url": "https://zero-divide.net/",
+      "activity_level": "medium",
+      "total_threads_found": 3,
+      "threads_found": [
+        {
+          "title": "Comparing HSMAdvisor vs. FSWizard:Mobile and other products",
+          "url": "https://zero-divide.net/?article_id=4495_comparing-hsmadvisor-vs-fswizard-mobile-and-other-products",
+          "apps_mentioned": [
+            "HSMAdvisor",
+            "FSWizard",
+            "G-Wizard"
+          ],
+          "key_discussions": [
+            "Detailed technical comparison of calculators",
+            "Tool geometry and deflection differences",
+            "Machine profiling capabilities"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "informative - comprehensive technical comparison"
+        },
+        {
+          "title": "One Case of HSM Machining: HSMAdvisor vs. All",
+          "url": "https://zero-divide.net/?article_id=4822_one-case-of-hsm-machining-hsmadvisor-vs-all",
+          "apps_mentioned": [
+            "HSMAdvisor",
+            "Competitors"
+          ],
+          "key_discussions": [
+            "Real-world machining case studies",
+            "HSMAdvisor performance in practice"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "positive for HSMAdvisor"
+        },
+        {
+          "title": "Comparison between FSWizard and HSM Advisor",
+          "url": "https://zero-divide.net/forums?article_id=4905_comparison-between-fswizard-and-hsm-advisor",
+          "apps_mentioned": [
+            "FSWizard",
+            "HSMAdvisor"
+          ],
+          "key_discussions": [
+            "Same developer products comparison",
+            "When to use each tool",
+            "Feature differentiation"
+          ],
+          "pain_points": [],
+          "feature_wishes": [],
+          "sentiment": "informative"
+        }
+      ]
+    }
+  ],
+  "app_mentions_frequency": {
+    "FSWizard": "High - mentioned in 25+ threads across all forums. Free web and mobile app, most frequently recommended free option",
+    "HSMAdvisor": "High - mentioned in 22+ threads across all forums. Paid desktop app, frequently praised for advanced features and accuracy",
+    "G-Wizard": "High - mentioned in 20+ threads across all forums. Paid software from CNCCookbook, criticized for Adobe AIR dependency and high cost",
+    "ME Consultant Pro": "Medium - mentioned in 4+ threads. Well-regarded but less frequently discussed than top three",
+    "Machining Advisor Pro (MAP)": "Medium - mentioned in 4+ threads. Harvey Tool product, free online access, praised but usability questions",
+    "LMS Calculator": "Low - mentioned in 2+ threads. Recommended for hobby/small machine users",
+    "Machining Mate": "Low - mentioned in 2+ threads. Free option for Android",
+    "Micro 100 Calculator": "Low - mentioned in 1+ threads. Tool manufacturer specific",
+    "Harvey Tool Reference PDFs": "Low - mentioned as alternative to software",
+    "Custom Excel spreadsheets": "Low - mentioned as user-developed solutions"
+  },
+  "common_pain_points": [
+    "Adobe AIR dependency (G-Wizard) - blocks corporate/Windows 10 Enterprise users",
+    "Inconsistent results between different calculators",
+    "Missing or limited material libraries (especially 304/303 stainless, PEEK, PTFE)",
+    "Calculators give unrealistic results for smaller hobby/home shop equipment",
+    "User interface complexity and usability issues",
+    "Easy to make input errors",
+    "Results don't match tool manufacturer specifications",
+    "Clunky UI with performance issues (FSWizard screen repainting)",
+    "Assumptions about coolant availability not always valid",
+    "Limited support quality",
+    "Database errors and inaccuracies",
+    "Some tools generate dangerously wrong numbers for small tools",
+    "Difficulty adapting professional calculators to hobby equipment",
+    "No calculator accounts for individual machine characteristics",
+    "Integration challenges with CAM software (GibbsCAM, Mastercam)",
+    "Requires online connectivity for some tools",
+    "Deflection calculations vary significantly between tools",
+    "Lack of clear methodology documentation",
+    "Averaging data across tool manufacturers reduces accuracy"
+  ],
+  "common_feature_requests": [
+    "Offline/standalone desktop calculator capability",
+    "Chip thinning (radial and axial) compensation",
+    "Tool deflection calculation and prediction",
+    "Cutting force and torque calculations",
+    "Material removal rate (MRR) output",
+    "Horsepower requirements",
+    "Comprehensive material database with more industrial materials",
+    "Machine-specific customization and profiling",
+    "Tool breakage prevention features",
+    "Machine torque curve integration",
+    "Advanced tool geometry consideration (flute length, helix angle, taper angle, shank diameter)",
+    "Community-contributed material and result databases",
+    "Calibration capability with user's actual test data",
+    "Turning operation support (especially for online tools)",
+    "Better small tool/endmill accuracy",
+    "Simplified user interfaces for hobby machinists",
+    "Integration with CAM software (Mastercam, GibbsCAM, etc.)",
+    "Tool manufacturer data integration",
+    "Persistent configuration storage per tool/material combination",
+    "Support for dry cutting mode vs coolant",
+    "Cross-platform compatibility without Adobe AIR",
+    "Mobile app offline functionality",
+    "Manual machine-specific modes",
+    "Step-over percentage guidance",
+    "Both milling and lathe capabilities in one tool"
+  ],
+  "key_insights": {
+    "top_3_apps": [
+      "FSWizard - Most recommended free option, cross-platform (web/mobile/desktop), actively developed by Eldar Gerfanov, but criticized for UI issues",
+      "HSMAdvisor - Premium option with advanced features, accounts for tool geometry, machine profiling, consistently praised despite cost",
+      "G-Wizard - Established but declining in favor due to Adobe AIR dependency, compatibility issues, and cost compared to free alternatives"
+    ],
+    "emerging_trend": "Strong preference shift from G-Wizard to HSMAdvisor/FSWizard due to technical barriers and cost",
+    "major_unmet_needs": [
+      "Better offline/standalone mobile apps",
+      "Machine-specific tuning for hobby/small shop equipment",
+      "Improved deflection and cutting force calculations",
+      "Comprehensive material libraries with community contributions",
+      "Better integration with popular CAM software"
+    ],
+    "sentiment_analysis": "Overall sentiment is mixed-to-negative. Users appreciate having options but are frustrated by lack of perfect solution. HSMAdvisor gains points for taking tool geometry seriously. FSWizard gains points for being free but criticized for UI. G-Wizard losing favor due to technical barriers.",
+    "user_community_behavior": "Machinists actively cross-reference multiple calculators to validate results. They emphasize that calculators are starting points requiring experience and machine-specific adjustment. Strong desire for community-shared data and calibration methods."
+  }
+}
